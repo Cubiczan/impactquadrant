@@ -1,0 +1,10 @@
+Hi {{customer.first_name | default: 'there'}},
+
+Thanks for filling in the ImpactQuadrant scorecard. Your business scored in the top band, which usually means buyers will be interested.
+
+The next step is a Valuation Snapshot ($100) so you know what it's worth before anyone else tells you: https://whop.com/checkout/plan_DxqY6XEluwGE6
+
+Or just reply and we can talk it through.
+
+Shyam
+ImpactQuadrant

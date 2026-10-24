@@ -1,0 +1,16 @@
+import test from 'node:test'; import assert from 'node:assert/strict';
+import { buildCio, sendCio, buildClickup, sendClickup, skuOf, scorecardEvent } from '../lib/integrations.js';
+import { planActions } from '../lib/whop-events.js';
+const pay = (plan, extra = {}) => ({ type: 'payment.succeeded', data: { id: 'pay_1', plan: { id: plan }, user: { id: 'user_1', email: 'Ann@Example.com', name: 'Ann Lee' }, ...extra } });
+const spy = () => { const calls = []; const f = async (url, o) => { calls.push({ url, ...o }); return { ok: true, json: async () => ({ id: 'tsk1' }) }; }; f.calls = calls; return f; };
+test('plan id maps to sku', () => { assert.equal(skuOf(pay('plan_DxqY6XEluwGE6').data), 'valuation_snapshot'); assert.equal(planActions(pay('plan_wFIIKYKAZbP1n')).sku, 'deal_room'); });
+test('cio payload for snapshot', () => { const p = buildCio(pay('plan_DxqY6XEluwGE6')); assert.equal(p.id, 'ann@example.com'); assert.equal(p.attrs.first_name, 'Ann'); assert.deepEqual(p.events.map(e => e.name), ['iq_payment_succeeded', 'iq_snapshot_purchased']); });
+test('renewal does not restart onboarding', () => { const p = buildCio(pay('plan_dz3xCCAiGVTns', { billing_reason: 'subscription_cycle' })); assert.deepEqual(p.events.map(e => e.name), ['iq_payment_succeeded']); assert.equal(buildClickup(pay('plan_dz3xCCAiGVTns', { billing_reason: 'subscription_cycle' })).skip, 'no_task_set'); });
+test('CIO off by default sends nothing', async () => { const f = spy(); assert.equal(await sendCio({}, buildCio(pay('plan_DxqY6XEluwGE6')), f), 'dry_run'); assert.equal(f.calls.length, 0); });
+test('CIO live without keys sends nothing', async () => { const f = spy(); assert.equal(await sendCio({ CIO_LIVE: '1' }, buildCio(pay('plan_DxqY6XEluwGE6')), f), 'missing_keys'); assert.equal(f.calls.length, 0); });
+test('CIO live identifies then tracks', async () => { const f = spy(); assert.equal(await sendCio({ CIO_LIVE: '1', CIO_SITE_ID: 's', CIO_API_KEY: 'k' }, buildCio(pay('plan_DxqY6XEluwGE6')), f), 'sent'); assert.equal(f.calls[0].method, 'PUT'); assert.match(f.calls[0].url, /customers\/ann%40example\.com$/); assert.equal(f.calls.length, 3); });
+test('no email skips', async () => { assert.equal(await sendCio({ CIO_LIVE: '1', CIO_SITE_ID: 's', CIO_API_KEY: 'k' }, buildCio({ type: 'payment.succeeded', data: {} }), spy()), 'skipped:no_email'); });
+test('ClickUp off by default', async () => { const f = spy(); assert.equal(await sendClickup({}, buildClickup(pay('plan_DxqY6XEluwGE6')), f), 'dry_run'); assert.equal(f.calls.length, 0); });
+test('ClickUp live creates parent + 5 subtasks for snapshot', async () => { const f = spy(); assert.equal(await sendClickup({ CLICKUP_LIVE: '1', CLICKUP_API_TOKEN: 't', CLICKUP_LIST_ID: '9' }, buildClickup(pay('plan_DxqY6XEluwGE6')), f), 'created:tsk1'); assert.equal(f.calls.length, 6); assert.equal(JSON.parse(f.calls[1].body).parent, 'tsk1'); });
+test('ClickUp skips non-product skus', () => assert.equal(buildClickup(pay('plan_other')).skip, 'no_task_set'));
+test('score bands', () => { assert.equal(scorecardEvent(85).name, 'iq_scorecard_high'); assert.equal(scorecardEvent(50).name, 'iq_scorecard_mid'); assert.equal(scorecardEvent(10).name, 'iq_scorecard_low'); });

@@ -1,0 +1,165 @@
+{
+ "brand": "ImpactQuadrant",
+ "campaigns": [
+  {
+   "key": "onb_snapshot",
+   "name": "IQ Onboarding - Valuation Snapshot",
+   "event": "iq_snapshot_purchased",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "Your Valuation Snapshot is underway",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nThanks for ordering a Valuation Snapshot from ImpactQuadrant. Here's what happens next:\n\n1. We review the company details you shared at checkout.\n2. If anything is unclear, we'll reply to this email with a short question or two.\n3. You'll get your Snapshot: a value range, the comparables we used, and the main things that move the number up or down.\n\nIf you have recent financials (a P&L or tax return) you're happy to share, just reply and attach them. It makes the range tighter.\n\nThanks,\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Thanks for ordering a Valuation Snapshot from ImpactQuadrant. Here's what happens next:</p><p>1. We review the company details you shared at checkout.<br>2. If anything is unclear, we'll reply to this email with a short question or two.<br>3. You'll get your Snapshot: a value range, the comparables we used, and the main things that move the number up or down.</p><p>If you have recent financials (a P&amp;L or tax return) you're happy to share, just reply and attach them. It makes the range tighter.</p><p>Thanks,<br>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 3,
+     "subject": "Quick check-in on your Snapshot",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nJust checking in. Is there anything else about the business we should know before we finish your Valuation Snapshot? Things like owner add-backs, a big customer, or a recent price change can shift the range.\n\nReply any time.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Just checking in. Is there anything else about the business we should know before we finish your Valuation Snapshot? Things like owner add-backs, a big customer, or a recent price change can shift the range.</p><p>Reply any time.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "onb_access",
+   "name": "IQ Onboarding - Deal Access",
+   "event": "iq_deal_access_started",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "Welcome to Deal Access",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nWelcome to ImpactQuadrant Deal Access. You'll now get a first look at new owner-led businesses before they're shared more widely.\n\nTo help us send the right deals, reply with:\n- Industries you're interested in\n- Target revenue or EBITDA range\n- States or regions you'd consider\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Welcome to ImpactQuadrant Deal Access. You'll now get a first look at new owner-led businesses before they're shared more widely.</p><p>To help us send the right deals, reply with:<br>- Industries you're interested in<br>- Target revenue or EBITDA range<br>- States or regions you'd consider</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 5,
+     "subject": "How to get the most from Deal Access",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nA few tips:\n- Reply quickly to deals you like. Owners notice who's serious.\n- Ask for a Valuation Snapshot on anything you're unsure about.\n- Tell us what you passed on and why, so the next ones fit better.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>A few tips:<br>- Reply quickly to deals you like. Owners notice who's serious.<br>- Ask for a Valuation Snapshot on anything you're unsure about.<br>- Tell us what you passed on and why, so the next ones fit better.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "onb_room",
+   "name": "IQ Onboarding - Deal Room",
+   "event": "iq_deal_room_started",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "You're in the Deal Room",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nWelcome to the ImpactQuadrant Deal Room. You now have access to three spaces on Whop:\n- Deal Room: live opportunities and discussion\n- Valuation Reports: our write-ups on how deals are priced\n- Deal Teardowns: what worked and what didn't on real deals\n\nStart with the latest teardown, then introduce yourself in the Deal Room.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Welcome to the ImpactQuadrant Deal Room. You now have access to three spaces on Whop:<br>- Deal Room: live opportunities and discussion<br>- Valuation Reports: our write-ups on how deals are priced<br>- Deal Teardowns: what worked and what didn't on real deals</p><p>Start with the latest teardown, then introduce yourself in the Deal Room.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 7,
+     "subject": "Anything you'd like us to cover?",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nYou've had a week in the Deal Room. Is there an industry, deal size or question you'd like a teardown or report on? Reply and tell me. We use these requests to plan what's next.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>You've had a week in the Deal Room. Is there an industry, deal size or question you'd like a teardown or report on? Reply and tell me. We use these requests to plan what's next.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "upsell_snapshot",
+   "name": "IQ Upsell - Snapshot to Deal Access",
+   "event": "iq_snapshot_purchased",
+   "emails": [
+    {
+     "delay_days": 10,
+     "subject": "Want to see deals like this first?",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nHope the Valuation Snapshot was useful. If you're looking to buy, Deal Access gives you a first look at new owner-led businesses for $49/month. Cancel any time.\n\nJoin here: https://whop.com/checkout/plan_dz3xCCAiGVTns\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Hope the Valuation Snapshot was useful. If you're looking to buy, Deal Access gives you a first look at new owner-led businesses for $49/month. Cancel any time.</p><p>Join here: <a href=\"https://whop.com/checkout/plan_dz3xCCAiGVTns\">https://whop.com/checkout/plan_dz3xCCAiGVTns</a></p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "upsell_access",
+   "name": "IQ Upsell - Deal Access to Deal Room",
+   "event": "iq_deal_access_started",
+   "emails": [
+    {
+     "delay_days": 21,
+     "subject": "Go deeper with the Deal Room",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nIf you want more than a first look, the Deal Room ($129/month) adds our valuation reports, deal teardowns and a space to talk through live deals with other buyers.\n\nUpgrade here: https://whop.com/checkout/plan_wFIIKYKAZbP1n\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>If you want more than a first look, the Deal Room ($129/month) adds our valuation reports, deal teardowns and a space to talk through live deals with other buyers.</p><p>Upgrade here: <a href=\"https://whop.com/checkout/plan_wFIIKYKAZbP1n\">https://whop.com/checkout/plan_wFIIKYKAZbP1n</a></p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "credit_30d",
+   "name": "IQ PROPOSED - 30-day Snapshot upgrade credit",
+   "event": "iq_snapshot_purchased",
+   "proposed": true,
+   "emails": [
+    {
+     "delay_days": 20,
+     "subject": "Your $100 Snapshot credit expires in 10 days",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nA reminder: because you bought a Valuation Snapshot, we'll credit the $100 toward a Deal Access or Deal Room subscription if you start within 30 days of your purchase.\n\nDeal Access ($49/month): https://whop.com/checkout/plan_dz3xCCAiGVTns\nDeal Room ($129/month): https://whop.com/checkout/plan_wFIIKYKAZbP1n\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>A reminder: because you bought a Valuation Snapshot, we'll credit the $100 toward a Deal Access or Deal Room subscription if you start within 30 days of your purchase.</p><p>Deal Access ($49/month): <a href=\"https://whop.com/checkout/plan_dz3xCCAiGVTns\">https://whop.com/checkout/plan_dz3xCCAiGVTns</a><br>Deal Room ($129/month): <a href=\"https://whop.com/checkout/plan_wFIIKYKAZbP1n\">https://whop.com/checkout/plan_wFIIKYKAZbP1n</a></p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 7,
+     "subject": "Last few days for your $100 credit",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nJust a heads-up: your $100 Snapshot credit toward a subscription ends in 3 days. Reply if you have any questions first.\n\nDeal Access: https://whop.com/checkout/plan_dz3xCCAiGVTns\nDeal Room: https://whop.com/checkout/plan_wFIIKYKAZbP1n\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Just a heads-up: your $100 Snapshot credit toward a subscription ends in 3 days. Reply if you have any questions first.</p><p>Deal Access: <a href=\"https://whop.com/checkout/plan_dz3xCCAiGVTns\">https://whop.com/checkout/plan_dz3xCCAiGVTns</a><br>Deal Room: <a href=\"https://whop.com/checkout/plan_wFIIKYKAZbP1n\">https://whop.com/checkout/plan_wFIIKYKAZbP1n</a></p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "score_high",
+   "name": "IQ Scorecard - High band follow-up",
+   "event": "iq_scorecard_high",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "Your scorecard looks strong",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nThanks for filling in the ImpactQuadrant scorecard. Your business scored in the top band, which usually means buyers will be interested.\n\nThe next step is a Valuation Snapshot ($100) so you know what it's worth before anyone else tells you: https://whop.com/checkout/plan_DxqY6XEluwGE6\n\nOr just reply and we can talk it through.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Thanks for filling in the ImpactQuadrant scorecard. Your business scored in the top band, which usually means buyers will be interested.</p><p>The next step is a Valuation Snapshot ($100) so you know what it's worth before anyone else tells you: <a href=\"https://whop.com/checkout/plan_DxqY6XEluwGE6\">https://whop.com/checkout/plan_DxqY6XEluwGE6</a></p><p>Or just reply and we can talk it through.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 4,
+     "subject": "Any questions about your score?",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nHappy to walk you through what drove your score and what buyers look at first. Just reply with a good time.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Happy to walk you through what drove your score and what buyers look at first. Just reply with a good time.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "score_mid",
+   "name": "IQ Scorecard - Mid band follow-up",
+   "event": "iq_scorecard_mid",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "Your scorecard results",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nThanks for filling in the ImpactQuadrant scorecard. Your business landed in the middle band. That's a good base, and a few changes (cleaner books, less reliance on you as the owner, steadier customers) often lift value a lot.\n\nA Valuation Snapshot ($100) shows where you stand today and what would move the number: https://whop.com/checkout/plan_DxqY6XEluwGE6\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Thanks for filling in the ImpactQuadrant scorecard. Your business landed in the middle band. That's a good base, and a few changes (cleaner books, less reliance on you as the owner, steadier customers) often lift value a lot.</p><p>A Valuation Snapshot ($100) shows where you stand today and what would move the number: <a href=\"https://whop.com/checkout/plan_DxqY6XEluwGE6\">https://whop.com/checkout/plan_DxqY6XEluwGE6</a></p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 7,
+     "subject": "Three things that raise value",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nThe three changes we see raise value most often:\n1. Monthly financials you can hand to a buyer\n2. A team that can run day-to-day work without you\n3. Repeat or contracted revenue\n\nReply if you'd like to talk about any of them.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>The three changes we see raise value most often:<br>1. Monthly financials you can hand to a buyer<br>2. A team that can run day-to-day work without you<br>3. Repeat or contracted revenue</p><p>Reply if you'd like to talk about any of them.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  },
+  {
+   "key": "score_low",
+   "name": "IQ Scorecard - Low band follow-up",
+   "event": "iq_scorecard_low",
+   "emails": [
+    {
+     "delay_days": 0,
+     "subject": "Your scorecard results and next steps",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nThanks for filling in the ImpactQuadrant scorecard. Your score suggests there's some groundwork to do before a sale, which is common and fixable.\n\nOver the next few weeks we'll send a couple of short, practical tips. No pressure to buy anything.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>Thanks for filling in the ImpactQuadrant scorecard. Your score suggests there's some groundwork to do before a sale, which is common and fixable.</p><p>Over the next few weeks we'll send a couple of short, practical tips. No pressure to buy anything.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    },
+    {
+     "delay_days": 14,
+     "subject": "A simple first step",
+     "body": "Hi {{customer.first_name | default: 'there'}},\n\nIf you do one thing this month, start keeping monthly profit and loss statements. It's the first thing any buyer asks for. When you're ready to check your progress, retake the scorecard or reply to this email.\n\nShyam\nImpactQuadrant",
+     "html": "<div style=\"font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#222\"><p>Hi {{customer.first_name | default: 'there'}},</p><p>If you do one thing this month, start keeping monthly profit and loss statements. It's the first thing any buyer asks for. When you're ready to check your progress, retake the scorecard or reply to this email.</p><p>Shyam<br>ImpactQuadrant</p></div>"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+Hi {{customer.first_name | default: 'there'}},
+
+Happy to walk you through what drove your score and what buyers look at first. Just reply with a good time.
+
+Shyam
+ImpactQuadrant

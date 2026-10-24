@@ -1,0 +1,9 @@
+Hi {{customer.first_name | default: 'there'}},
+
+A reminder: because you bought a Valuation Snapshot, we'll credit the $100 toward a Deal Access or Deal Room subscription if you start within 30 days of your purchase.
+
+Deal Access ($49/month): https://whop.com/checkout/plan_dz3xCCAiGVTns
+Deal Room ($129/month): https://whop.com/checkout/plan_wFIIKYKAZbP1n
+
+Shyam
+ImpactQuadrant

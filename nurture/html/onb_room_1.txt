@@ -1,0 +1,11 @@
+Hi {{customer.first_name | default: 'there'}},
+
+Welcome to the ImpactQuadrant Deal Room. You now have access to three spaces on Whop:
+- Deal Room: live opportunities and discussion
+- Valuation Reports: our write-ups on how deals are priced
+- Deal Teardowns: what worked and what didn't on real deals
+
+Start with the latest teardown, then introduce yourself in the Deal Room.
+
+Shyam
+ImpactQuadrant

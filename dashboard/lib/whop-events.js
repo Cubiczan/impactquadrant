@@ -1,5 +1,6 @@
 // ImpactQuadrant Whop event handling (pure, testable). No money moves here; no messages are sent.
 import crypto from 'node:crypto';
+import { PLAN_SKU } from './integrations.js';
 
 const TOLERANCE_S = 300;
 
@@ -31,7 +32,7 @@ export function planActions(evt, env = {}) {
   const type = evt?.type || evt?.action || 'unknown';
   const data = evt?.data || {};
   const md = { ...(data?.plan?.metadata || {}), ...(data?.product?.metadata || {}), ...(data?.metadata || {}) };
-  const sku = md.sku || 'unknown';
+  const sku = md.sku || PLAN_SKU[data?.plan?.id || data?.plan_id] || 'unknown';
   const tasks = [];
   if (['payment.succeeded', 'membership.went_valid', 'membership.activated'].includes(type)) {
     for (const a of SKU_ACTIONS[sku] || ['onboarding:generic']) tasks.push(a);

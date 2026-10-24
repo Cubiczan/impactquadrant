@@ -1,0 +1,6 @@
+Hi {{customer.first_name | default: 'there'}},
+
+If you do one thing this month, start keeping monthly profit and loss statements. It's the first thing any buyer asks for. When you're ready to check your progress, retake the scorecard or reply to this email.
+
+Shyam
+ImpactQuadrant

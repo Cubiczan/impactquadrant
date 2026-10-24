@@ -1,0 +1,11 @@
+Hi {{customer.first_name | default: 'there'}},
+
+The three changes we see raise value most often:
+1. Monthly financials you can hand to a buyer
+2. A team that can run day-to-day work without you
+3. Repeat or contracted revenue
+
+Reply if you'd like to talk about any of them.
+
+Shyam
+ImpactQuadrant

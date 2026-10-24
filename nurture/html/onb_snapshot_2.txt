@@ -1,0 +1,8 @@
+Hi {{customer.first_name | default: 'there'}},
+
+Just checking in. Is there anything else about the business we should know before we finish your Valuation Snapshot? Things like owner add-backs, a big customer, or a recent price change can shift the range.
+
+Reply any time.
+
+Shyam
+ImpactQuadrant

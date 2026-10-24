@@ -1,0 +1,8 @@
+Hi {{customer.first_name | default: 'there'}},
+
+Thanks for filling in the ImpactQuadrant scorecard. Your score suggests there's some groundwork to do before a sale, which is common and fixable.
+
+Over the next few weeks we'll send a couple of short, practical tips. No pressure to buy anything.
+
+Shyam
+ImpactQuadrant

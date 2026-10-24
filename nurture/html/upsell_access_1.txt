@@ -1,0 +1,8 @@
+Hi {{customer.first_name | default: 'there'}},
+
+If you want more than a first look, the Deal Room ($129/month) adds our valuation reports, deal teardowns and a space to talk through live deals with other buyers.
+
+Upgrade here: https://whop.com/checkout/plan_wFIIKYKAZbP1n
+
+Shyam
+ImpactQuadrant
