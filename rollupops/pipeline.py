@@ -185,4 +185,8 @@ def run(do_whop=False, top=6):
                "terac_enabled": terac.ENABLED}
     w("00_summary", summary); print(json.dumps(summary, indent=1)); return summary
 
-if __name__ == "__main__": run("--whop" in sys.argv)
+def build_db():
+    try:
+        from . import db; print("duckdb:", db.build())
+    except Exception as e: print("duckdb build skipped:", e)
+if __name__ == "__main__": run("--whop" in sys.argv); build_db()

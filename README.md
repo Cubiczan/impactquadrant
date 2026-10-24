@@ -60,3 +60,6 @@ cp out/*.json dashboard/public/data/ && (cd dashboard && vercel deploy --prod)
 | Deal Teardown | $149 | https://whop.com/checkout/plan_uJeL4VQ1BA9XB |
 | Sell-side retainer (GREEN only) | $1,500 | https://whop.com/checkout/plan_ZoPJy2iiRGuYU |
 Catalog: `data/whop_live_catalog.json`. Per-listing success-fee checkouts stay sandbox until approved.
+
+## Marketplace backend (DuckDB)
+Agents run both sides: `buyer_agent` keeps PE/platform buy mandates fresh from public signals, `seller_agent` keeps the seller pipeline (verification, Terac flag, GREEN jurisdiction), `matcher` proposes scored matches. `python -m rollupops.db` builds `data/rollupops.duckdb`. See [SCHEMA.md](SCHEMA.md).
