@@ -11,3 +11,9 @@ data/rollupops.duckdb
 data/*.duckdb
 data/inbox/
 data/terac_approvals.json
+data/review_secret
+data/reviews/
+dashboard/review_evidence/*.json
+!dashboard/review_evidence/demo-*.json
+dashboard/.env.local
+node_modules/

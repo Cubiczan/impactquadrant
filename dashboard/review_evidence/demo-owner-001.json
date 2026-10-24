@@ -1,0 +1,28 @@
+{
+ "check_id": "demo-owner-001",
+ "kind": "owner_verification",
+ "consent": {
+  "given": true,
+  "method": "verbal-on-call",
+  "at": "2026-10-24T13:13:26",
+  "recording_allowed": true
+ },
+ "context": {
+  "sector": "Precision machining",
+  "size_band": "$5-10M revenue",
+  "region": "US Midwest"
+ },
+ "notes": "DEMO (synthetic). Speaker said they own a precision machining shop (~40 staff) in Ohio-style Midwest region, founded 1998, described two product lines and named their CNC equipment consistently. Wants a confidential valuation within 12 months; succession reason (retirement). Contact [email], [phone].",
+ "transcript": null,
+ "recording": null,
+ "questions": [
+  "Does the person credibly present as an owner or authorized seller of the described business?",
+  "Is the business plausibly operating as described (sector, size band, region)?",
+  "Is the stated intent to sell or value the business genuine and consistent?"
+ ],
+ "verdicts": [
+  "verified",
+  "concerns",
+  "fail"
+ ]
+}

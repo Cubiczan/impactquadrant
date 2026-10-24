@@ -73,7 +73,7 @@ TEMPLATES = {
         "count": 1, "timeline_hours": 72, "business_type": "b2b"},
     "buyer_screening": {
         "task": "Verify a prospective acquirer: identity (firm site, firm-domain email, public profile match), plausibility of funds versus deal size, and real acquisition intent. Flag data harvesting, competitor fishing or mismatched identity. Upload a short written finding.",
-        "panel": "US-based M&A, private equity or KYC/fraud analysts with buy-side diligence experience; English.",
+        "panel": "US-only reviewers with an M&A, private equity, business brokerage, AML or identity-verification background; English.",
         "count": 1, "timeline_hours": 48, "business_type": "b2b"},
 }
 def _req(method, path, body=None):
@@ -101,3 +101,49 @@ def launch(opp_id, check_id):
     if not LIVE: return {"launched": False, "reason": "TERAC_LIVE!=1"}
     if not _approved(check_id): return {"launched": False, "reason": f"check {check_id} not approved in data/terac_approvals.json"}
     return _req("POST", f"/opportunities/{opp_id}/launch", {})
+
+# ---------------------------------------------------------------------------------------------
+# Evidence-review opportunities. Terac cannot book live calls or reach a named owner/buyer, so WE run the
+# consented call (rollupops.review), and Terac reviewers open our token-gated reviewer page and submit a
+# verdict there. review_type=manual_review => a reviewer is paid ONLY after we approve their submission.
+from rollupops import review as _review
+QUOTES = {"owner_verification": "lr93jf2jqea9luyzr1haw3oh", "buyer_screening": "kq09ob6qhi2ruiji24nyefnh"}
+REVIEW_MINUTES = int(os.environ.get("TERAC_REVIEW_MINUTES", "15"))
+BACKGROUNDS = ["M&A advisory or investment banking", "Private equity", "Business brokerage", "AML / KYC compliance", "Identity verification / fraud"]
+def opportunity_draft(kind, check_id, feasibility_request_id=None, project_id=None):
+    """Pure function: the draft payload (nothing sent). Task = interview on our hosted reviewer page."""
+    assert kind in _review.KINDS
+    label = "Owner verification" if kind == "owner_verification" else "Buyer screening"
+    return {
+        "title": f"Review a consented identity-and-intent call ({label})",
+        "internal_title": f"RollupOps {kind} {check_id}",
+        "description": ("Review redacted evidence from a short, consented identity-and-intent call we ran, then submit a verdict "
+                        "(verified / concerns / fail) with reasons on our page. ~15 min. Paid after we approve your review."),
+        "project_id": project_id or os.environ.get("TERAC_PROJECT_ID", ""),
+        "num_participants": 1, "business_type": "b2b", "customer_screening_review": "manual_review",
+        "filters": [{"multi_select--country": {"$in": ["US"]}}],
+        "screening_questions": [
+            {"key": "bg", "pick": "any", "text": "Which of these have you worked in professionally for at least 2 years?",
+             "answers": [{"text": b, "qualify_logic": "must_one_of"} for b in BACKGROUNDS] + [{"text": "None of these", "qualify_logic": "reject"}]},
+            {"key": "conf", "pick": "boolean", "text": "Will you keep the reviewed material confidential and not try to identify or contact anyone in it?",
+             "answers": [{"text": "Yes", "qualify_logic": "must"}, {"text": "No", "qualify_logic": "reject"}]}],
+        "tasks": [{"sequence": 1, "task_type": "interview", "review_type": "manual_review", "duration_minutes": REVIEW_MINUTES,
+                   "title": "Review evidence and submit verdict", "task_url": _review.reviewer_url(check_id),
+                   "description": "Open the page, read the redacted consent, context and call notes, answer the questions and submit verified / concerns / fail with reasons."}],
+        "expected_days_to_complete": 5,
+        **({"feasibility_request_id": feasibility_request_id} if feasibility_request_id else {}),
+    }
+def create_review_draft(kind, check_id, use_quote=True):
+    """Creates the DRAFT on Terac (free, but still gated): TERAC_LIVE=1 AND data/terac_approvals.json[check_id] is true.
+    Launch stays a separate gated call (launch()). Never called by the orchestrator."""
+    body = opportunity_draft(kind, check_id, QUOTES.get(kind) if use_quote else None)
+    if not LIVE: return {"created": False, "reason": "TERAC_LIVE!=1", "draft": body}
+    if not _approved(check_id): return {"created": False, "reason": f"check {check_id} not approved in data/terac_approvals.json", "draft": body}
+    if not body["project_id"]: return {"created": False, "reason": "TERAC_PROJECT_ID not set", "draft": body}
+    if body.get("feasibility_request_id") and get_feasibility(body["feasibility_request_id"]).get("status") != "RESPONDED":
+        body.pop("feasibility_request_id")  # quote not priced yet -> Terac estimates; review price before launch
+    return _req("POST", "/opportunities", body)
+def approve_submission(submission_id, check_id):
+    """Pays the reviewer. Only after WE accepted their verdict; same gate as launch."""
+    if not LIVE or not _approved(check_id): return {"approved": False, "reason": "TERAC_LIVE!=1 or check not approved"}
+    return _req("POST", f"/submissions/{submission_id}/approve", {})
