@@ -65,3 +65,13 @@ Catalog: `data/whop_live_catalog.json`. Per-listing success-fee checkouts stay s
 Agents run both sides: `buyer_agent` keeps PE/platform buy mandates fresh from public signals, `seller_agent` keeps the seller pipeline (verification, Terac flag, GREEN jurisdiction), `matcher` proposes scored matches. `python -m rollupops.db` builds `data/rollupops.duckdb`. See [SCHEMA.md](SCHEMA.md).
 
 **Multi-agent cycle:** `python -m rollupops.orchestrator --exa` runs parallel buyer-search and seller-search agents (Exa), the matcher and the Whop agent. The dashboard's Agents panel shows runs, matches and Whop teaser payloads. Nothing is sent to anyone.
+
+## Impact Quadrant Precision Sale Process (live, flat fee)
+| Service | Price | Checkout |
+|---|---|---|
+| Business Valuation Report | $499 one-time | https://whop.com/checkout/plan_WtHSQEw7OfZqz |
+| Sale-Readiness Audit | $999 one-time | https://whop.com/checkout/plan_9V5dcLhzS24to |
+| Buyer Landscape Report | $299 one-time | https://whop.com/checkout/plan_qMZc3rTzx0pOB |
+| Confidential Teaser + CIM | $1,500 one-time | https://whop.com/checkout/plan_rHZvi1hNfO0RW |
+| Quality-of-Earnings Lite | $2,500 one-time | https://whop.com/checkout/plan_5GulOsl8BSUJz |
+On a `payment.succeeded` for one of these plans, `rollupops.fulfillment` drafts the deliverable from DuckDB + Exa into `out/fulfillment/` for human review. Nothing is sent automatically. Not legal, tax or financial advice.

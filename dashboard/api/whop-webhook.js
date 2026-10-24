@@ -20,6 +20,6 @@ export default async function handler(req, res) {
       headers: { 'Content-Type': 'application/json', 'x-rollupops-secret': process.env.WIX_PUSH_SECRET }, body: JSON.stringify({ targetId, status: 'sold' }) });
     wix = r.status;
   }
-  console.log(JSON.stringify({ type, targetId, match_id: md.match_id, duckdb: 'pulled by rollupops.orchestrator whop_sync', segment: md.segment, wix, verifier_transfer: 'queued (sandbox)' }));
+  console.log(JSON.stringify({ type, targetId, match_id: md.match_id, duckdb: 'pulled by rollupops.orchestrator whop_sync', fulfillment: 'draft queued for human review (rollupops.fulfillment)', segment: md.segment, wix, verifier_transfer: 'queued (sandbox)' }));
   return res.status(200).json({ ok: true, type, targetId, wix });
 }

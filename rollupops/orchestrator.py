@@ -32,7 +32,9 @@ def whop_sync(con):
     for p in data:  # amounts + plan only; no buyer PII stored
         con.execute("INSERT OR REPLACE INTO whop_events VALUES (?,?,?,?,?,?,?)", [p.get("id"), "payment:" + str(p.get("status")), (p.get("plan") or {}).get("id"),
                     (p.get("membership") or {}).get("id"), p.get("total") or p.get("usd_total"), json.dumps(p.get("metadata") or {}), agents.now()])
-    return r.done({"payments": len(data)})
+    from . import fulfillment  # Precision Sale Process: draft deliverables for paid plans (human review, no sends)
+    drafted = [fulfillment.fulfill(p) for p in data if str(p.get("status")) in ("paid", "succeeded")]
+    return r.done({"payments": len(data), "fulfillment_drafts": [d for d in drafted if "draft" in d]})
 def export(con, path):
     q = lambda s: [dict(zip([d[0] for d in con.description], r)) for r in con.execute(s).fetchall()]
     out = {"generated": str(agents.now()), "agents": q("SELECT * FROM v_agent_summary ORDER BY side, agent"),
