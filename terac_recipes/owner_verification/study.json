@@ -1,0 +1,19 @@
+{
+  "_note": "RollupOps' ONLY Terac check: blue-collar business owner verification. PE buyers NEVER go to Terac (vetted personally). Synthetic demo bundle only.",
+  "title": "Read a short business-owner call summary and give a verdict",
+  "internal_title": "RollupOps owner verification (synthetic demo-owner-001)",
+  "description": "Read a short, redacted summary of a consented call with a small trades business owner (synthetic example). Answer 3 questions and submit a verdict: verified, concerns or fail, with reasons and red flags. About 10 minutes.",
+  "num_participants": 1,
+  "business_type": "b2c",
+  "customer_screening_review": "auto_invite",
+  "tasks": [{"sequence": 1, "task_type": "interview", "review_type": "manual_review",
+    "task_url": "https://dashboard-six-fawn-83.vercel.app/review.html?c=demo-owner-001&t=ea2fba9926b58ff8411c3bc73117d4d5",
+    "title": "Review owner call summary",
+    "description": "Open the page, read the redacted call summary, answer the 3 questions and submit your verdict (verified / concerns / fail) with reasons. Do not try to identify or contact anyone.",
+    "duration_minutes": 10}],
+  "filters": [{"multi_select--country": {"$in": ["US"]}}],
+  "screening_questions": [{"key": "q0", "text": "Which best describes how comfortable you are reading a written summary and giving a short written judgement in English?", "pick": "one",
+    "answers": [{"text": "Very comfortable, I do this often", "qualify_logic": "may"}, {"text": "Comfortable", "qualify_logic": "may"},
+                {"text": "Not comfortable", "qualify_logic": "reject"}, {"text": "None of the above", "qualify_logic": "reject"}]}],
+  "expected_days_to_complete": 5
+}

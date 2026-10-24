@@ -1,0 +1,5 @@
+{"type":"object","required":["verdict","reasons","red_flags"],"properties":{
+ "verdict":{"enum":["verified","concerns","fail"]},
+ "reasons":{"type":"array","items":{"type":"string"},"minItems":1},
+ "red_flags":{"type":"array","items":{"type":"string"}},
+ "answers":{"type":"object","properties":{"credible_owner":{"type":"string"},"business_operating":{"type":"string"},"genuine_intent":{"type":"string"}}}}}
