@@ -1,0 +1,6 @@
+{"business": "biz_hBjAsGrR4pbWup", "mode": "LIVE", "scope": "Available in 24 US states + 6 countries",
+ "products": {
+  "pe_deal_flow": {"product_id": "prod_klDLOsiPCFzuH", "plan_id": "plan_vw11C9YfuqPBB", "price": "$499/mo", "purchase_url": "https://whop.com/checkout/plan_vw11C9YfuqPBB"},
+  "deal_drop": {"product_id": "prod_DQLhNeWbAd1Ls", "plan_id": "plan_Y29FScJ0r99WQ", "price": "$49/mo", "purchase_url": "https://whop.com/checkout/plan_Y29FScJ0r99WQ"},
+  "teardown": {"product_id": "prod_PRhFKR2p2gZVt", "plan_id": "plan_uJeL4VQ1BA9XB", "price": "$149 one-time", "purchase_url": "https://whop.com/checkout/plan_uJeL4VQ1BA9XB"},
+  "sell_side_retainer": {"product_id": "prod_5p2ipWIiBoW1D", "plan_id": "plan_ZoPJy2iiRGuYU", "price": "$1,500 one-time (credited at close; GREEN only)", "purchase_url": "https://whop.com/checkout/plan_ZoPJy2iiRGuYU"}}}

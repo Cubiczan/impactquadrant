@@ -51,3 +51,12 @@ cp out/*.json dashboard/public/data/ && (cd dashboard && vercel deploy --prod)
 ## Operating scope: GREEN only
 **Available in 24 US states + 6 countries** (AL, CT, DC, DE, IA, IN, KS, MA, MD, MO, MS, MT, NC, ND, NJ, NM, OK, PA, SC, TN, TX, VA, VT, WV + BR, CH, DE, ES, JP, MX).
 `jurisdiction.scope_gate()` declines sellers and buyers anywhere else with "Not available in your location yet" (no flat-fee products, no referrals). The pipeline drops non-GREEN listings.
+
+## Live Whop products (biz_hBjAsGrR4pbWup)
+| Product | Price | Checkout |
+|---|---|---|
+| PE Deal Flow | $499/mo | https://whop.com/checkout/plan_vw11C9YfuqPBB |
+| Off-Market Deal Drop | $49/mo | https://whop.com/checkout/plan_Y29FScJ0r99WQ |
+| Deal Teardown | $149 | https://whop.com/checkout/plan_uJeL4VQ1BA9XB |
+| Sell-side retainer (GREEN only) | $1,500 | https://whop.com/checkout/plan_ZoPJy2iiRGuYU |
+Catalog: `data/whop_live_catalog.json`. Per-listing success-fee checkouts stay sandbox until approved.

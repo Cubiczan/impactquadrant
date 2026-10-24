@@ -1,7 +1,7 @@
 """Minimal Whop REST client. SANDBOX ONLY unless WHOP_LIVE=1 AND NEEDS_SHYAM_APPROVED=1."""
 import os, json, urllib.request, urllib.error
 LIVE = os.environ.get("WHOP_LIVE") == "1" and os.environ.get("NEEDS_SHYAM_APPROVED") == "1"
-PROD_BIZ = "biz_yXvRBAxPMOzd7b"  # production business (Cosmicspiritguide), id from plan responses
+PROD_BIZ = "biz_hBjAsGrR4pbWup"  # production business (Cubiczan)
 BIZ = os.environ.get("WHOP_COMPANY_ID", PROD_BIZ if LIVE else "biz_a5nrqqjxL9lLAv")
 BASE = "https://api.whop.com/api/v1" if LIVE else "https://sandbox-api.whop.com/api/v1"
 
