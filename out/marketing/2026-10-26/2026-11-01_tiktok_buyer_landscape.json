@@ -1,0 +1,18 @@
+{
+ "product": "buyer_landscape",
+ "platform": "tiktok",
+ "text": "Who would buy your company? See the buyer landscape for your niche before you go to market. IQ Buyer Landscape Report, $299 one-time. Link in bio. Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico. Not legal or financial advice. #smallbusiness #businessowner #exitplanning #manufacturing #businesstok",
+ "checkout": "https://whop.com/checkout/plan_qMZc3rTzx0pOB",
+ "status": "draft",
+ "chars": 335,
+ "script": {
+  "hook (0-3s)": "Who would buy your company?",
+  "beat_1": "Most owners guess. Buyers don't. IQ Buyer Landscape Report gives you the buyer's view.",
+  "beat_2": "Built for small and mid-size manufacturing and distribution businesses.",
+  "beat_3": "Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico.",
+  "cta": "$299 one-time. Tap the link in bio to check out.",
+  "on_screen_text": "IQ Buyer Landscape Report",
+  "length_s": 30
+ },
+ "scheduled": "2026-11-01"
+}

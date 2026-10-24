@@ -21,6 +21,13 @@
   "file": "2026-10-26_instagram_pe_deal_flow.json"
  },
  {
+  "date": "2026-10-26",
+  "platform": "tiktok",
+  "product": "pe_deal_flow",
+  "status": "draft",
+  "file": "2026-10-26_tiktok_pe_deal_flow.json"
+ },
+ {
   "date": "2026-10-27",
   "platform": "linkedin",
   "product": "deal_drop",
@@ -40,6 +47,13 @@
   "product": "deal_drop",
   "status": "draft",
   "file": "2026-10-27_instagram_deal_drop.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "tiktok",
+  "product": "deal_drop",
+  "status": "draft",
+  "file": "2026-10-27_tiktok_deal_drop.json"
  },
  {
   "date": "2026-10-28",
@@ -63,6 +77,13 @@
   "file": "2026-10-28_instagram_teardown.json"
  },
  {
+  "date": "2026-10-28",
+  "platform": "tiktok",
+  "product": "teardown",
+  "status": "draft",
+  "file": "2026-10-28_tiktok_teardown.json"
+ },
+ {
   "date": "2026-10-29",
   "platform": "linkedin",
   "product": "sell_side_retainer",
@@ -82,6 +103,13 @@
   "product": "sell_side_retainer",
   "status": "draft",
   "file": "2026-10-29_instagram_sell_side_retainer.json"
+ },
+ {
+  "date": "2026-10-29",
+  "platform": "tiktok",
+  "product": "sell_side_retainer",
+  "status": "draft",
+  "file": "2026-10-29_tiktok_sell_side_retainer.json"
  },
  {
   "date": "2026-10-30",
@@ -105,6 +133,13 @@
   "file": "2026-10-30_instagram_valuation.json"
  },
  {
+  "date": "2026-10-30",
+  "platform": "tiktok",
+  "product": "valuation",
+  "status": "draft",
+  "file": "2026-10-30_tiktok_valuation.json"
+ },
+ {
   "date": "2026-10-31",
   "platform": "linkedin",
   "product": "readiness",
@@ -124,6 +159,13 @@
   "product": "readiness",
   "status": "draft",
   "file": "2026-10-31_instagram_readiness.json"
+ },
+ {
+  "date": "2026-10-31",
+  "platform": "tiktok",
+  "product": "readiness",
+  "status": "draft",
+  "file": "2026-10-31_tiktok_readiness.json"
  },
  {
   "date": "2026-11-01",
@@ -147,6 +189,13 @@
   "file": "2026-11-01_instagram_buyer_landscape.json"
  },
  {
+  "date": "2026-11-01",
+  "platform": "tiktok",
+  "product": "buyer_landscape",
+  "status": "draft",
+  "file": "2026-11-01_tiktok_buyer_landscape.json"
+ },
+ {
   "date": "2026-10-26",
   "platform": "linkedin",
   "product": "teaser_cim",
@@ -168,6 +217,13 @@
   "file": "2026-10-26_instagram_teaser_cim.json"
  },
  {
+  "date": "2026-10-26",
+  "platform": "tiktok",
+  "product": "teaser_cim",
+  "status": "draft",
+  "file": "2026-10-26_tiktok_teaser_cim.json"
+ },
+ {
   "date": "2026-10-27",
   "platform": "linkedin",
   "product": "qoe_lite",
@@ -187,5 +243,12 @@
   "product": "qoe_lite",
   "status": "draft",
   "file": "2026-10-27_instagram_qoe_lite.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "tiktok",
+  "product": "qoe_lite",
+  "status": "draft",
+  "file": "2026-10-27_tiktok_qoe_lite.json"
  }
 ]

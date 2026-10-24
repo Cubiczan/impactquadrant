@@ -1,0 +1,18 @@
+{
+ "product": "teaser_cim",
+ "platform": "tiktok",
+ "text": "Go to market like a pro: a confidential teaser plus a full CIM, prepared for you. IQ Confidential Teaser + CIM, $1,500 one-time. Link in bio. Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico. Not legal or financial advice. #smallbusiness #businessowner #exitplanning #manufacturing #businesstok",
+ "checkout": "https://whop.com/checkout/plan_rHZvi1hNfO0RW",
+ "status": "draft",
+ "chars": 330,
+ "script": {
+  "hook (0-3s)": "Go to market like a pro: a confidential teaser plus a full CIM, prepared for you.",
+  "beat_1": "Most owners guess. Buyers don't. IQ Confidential Teaser + CIM gives you the buyer's view.",
+  "beat_2": "Built for small and mid-size manufacturing and distribution businesses.",
+  "beat_3": "Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico.",
+  "cta": "$1,500 one-time. Tap the link in bio to check out.",
+  "on_screen_text": "IQ Confidential Teaser + CIM",
+  "length_s": 30
+ },
+ "scheduled": "2026-10-26"
+}

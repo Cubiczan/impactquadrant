@@ -1,0 +1,18 @@
+{
+ "product": "sell_side_retainer",
+ "platform": "tiktok",
+ "text": "Ready to sell your manufacturing or distribution business? Start a sell-side process with a retainer credited at close. Sell Side Retainer, $1,500 one-time (credited at close; GREEN only). Link in bio. Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico. Not legal or financial advice. #smallbusiness #businessowner #exitplanning #manufacturing #businesstok",
+ "checkout": "https://whop.com/checkout/plan_ZoPJy2iiRGuYU",
+ "status": "draft",
+ "chars": 390,
+ "script": {
+  "hook (0-3s)": "Ready to sell your manufacturing or distribution business?",
+  "beat_1": "Most owners guess. Buyers don't. Sell Side Retainer gives you the buyer's view.",
+  "beat_2": "Built for small and mid-size manufacturing and distribution businesses.",
+  "beat_3": "Available in 24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico.",
+  "cta": "$1,500 one-time (credited at close; GREEN only). Tap the link in bio to check out.",
+  "on_screen_text": "Sell Side Retainer",
+  "length_s": 30
+ },
+ "scheduled": "2026-10-29"
+}
