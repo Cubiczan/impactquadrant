@@ -43,9 +43,10 @@ def export(con, path):
            "matches_by_vertical": q("SELECT sp.vertical, count(*) n, round(max(score)) top FROM matches m JOIN seller_pipeline sp USING(seller_id) GROUP BY 1 ORDER BY 2 DESC"),
            "top_matches": q("SELECT p.name platform, sp.vertical, sp.state, round(m.score) score, m.status FROM matches m JOIN buyer_mandates b USING(mandate_id) JOIN platforms p USING(platform_id) JOIN seller_pipeline sp USING(seller_id) ORDER BY m.score DESC LIMIT 15"),
            "whop_outbox": q("SELECT json_extract_string(payload_json,'$.product.title') title, published FROM whop_outbox")}
-    from rollupops import marketing; out["marketing"] = marketing.standup()
+    from rollupops import marketing; out["marketing"] = marketing.standup(); out["inbox"] = globals().get("INBOX_COUNTS", {})
     path.write_text(json.dumps(out, indent=1, default=str)); return out
 def cycle(use_exa=False, n=5):
+    from . import inbox; global INBOX_COUNTS; INBOX_COUNTS = inbox.cycle_counts()
     t0 = time.time(); fetched = agents.exa_fetch(BUYER_TASKS + SELLER_TASKS, n) if use_exa else []
     pub = db.build(private=False); priv = db.build(private=True)
     for p in (pub, priv):
@@ -57,4 +58,4 @@ def cycle(use_exa=False, n=5):
     return stats
 if __name__ == "__main__":
     s = cycle("--exa" in sys.argv, int(sys.argv[sys.argv.index("--n") + 1]) if "--n" in sys.argv else 5)
-    print(json.dumps({k: s[k] for k in ("counts", "authoritative_mandates", "agents", "marketing")}, indent=1, default=str))
+    print(json.dumps({k: s[k] for k in ("counts", "authoritative_mandates", "agents", "marketing", "inbox")}, indent=1, default=str))

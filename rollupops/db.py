@@ -94,6 +94,7 @@ def build(private=False):
                    website=t.get("website"), notes=t.get("notes"), independent=True)
     # --- user workbooks (private raw; provenance = file::sheet) ---
     load_workbooks(b)
+    from . import inbox; inbox.load(b)  # sales-swarm feeds
     if (cp := PRIVATE_RAW / "contacts_private.csv").exists():
         for r in csv.DictReader(open(cp)): b.contact(r["name"], None, r["sponsor"], r["email"], None, "contacts_private.csv")
     if private and (sp := PRIVATE_RAW / "signed_buyers.csv").exists():
