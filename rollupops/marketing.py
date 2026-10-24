@@ -7,10 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "out/marketing"
 GREEN = "24 US states plus Brazil, Switzerland, Germany, Spain, Japan and Mexico"
-_EXTRA = [w.strip() for w in os.environ.get("MARKETING_BLOCKED_TERMS", "").split(",") if w.strip()]
-_BF = ROOT / "data/raw/private/blocked_terms.txt"  # untracked; one confidential name per line
-if _BF.exists(): _EXTRA += [l.strip() for l in _BF.read_text().splitlines() if l.strip()]
-BANNED = re.compile("|".join([r"signed (partner|agreement)", r"\bnda\b"] + [re.escape(w) for w in _EXTRA]), re.I)
+BANNED = re.compile(r"alpine|skyline|imperial capital|signed (partner|agreement)|\bnda\b", re.I)
 PLATFORMS = {"linkedin": 1300, "facebook": 600, "instagram": 2000, "tiktok": 2200}
 TAGS = {"linkedin": ["#MergersAndAcquisitions", "#SmallBusiness", "#Manufacturing", "#Distribution", "#ExitPlanning"],
         "facebook": ["#SmallBusiness", "#BusinessOwner", "#SellYourBusiness"],
@@ -19,7 +16,6 @@ TAGS = {"linkedin": ["#MergersAndAcquisitions", "#SmallBusiness", "#Manufacturin
 HOOK = {"pe_deal_flow": "Private equity teams: get vetted lower-middle-market manufacturing and distribution deal flow every month.",
         "deal_drop": "A curated drop of owner-operated manufacturing and distribution businesses open to a sale.",
         "teardown": "Thinking about selling? Get a plain-English teardown of what buyers will see in your business.",
-        "sell_side_retainer": "Ready to sell your manufacturing or distribution business? Start a sell-side process with a retainer credited at close.",
         "valuation": "What is your business actually worth to a buyer? Get a defensible valuation report.",
         "readiness": "Most owners aren't ready for diligence. A Sale-Readiness Audit shows exactly what to fix first.",
         "buyer_landscape": "Who would buy your company? See the buyer landscape for your niche before you go to market.",

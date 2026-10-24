@@ -37,7 +37,6 @@
     ]
   },
   "fee_schedule": "10/8/6/4% tiers excl. real estate, min $15k",
-  "retainer": 1500.0,
   "offers": [
     {
       "targetId": "t_9a6db228",
@@ -58,20 +57,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_9a6db228.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "97a3c98a95ff1433b07891e4c7b004e73467bb9c34a8c65c68d496eb67b42b23"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_9a6db228.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "dc074e0fbb3ab1cb3b24de19a5124c66019c594099e316c663172bbddf7b520b"
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
         "checkout_id": "ch_oGT4PPHRXYqeyyM",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_oGT4PPHRXYqeyyM/",
         "price": 81600.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_A0Ymccx9caTdNzr",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_A0Ymccx9caTdNzr/",
-        "price": 1500.0,
         "error": null
       }
     },
@@ -94,20 +87,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_f13dd4e6.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (VA) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "03dfeae6ec5e36df87fd2a746044d07f50a5d5733ab31a82ea2b40d5c4292b11"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_f13dd4e6.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (VA) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "052ef4f8411b1347abe85e0bc2e37dfa78f94c989d918fee6bd95d2fea866022"
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
         "checkout_id": "ch_G1BgbkCHrjee94l",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_G1BgbkCHrjee94l/",
         "price": 81600.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_Z46W0vBz5RxlEmR",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_Z46W0vBz5RxlEmR/",
-        "price": 1500.0,
         "error": null
       }
     },
@@ -130,20 +117,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_fca82e34.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (SC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "e2e4b2678a6c4040c0feea6f630fe092900a75819173284c85c120b6e75b8223"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_fca82e34.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $408,000.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (SC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "c41d9a85919023c6e1590131fd1d4b546ea39ce20271fe0eddaa2ebf0f3d3aee"
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
         "checkout_id": "ch_ZX5Z4d1uOpqvSEB",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_ZX5Z4d1uOpqvSEB/",
         "price": 81600.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_pWUwXj7nhh9F2Ro",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_pWUwXj7nhh9F2Ro/",
-        "price": 1500.0,
         "error": null
       }
     },
@@ -166,20 +147,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_6d911540.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "28ad146f5c5c1cabf65ff7877cb5d6ce37bc09ce046c613915126ab18123c1e7"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_6d911540.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "986e282e784cb0154a9381737fe7a0cccda5c7c99fe33abbfb7534c40babcd0e"
       },
       "success_fee_tranches": 2,
       "success_fee_checkout": {
         "checkout_id": "ch_zChdoTjJX54lUpG",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_zChdoTjJX54lUpG/",
         "price": 70400.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_SiMPPOabqpyTEDN",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_SiMPPOabqpyTEDN/",
-        "price": 1500.0,
         "error": null
       }
     },
@@ -202,20 +177,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_15cdfe12.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "fbbddc3ab9f19be7d17a2ce1388b437edb6cc278b1dfed5751432a6f0d6e8e2c"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_15cdfe12.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "f71beb66a937524a8661ff8b4a07ffa0a662f83829f61b87496b2db08f1558e5"
       },
       "success_fee_tranches": 2,
       "success_fee_checkout": {
         "checkout_id": "ch_cFXPCKTII0TtyLL",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_cFXPCKTII0TtyLL/",
         "price": 70400.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_knVnYjxpBp1cWRj",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_knVnYjxpBp1cWRj/",
-        "price": 1500.0,
         "error": null
       }
     },
@@ -238,20 +207,14 @@
       "never_hold_funds": true,
       "agreement": {
         "version": "SFA-2026-10-24",
-        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_13cbd526.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
-        "sha256": "2444e14263c8aad3341a7690bcc2fafded9379e80deca7ad6401671bfc3cbe63"
+        "text": "ImpactQuadrant Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing t_13cbd526.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "0be97ee5fce2142820dd38a0c28c2c764bf492ddb06ed2f5a7f901c1f8e1aee1"
       },
       "success_fee_tranches": 2,
       "success_fee_checkout": {
         "checkout_id": "ch_7eRcTzWbwMF6D0z",
         "purchase_url": "https://sandbox.whop.com/checkout/ch_7eRcTzWbwMF6D0z/",
         "price": 70400.0,
-        "error": null
-      },
-      "retainer_checkout": {
-        "checkout_id": "ch_uqENTAZkg1Tkmh0",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_uqENTAZkg1Tkmh0/",
-        "price": 1500.0,
         "error": null
       }
     }

@@ -5,7 +5,6 @@ import json, hashlib
 from pathlib import Path
 from . import whop, jurisdiction
 OUT = Path(__file__).resolve().parent.parent / "out"
-RETAINER = 1500.0
 MIN_FEE = 15000.0
 TRANCHE_MAX = 95000.0
 def fee_schedule(price):
@@ -22,14 +21,13 @@ AGREEMENT = """ImpactQuadrant Success-Fee Engagement (click-through) v{v}
 2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.
 3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.
 4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum ${min:,.0f}. Estimated fee at listed value: ${est:,.0f}.
-5. Retainer: {ret}
+5. Advance fees: None. ImpactQuadrant charges no retainer or upfront fee; the success fee is the only fee.
 6. Jurisdiction: Offered only where seller ({s}) and buyer ({b}) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.
 7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.
 8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA)."""
 
 def terms(listing, gate, est_price):
-    ret = f"Optional ${RETAINER:,.0f} marketing retainer, credited against fee at close." if gate["advance_seller_listing_fee_allowed"] else "No advance fee in this jurisdiction."
-    txt = AGREEMENT.format(v=AGREEMENT_VERSION, tid=listing["targetId"], min=MIN_FEE, est=fee_schedule(est_price), ret=ret, s=gate.get("seller_state") or gate["seller"], b=gate["buyer"])
+    txt = AGREEMENT.format(v=AGREEMENT_VERSION, tid=listing["targetId"], min=MIN_FEE, est=fee_schedule(est_price), s=gate.get("seller_state") or gate["seller"], b=gate["buyer"])
     return {"version": AGREEMENT_VERSION, "text": txt, "sha256": hashlib.sha256(txt.encode()).hexdigest()}
 
 def _plan(price, title, tid, kind):
@@ -52,8 +50,6 @@ def offer(listing, buyer=("US", None), do_whop=False):
         n = int(-(-o["est_fee_at_close"] // TRANCHE_MAX)); amt = round(o["est_fee_at_close"] / n, 2)
         o["success_fee_tranches"] = n
         o["success_fee_checkout"] = _plan(amt, f"Success fee {listing['targetId'][2:]}", listing["targetId"], f"success_fee 1/{n}")
-        if g["advance_seller_listing_fee_allowed"]:
-            o["retainer_checkout"] = _plan(RETAINER, f"Retainer {listing['targetId'][2:]}", listing["targetId"], "retainer")
     return o
 
 def green_states():
@@ -65,7 +61,6 @@ def green_states():
 def run(listings, do_whop=False):
     offers = [offer(l, ("US", "NC"), do_whop) for l in listings]
     for l, o in zip(listings, offers):
-        l["commission"] = {"route": o["route"], "est_fee": o["est_fee_at_close"], "url": (o.get("success_fee_checkout") or {}).get("purchase_url"), "tranches": o.get("success_fee_tranches"), "tranche_amount": (o.get("success_fee_checkout") or {}).get("price"),
-                           "retainer_url": (o.get("retainer_checkout") or {}).get("purchase_url")}
-    state = {"mode": "LIVE" if whop.LIVE else "sandbox", "green": green_states(), "fee_schedule": "10/8/6/4% tiers excl. real estate, min $15k", "retainer": RETAINER, "offers": offers}
+        l["commission"] = {"route": o["route"], "est_fee": o["est_fee_at_close"], "url": (o.get("success_fee_checkout") or {}).get("purchase_url"), "tranches": o.get("success_fee_tranches"), "tranche_amount": (o.get("success_fee_checkout") or {}).get("price")}
+    state = {"mode": "LIVE" if whop.LIVE else "sandbox", "green": green_states(), "fee_schedule": "10/8/6/4% tiers excl. real estate, min $15k", "offers": offers}
     (OUT / "08_commission.json").write_text(json.dumps(state, indent=2)); return state

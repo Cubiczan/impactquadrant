@@ -100,8 +100,7 @@
       "est_fee": 408000.0,
       "url": "https://sandbox.whop.com/checkout/ch_oGT4PPHRXYqeyyM/",
       "tranches": 5,
-      "tranche_amount": 81600.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_A0Ymccx9caTdNzr/"
+      "tranche_amount": 81600.0
     }
   },
   {
@@ -205,8 +204,7 @@
       "est_fee": 408000.0,
       "url": "https://sandbox.whop.com/checkout/ch_G1BgbkCHrjee94l/",
       "tranches": 5,
-      "tranche_amount": 81600.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_Z46W0vBz5RxlEmR/"
+      "tranche_amount": 81600.0
     }
   },
   {
@@ -310,8 +308,7 @@
       "est_fee": 408000.0,
       "url": "https://sandbox.whop.com/checkout/ch_ZX5Z4d1uOpqvSEB/",
       "tranches": 5,
-      "tranche_amount": 81600.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_pWUwXj7nhh9F2Ro/"
+      "tranche_amount": 81600.0
     }
   },
   {
@@ -414,8 +411,7 @@
       "est_fee": 140800.0,
       "url": "https://sandbox.whop.com/checkout/ch_zChdoTjJX54lUpG/",
       "tranches": 2,
-      "tranche_amount": 70400.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_SiMPPOabqpyTEDN/"
+      "tranche_amount": 70400.0
     }
   },
   {
@@ -518,8 +514,7 @@
       "est_fee": 140800.0,
       "url": "https://sandbox.whop.com/checkout/ch_cFXPCKTII0TtyLL/",
       "tranches": 2,
-      "tranche_amount": 70400.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_knVnYjxpBp1cWRj/"
+      "tranche_amount": 70400.0
     }
   },
   {
@@ -622,8 +617,7 @@
       "est_fee": 140800.0,
       "url": "https://sandbox.whop.com/checkout/ch_7eRcTzWbwMF6D0z/",
       "tranches": 2,
-      "tranche_amount": 70400.0,
-      "retainer_url": "https://sandbox.whop.com/checkout/ch_uqENTAZkg1Tkmh0/"
+      "tranche_amount": 70400.0
     }
   }
 ]
