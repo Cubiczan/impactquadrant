@@ -1,11 +1,12 @@
 """Minimal Whop REST client. SANDBOX ONLY unless WHOP_LIVE=1 AND NEEDS_SHYAM_APPROVED=1."""
 import os, json, urllib.request, urllib.error
-BIZ = os.environ.get("WHOP_COMPANY_ID", "biz_a5nrqqjxL9lLAv")
 LIVE = os.environ.get("WHOP_LIVE") == "1" and os.environ.get("NEEDS_SHYAM_APPROVED") == "1"
+PROD_BIZ = "biz_yXvRBAxPMOzd7b"  # production business (Cosmicspiritguide), id from plan responses
+BIZ = os.environ.get("WHOP_COMPANY_ID", PROD_BIZ if LIVE else "biz_a5nrqqjxL9lLAv")
 BASE = "https://api.whop.com/api/v1" if LIVE else "https://sandbox-api.whop.com/api/v1"
 
 def call(method, path, body=None):
-    key = os.environ["WHOP_API_KEY"]
+    key = os.environ["WHOP_PROD_API_KEY" if LIVE else "WHOP_API_KEY"]
     req = urllib.request.Request(BASE + path, method=method,
         data=json.dumps(body).encode() if body is not None else None,
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
