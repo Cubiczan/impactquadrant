@@ -85,3 +85,8 @@ Terac human-in-the-loop runs in exactly ONE place, behind `TERAC_ENABLED=1`: **b
 No Terac on: teasers, subscriptions, scoring, matching, marketing, checkout, service fulfillment. Fulfillment deliverables go out only after the owner's own approval. Marketing posts go out only after the owner approves the final text. Queues: `dashboard/public/data/human_checks.json` → dashboard "Human checks" panel.
 ### Terac (real API)
 `rollupops/terac.py` talks to Terac REST v2 (`https://terac.com/api/external/v2`) with `TERAC_API_KEY` from the environment. Read-only calls: org context, list opportunities, get feasibility, get submissions. Free (explicit only): `request_feasibility(kind)` for the owner template. Spending: `launch()` requires `TERAC_LIVE=1` **and** the check id set to `true` in untracked `data/terac_approvals.json` by the owner. The orchestrator never creates, launches or approves anything.
+
+## Submission
+
+- Demo video (2 min, captions): [submission/demo.mp4](submission/demo.mp4) — [view on GitHub](https://github.com/Cubiczan/rollupops/blob/main/submission/demo.mp4)
+- Pitch deck (PDF): [submission/impactquadrant-deck.pdf](submission/impactquadrant-deck.pdf)
