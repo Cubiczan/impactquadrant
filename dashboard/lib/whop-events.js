@@ -39,6 +39,10 @@ export function planActions(evt, env = {}) {
     tasks.push('revoke:access_review');
   } else if (type === 'refund.created' || type === 'payment.refunded') {
     tasks.push('log:refund');
+  } else if (type === 'payment.failed') {
+    tasks.push('shyam:review_failed_payment');
+  } else if (type === 'dispute.created') {
+    tasks.push('shyam:review_dispute');
   }
   // Terac owner verification: only sellers (business owners), never buyers. Launching a study
   // additionally requires TERAC_LIVE plus an owner approval record, so here it is only queued.
