@@ -1,7 +1,7 @@
 {
-  "_note": "RollupOps' ONLY Terac check: blue-collar business owner verification. PE buyers NEVER go to Terac (vetted personally). Synthetic demo bundle only.",
+  "_note": "ImpactQuadrant' ONLY Terac check: blue-collar business owner verification. PE buyers NEVER go to Terac (vetted personally). Synthetic demo bundle only.",
   "title": "Read a short business-owner call summary and give a verdict",
-  "internal_title": "RollupOps owner verification (synthetic demo-owner-001)",
+  "internal_title": "ImpactQuadrant owner verification (synthetic demo-owner-001)",
   "description": "Read a short, redacted summary of a consented call with a small trades business owner (synthetic example). Answer 3 questions and submit a verdict: verified, concerns or fail, with reasons and red flags. About 10 minutes.",
   "num_participants": 1,
   "business_type": "b2c",

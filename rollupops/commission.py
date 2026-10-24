@@ -17,10 +17,10 @@ def fee_schedule(price):
     return round(max(MIN_FEE, fee), 2)
 
 AGREEMENT_VERSION = "SFA-2026-10-24"
-AGREEMENT = """RollupOps Success-Fee Engagement (click-through) v{v}
-1. Scope: Seller engages RollupOps (Impact Quadrant) to introduce qualified buyers for an ASSET SALE of the business described in listing {tid}.
+AGREEMENT = """ImpactQuadrant Success-Fee Engagement (click-through) v{v}
+1. Scope: Seller engages ImpactQuadrant to introduce qualified buyers for an ASSET SALE of the business described in listing {tid}.
 2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.
-3. Funds: RollupOps never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.
+3. Funds: ImpactQuadrant never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.
 4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum ${min:,.0f}. Estimated fee at listed value: ${est:,.0f}.
 5. Retainer: {ret}
 6. Jurisdiction: Offered only where seller ({s}) and buyer ({b}) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.

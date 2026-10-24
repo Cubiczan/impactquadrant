@@ -1,4 +1,4 @@
-# RollupOps by Impact Quadrant
+# ImpactQuadrant
 **Business brokerage, reimagined and automated.** The agent does the broker's whole job: finds buyers, sources sellers, qualifies both sides, matches, and runs the deal room and checkout. **Agents run the brokerage; humans guarantee trust.**
 
 Built for the Terac Zero-Human Company Hackathon (NYC, 2026-10-24). Focus: small and medium **manufacturing & distribution** businesses (precision machining, industrial distribution). Global-ready (country/state fields, jurisdiction gate).
@@ -9,7 +9,7 @@ Built for the Terac Zero-Human Company Hackathon (NYC, 2026-10-24). Focus: small
 - Trust, KYC, jurisdiction: `TRUST.md` · Demo script: `DEMO.md`
 
 ## Pipeline (`python -m rollupops.pipeline --whop`)
-1. **Buyers**: curated public signals (`data/buyer_signals.json`) + Impact Quadrant PE registry + live **Exa** search (`EXA_API_KEY`).
+1. **Buyers**: curated public signals (`data/buyer_signals.json`) + ImpactQuadrant PE registry + live **Exa** search (`EXA_API_KEY`).
 2. **Buyer activity score** from public signals (add-on press, partner pages, corp-dev hiring), buy-box inference, qualification (proof of funds before unlock).
 3. **Sourcing** (curated + Exa), automated checks (company site, PE-owned exclusion, dedupe, focus; no mining).
 4. **Value-driver scoring** + valuation **estimate** (SDE <$2M, EBITDA ≥$2M; never mixed; range, not asking price).
@@ -57,7 +57,7 @@ Agents run both sides: `buyer_agent` keeps PE/platform buy mandates fresh from p
 
 **Multi-agent cycle:** `python -m rollupops.orchestrator --exa` runs parallel buyer-search and seller-search agents (Exa), the matcher and the Whop agent. The dashboard's Agents panel shows runs, matches and Whop teaser payloads. Nothing is sent to anyone.
 
-## Impact Quadrant Precision Sale Process (live, flat fee)
+## ImpactQuadrant Precision Sale Process (live, flat fee)
 | Service | Price | Checkout |
 |---|---|---|
 | Business Valuation Report | $499 one-time | https://whop.com/checkout/plan_WtHSQEw7OfZqz |
@@ -88,5 +88,5 @@ No Terac on: teasers, subscriptions, scoring, matching, marketing, checkout, ser
 
 ## Submission
 
-- Demo video (2 min, captions): [submission/demo.mp4](submission/demo.mp4) — [view on GitHub](https://github.com/Cubiczan/rollupops/blob/main/submission/demo.mp4)
+- Demo video (2 min, captions): [submission/demo.mp4](submission/demo.mp4) — [view on GitHub](https://github.com/Cubiczan/impactquadrant/blob/main/submission/demo.mp4)
 - Pitch deck (PDF): [submission/impactquadrant-deck.pdf](submission/impactquadrant-deck.pdf)

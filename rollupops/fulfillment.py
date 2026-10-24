@@ -15,7 +15,7 @@ OUTBOX = ROOT / "out/fulfillment"
 DASH = os.environ.get("DASHBOARD_URL", "https://dashboard-six-fawn-83.vercel.app")
 CAT = json.loads((ROOT / "data/whop_live_catalog.json").read_text())["products"]
 PLAN2SKU = {v["plan_id"]: k for k, v in CAT.items()}
-DISCLAIMER = "Prepared by Impact Quadrant agents and reviewed by a human before delivery. Estimates only; not legal, tax, accounting or financial advice."
+DISCLAIMER = "Prepared by ImpactQuadrant agents and reviewed by a human before delivery. Estimates only; not legal, tax, accounting or financial advice."
 BASE_Q = [("company", "Business name (kept confidential)"), ("vertical", "Industry / vertical"), ("state", "State or country of the business"),
           ("revenue", "Last full-year revenue (USD)"), ("earnings", "Last full-year EBITDA or owner's earnings (SDE)")]
 INTAKE = {

@@ -1,4 +1,4 @@
-# Impact Quadrant pricing (live Whop checkouts)
+# ImpactQuadrant pricing (live Whop checkouts)
 Available in 24 US states + 6 countries. Flat fees. Estimates for planning only; not legal, tax or financial advice.
 
 ## Precision Sale Process

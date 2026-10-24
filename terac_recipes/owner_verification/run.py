@@ -1,4 +1,4 @@
-"""RollupOps owner-verification Terac recipe runner. Replay is free; launch needs --confirm and human approval."""
+"""ImpactQuadrant owner-verification Terac recipe runner. Replay is free; launch needs --confirm and human approval."""
 import json, os, sys, urllib.request
 from pathlib import Path
 HERE = Path(__file__).parent

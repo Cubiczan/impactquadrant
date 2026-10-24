@@ -1,4 +1,4 @@
-# Apply RollupOps to impactquadrant.info (Wix + Velo). Do NOT publish until Shyam reviews.
+# Apply ImpactQuadrant to impactquadrant.info (Wix + Velo). Do NOT publish until Shyam reviews.
 Box check (2026-10-24): no Wix API key, no WIX_* env, no Wix CLI login, no saved Wix session. Editing must be done in the browser (Wix editor), signed in by Shyam.
 
 ## Browser task, step by step

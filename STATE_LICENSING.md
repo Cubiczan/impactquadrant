@@ -1,4 +1,4 @@
-# RollupOps — Business-sale success-fee licensing (US + global)
+# ImpactQuadrant — Business-sale success-fee licensing (US + global)
 
 **NOT LEGAL ADVICE.** Snapshot 2026-10-24 from secondary statute-citing tables and some primary sources. Sources conflict for several states; confirm with counsel before taking any contingent fee.
 
@@ -86,7 +86,7 @@ Non-contingent info/listing/verification fees: generally not 'compensation for n
 |BR|YELLOW|Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) — VERIFY BEFORE COMMISSION|none|unverified|
 |MX|YELLOW|Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) — VERIFY BEFORE COMMISSION|none|unverified|
 
-## Recommended RollupOps rule
+## Recommended ImpactQuadrant rule
 1. Contingent commission only when seller AND buyer are in GREEN states, asset sale, no real estate or lease assignment in the fee basis, no handling of funds.
 2. Stock sales: only within federal §15(b)(13) conditions AND state M&A relief (or registered BD partner).
 3. Flat-fee info/verification/subscription products everywhere (avoid 'advance listing fees' to sellers in NV and RED states).

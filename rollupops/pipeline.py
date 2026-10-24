@@ -1,4 +1,4 @@
-"""RollupOps agent loop: Business brokerage, reimagined and automated.
+"""ImpactQuadrant agent loop: Business brokerage, reimagined and automated.
 Stages write JSON to out/. Run: python -m rollupops.pipeline [--whop]"""
 import csv, json, os, re, sys, hashlib, datetime as dt
 from pathlib import Path
@@ -125,10 +125,10 @@ def teaser(t):
     return tz
 
 # 7. outreach drafts (never sent) -----------------------------------------
-FOOTER = "\n--\nImpact Quadrant · impactquadrant.info · Reply STOP to opt out. [CAN-SPAM postal address required before any real send]"
+FOOTER = "\n--\nImpactQuadrant · impactquadrant.info · Reply STOP to opt out. [CAN-SPAM postal address required before any real send]"
 def drafts(t, tz):
     seller = {"to_role": "owner", "target": t["name"], "subject": "A free, confidential valuation for your business",
-      "body": f"Hi,\n\nWe run Impact Quadrant, an automated business brokerage. We prepare free, confidential valuation estimates for established {t['trade']} companies in the {tz['region']}. "
+      "body": f"Hi,\n\nWe run ImpactQuadrant, an automated business brokerage. We prepare free, confidential valuation estimates for established {t['trade']} companies in the {tz['region']}. "
               "No obligation and nothing to sign. If you'd like yours, reply and we'll set up a 15-minute call." + FOOTER}
     buyer = [{"to_role": "buyer", "platform": b, "subject": f"Proprietary {t['trade']} add-on in the {tz['region']} matching your buy-box",
       "body": f"Hi,\n\nWe have a proprietary {t['trade']} lead in the {tz['region']} ({tz['revenueBand']}, {tz['earningsBand']}) matching your add-on criteria, and the owner is open to a call. "

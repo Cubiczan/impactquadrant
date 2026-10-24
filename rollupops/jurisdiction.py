@@ -33,7 +33,7 @@ def gate(seller=("US", None), buyer=("US", None), deal_structure="asset", fee_ba
     if deal_structure == "stock" and not (s["us"] and b["us"]): both_green = False  # non-US share deals -> partner
     if deal_structure == "stock": structure_ok = both_green and s["ma_relief"] and b["ma_relief"]  # + federal M&A broker exemption
     else: structure_ok = both_green and not fee_basis_includes_real_estate
-    route = "direct success fee (RollupOps engagement letter)" if structure_ok else ("partner broker-dealer" if deal_structure == "stock" and both_green else "licensed partner broker referral")
+    route = "direct success fee (ImpactQuadrant engagement letter)" if structure_ok else ("partner broker-dealer" if deal_structure == "stock" and both_green else "licensed partner broker referral")
     red_or_nv = s["status"] == "RED" or s.get("state") == "NV"
     return {"seller": s["status"], "buyer": b["status"], "seller_state": s.get("state"), "success_fee_eligible": structure_ok,
             "success_fee_enabled": structure_ok, "success_fee_route": route,

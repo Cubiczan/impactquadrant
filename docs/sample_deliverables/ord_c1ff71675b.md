@@ -1,5 +1,5 @@
 # Confidential Teaser + CIM
-_Prepared by Impact Quadrant agents and reviewed by a human before delivery. Estimates only; not legal, tax, accounting or financial advice._
+_Prepared by ImpactQuadrant agents and reviewed by a human before delivery. Estimates only; not legal, tax, accounting or financial advice._
 
 **Vertical:** precision machining  **Location:** NC
 

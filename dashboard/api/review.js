@@ -44,7 +44,7 @@ export default async function handler(req, res) {
     if (reasons.length < 20) return res.status(400).json({ error: 'please give reasons (at least 20 characters)' });
     const rec = { check_id: c, kind: b.kind, verdict, reasons, reviewer: String(body.reviewer || '').slice(0, 120),
       submissionId: String(body.submissionId || '').slice(0, 64), at: new Date().toISOString(), approved: false,
-      note: 'Pending Impact Quadrant approval; Terac pays only after we approve (manual_review).' };
+      note: 'Pending ImpactQuadrant approval; Terac pays only after we approve (manual_review).' };
     await put(`verdicts/${c}/${Date.now()}.json`, JSON.stringify(rec), { access: 'private', contentType: 'application/json', addRandomSuffix: true });
     return res.status(200).json({ ok: true, stored: true, verdict, submissionId: rec.submissionId });
   } catch (e) { return res.status(500).json({ error: 'server error' }); }

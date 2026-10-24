@@ -1,4 +1,4 @@
-# RollupOps DuckDB backend (`data/rollupops.duckdb`)
+# ImpactQuadrant DuckDB backend (`data/rollupops.duckdb`)
 Build (idempotent, drops & rebuilds): `python -m rollupops.db` — also runs at the end of `python -m rollupops.pipeline`.
 DDL: `sql/schema.sql`; views: `sql/views.sql`. Every source table carries `src_file` provenance.
 

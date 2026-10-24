@@ -1,4 +1,4 @@
-# Trust, KYC & jurisdiction (RollupOps)
+# Trust, KYC & jurisdiction (ImpactQuadrant)
 **Agents run the brokerage; humans guarantee trust.** Access scales with verification (trust ladder).
 
 ## Seller ladder

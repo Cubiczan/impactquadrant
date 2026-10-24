@@ -1,7 +1,7 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Evidence review · Impact Quadrant</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<!doctype html><html><head><meta charset="utf-8"><title>Evidence review · ImpactQuadrant</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <style>body{font-family:system-ui,sans-serif;margin:0;background:#0b1020;color:#e7eaf3}main{max-width:820px;margin:auto;padding:24px}section{background:#141d3a;border-radius:12px;padding:16px;margin:12px 0}h1{font-size:22px}h2{font-size:15px;color:#9fd1ff;margin:0 0 8px}pre{white-space:pre-wrap;background:#0f1730;padding:10px;border-radius:8px}label{display:block;margin:6px 0}textarea,input{width:100%;box-sizing:border-box;background:#0f1730;color:#e7eaf3;border:1px solid #22305a;border-radius:8px;padding:8px}button{background:#2b6cff;color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:15px;margin-top:10px}.muted{color:#9fb0d8;font-size:13px}</style></head>
 <body><main><h1>Evidence review <span class="muted" id="kind"></span></h1>
-<p class="muted">You are reviewing a consented identity-and-intent call that Impact Quadrant ran. Evidence is redacted. Do not try to contact or identify the person. You are paid after we review and approve your verdict.</p>
+<p class="muted">You are reviewing a consented identity-and-intent call that ImpactQuadrant ran. Evidence is redacted. Do not try to contact or identify the person. You are paid after we review and approve your verdict.</p>
 <div id="app">Loading…</div></main>
 <script>
 const P=new URLSearchParams(location.search),c=P.get('c'),t=P.get('t'),sid=P.get('teracSubmissionId')||P.get('submissionId')||'',task=P.get('taskId')||'';
@@ -22,7 +22,7 @@ fetch(`/api/review?c=${encodeURIComponent(c||'')}&t=${encodeURIComponent(t||'')}
  f.onsubmit=e=>{e.preventDefault();const x=Object.fromEntries(new FormData(f));
   fetch('/api/review',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({c,t,...x,submissionId:sid})}).then(r=>r.json()).then(r=>{
    if(!r.ok){msg.textContent='Error: '+r.error;return}
-   app.innerHTML='<section><h2>Thank you</h2><p>Your verdict is stored. Impact Quadrant reviews it before Terac releases payment.</p></section>';
+   app.innerHTML='<section><h2>Thank you</h2><p>Your verdict is stored. ImpactQuadrant reviews it before Terac releases payment.</p></section>';
    if(sid){const u=new URL('https://terac.com/api/external/callback');u.searchParams.set('submissionId',sid);u.searchParams.set('teracSubmissionId',sid);if(task)u.searchParams.set('taskId',task);u.searchParams.set('result','completed');setTimeout(()=>location.href=u,1500)}
   })}
 }).catch(()=>app.textContent='Could not load.');

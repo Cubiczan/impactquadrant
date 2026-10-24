@@ -1,5 +1,5 @@
 # 3-minute demo: "Business brokerage, reimagined and automated."
-- 0:00 Problem: small manufacturers and distributors have no exit path; brokers are slow and expensive; buyers can't find off-market deals. Impact Quadrant runs a brokerage with zero staff. **Agents run the brokerage; humans guarantee trust.**
+- 0:00 Problem: small manufacturers and distributors have no exit path; brokers are slow and expensive; buyers can't find off-market deals. ImpactQuadrant runs a brokerage with zero staff. **Agents run the brokerage; humans guarantee trust.**
 - 0:20 Agent finds buyers: Exa + our registry → PE platforms scored from public add-on press (e.g. Threadlock Precision, Solve Industrial Motion Group). Buy-box inferred.
 - 0:50 Sources sellers (precision machining, industrial distribution), drops PE-owned ones, scores value drivers, estimates an SDE/EBITDA value range (labeled estimate). Blind teaser passes the PII lint.
 - 1:20 Lists on Whop: per-target unlock on the seller's connected account with 20% platform fee; two buyer segments: PE ($499/mo Deal Flow, $250 unlock) and individual buyers ("No $10k course. Just the deals.": $49/mo Off-Market Deal Drop, $19–99 unlock, $149 Deal Teardown). Teaser shows on impactquadrant.info/marketplace.

@@ -1,4 +1,4 @@
-"""Build the RollupOps DuckDB (idempotent: drops & rebuilds).
+"""Build the ImpactQuadrant DuckDB (idempotent: drops & rebuilds).
   python -m rollupops.db            -> data/rollupops.duckdb   (PUBLIC: no PII, no agreement status)
   python -m rollupops.db --private  -> $PRIVATE_RAW/../rollupops_private.duckdb (PII + private overlays; never committed)
 Raw user workbooks live only in PRIVATE_RAW (they contain work emails/phones)."""

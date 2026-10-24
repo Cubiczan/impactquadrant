@@ -16,7 +16,7 @@ SECRET_FILE = ROOT / "data/review_secret"          # untracked; same value as Ve
 BASE_URL = os.environ.get("REVIEW_BASE_URL", "https://dashboard-six-fawn-83.vercel.app")
 KINDS = ("owner_verification",)  # no buyer review; PE buyers are vetted manually by the owner
 VERDICTS = ("verified", "concerns", "fail")
-CONSENT_SCRIPT = ("This call is with Impact Quadrant. With your permission we will record it (or take notes) so that one "
+CONSENT_SCRIPT = ("This call is with ImpactQuadrant. With your permission we will record it (or take notes) so that one "
                   "independent reviewer can confirm your identity and intent. Only a redacted summary is shared; you can "
                   "stop at any time and ask us to delete the recording. Do you consent?")
 # Never shipped to reviewers. Extra private terms come from env RU_BLOCKED_TERMS (comma-separated) or data/raw/private/blocked_terms.txt.
@@ -47,7 +47,7 @@ def reviewer_url(check_id): return f"{BASE_URL}/review.html?c={check_id}&t={toke
 def _dir(check_id):
     if not re.fullmatch(r"[a-z0-9-]{3,64}", check_id): raise ValueError("check_id must be [a-z0-9-]")
     d = LOCAL / check_id; d.mkdir(parents=True, exist_ok=True); return d
-def capture_consent(check_id, kind, subject_ref, consented, method="verbal-on-call", recorded=True, captured_by="Impact Quadrant"):
+def capture_consent(check_id, kind, subject_ref, consented, method="verbal-on-call", recorded=True, captured_by="ImpactQuadrant"):
     """Step 1, BEFORE recording. Read CONSENT_SCRIPT aloud; record the answer. No consent -> nothing is recorded."""
     assert kind in KINDS
     rec = {"check_id": check_id, "kind": kind, "subject_ref": subject_ref, "consented": bool(consented), "recording_allowed": bool(consented and recorded),
@@ -75,7 +75,7 @@ def publish_bundle(check_id):
     b = {"check_id": check_id, "kind": c["kind"], "consent": {"given": True, "method": c["method"], "at": c["at"], "recording_allowed": c["recording_allowed"]},
          "context": redact(ev.get("context") or {}), "notes": redact_text(ev.get("notes") or ""),
          "transcript": redact_text(ev["transcript"]) if ev.get("transcript") else None,
-         "recording": "Recording held by Impact Quadrant; summary/transcript shown here." if ev.get("recording_path") else None,
+         "recording": "Recording held by ImpactQuadrant; summary/transcript shown here." if ev.get("recording_path") else None,
          "questions": QUESTIONS[c["kind"]], "verdicts": list(VERDICTS)}
     blob = json.dumps(b).lower()
     assert not any(t.lower() in blob for t in _blocked()), "blocked term survived redaction"

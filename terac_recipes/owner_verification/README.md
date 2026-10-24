@@ -1,4 +1,4 @@
-# Terac recipe: owner verification (RollupOps' only Terac check)
+# Terac recipe: owner verification (ImpactQuadrant' only Terac check)
 
 Built on the Terac Cookbook (https://github.com/TeracAI/terac-cookbook) and the Terac MCP (https://terac.com/mcp).
 PE buyers never go to Terac; they are vetted personally.

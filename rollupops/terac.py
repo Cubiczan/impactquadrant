@@ -15,7 +15,7 @@ BADGE = {"verified": "Verified by human (Terac)", "flagged": "Flagged", "pending
          "pending_human": "Queued for human check (Terac off)"}
 _used = {"owner_verification": 0}
 _queue = {"owner_verification": []}
-SCRIPTS = {"owner_verification": "Disclosed: caller works with Impact Quadrant. Consent first; no recording without consent. Confirm the business operates at the stated location, the speaker is an owner, and genuine interest in a confidential valuation/sale. Flag anything inconsistent."}
+SCRIPTS = {"owner_verification": "Disclosed: caller works with ImpactQuadrant. Consent first; no recording without consent. Confirm the business operates at the stated location, the speaker is an owner, and genuine interest in a confidential valuation/sale. Flag anything inconsistent."}
 def _enqueue(kind, ref, reason, blocking):
     if ENABLED and _used[kind] < CAP:
         _used[kind] += 1; status = "pending"  # live path walks the Terac MCP flow; results flip status later
@@ -45,7 +45,7 @@ LIVE = os.environ.get("TERAC_LIVE") == "1"
 APPROVALS = ROOT / "data/terac_approvals.json"
 TEMPLATES = {
     "owner_verification": {
-        "task": "With the owner's consent, confirm a small business operates at its stated location, the person is an owner, and they genuinely want a confidential valuation or sale. Disclose the caller works with Impact Quadrant; no recording without consent. Flag inconsistencies.",
+        "task": "With the owner's consent, confirm a small business operates at its stated location, the person is an owner, and they genuinely want a confidential valuation or sale. Disclose the caller works with ImpactQuadrant; no recording without consent. Flag inconsistencies.",
         "panel": "US-based business researchers / verification specialists experienced with small-business due diligence or KYC; English.",
         "count": 1, "timeline_hours": 72, "business_type": "b2b"},
 }
@@ -89,7 +89,7 @@ def opportunity_draft(kind, check_id, feasibility_request_id=None, project_id=No
     label = "Owner verification"
     return {
         "title": f"Review a consented identity-and-intent call ({label})",
-        "internal_title": f"RollupOps {kind} {check_id}",
+        "internal_title": f"ImpactQuadrant {kind} {check_id}",
         "description": ("Review redacted evidence from a short, consented identity-and-intent call we ran, then submit a verdict "
                         "(verified / concerns / fail) with reasons on our page. ~15 min. Paid after we approve your review."),
         "project_id": project_id or os.environ.get("TERAC_PROJECT_ID", ""),
