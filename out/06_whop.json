@@ -52,48 +52,6 @@
       "seller_net": 79.2
     },
     {
-      "target": "t_2fdfb85d",
-      "segment": "pe",
-      "gmv_if_sold": 250.0,
-      "platform_fee": 50.0,
-      "seller_net": 200.0
-    },
-    {
-      "target": "t_2fdfb85d",
-      "segment": "individual",
-      "gmv_if_sold": 49.0,
-      "platform_fee": 9.8,
-      "seller_net": 39.2
-    },
-    {
-      "target": "t_f24f7afb",
-      "segment": "pe",
-      "gmv_if_sold": 250.0,
-      "platform_fee": 50.0,
-      "seller_net": 200.0
-    },
-    {
-      "target": "t_f24f7afb",
-      "segment": "individual",
-      "gmv_if_sold": 49.0,
-      "platform_fee": 9.8,
-      "seller_net": 39.2
-    },
-    {
-      "target": "t_d4054dc3",
-      "segment": "pe",
-      "gmv_if_sold": 250.0,
-      "platform_fee": 50.0,
-      "seller_net": 200.0
-    },
-    {
-      "target": "t_d4054dc3",
-      "segment": "individual",
-      "gmv_if_sold": 49.0,
-      "platform_fee": 9.8,
-      "seller_net": 39.2
-    },
-    {
       "target": "t_fca82e34",
       "segment": "pe",
       "gmv_if_sold": 250.0,
@@ -106,6 +64,48 @@
       "gmv_if_sold": 99.0,
       "platform_fee": 19.8,
       "seller_net": 79.2
+    },
+    {
+      "target": "t_6d911540",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_6d911540",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
+    },
+    {
+      "target": "t_15cdfe12",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_15cdfe12",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
+    },
+    {
+      "target": "t_13cbd526",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_13cbd526",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
     }
   ],
   "referral": {

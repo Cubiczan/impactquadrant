@@ -157,12 +157,13 @@ def run(do_whop=False, top=6):
     targets = source_targets()
     elig = [score_target(t, buyers) for t in targets if t["status"] == "eligible"]
     w("02_targets", targets)
-    ranked = sorted(elig, key=lambda t: -t["score"])[:top]
+    ranked = sorted([t for t in elig if jurisdiction.available(t.get('country','US'), t.get('state'))], key=lambda t: -t["score"])[:top]
     listings, outreach = [], []
     for t in ranked:
         tr = trust.seller_ladder(t)
         if not tr["publish_teaser"]: continue
         tz = teaser(t); tz["trust"] = tr; tz["country"] = t.get("country", "US"); tz["stateProvince"] = t.get("state", "")
+        if not jurisdiction.available(tz["country"], t.get("state")): continue  # GREEN-only scope: drop non-GREEN listings
         tz["jurisdiction"] = jurisdiction.gate((tz["country"], t.get("state")), ("US", None))
 
         tz["terac"] = tr["L2_terac_call"]

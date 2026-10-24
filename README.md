@@ -45,5 +45,9 @@ cp out/*.json dashboard/public/data/ && (cd dashboard && vercel deploy --prod)
 `rollupops/commission.py` - click-through engagement letter (versioned, SHA-256 hashed) + Whop checkouts (sandbox).
 - Fee: 10% / 8% / 6% / 4% tiers on price excluding real estate, min $15k, payable only at close. Whop caps a purchase at $100k, so the fee is invoiced in equal tranches of $95k or less.
 - Optional $1,500 retainer, credited at close, only where advance fees are allowed (not RED states or NV).
-- Gate (`jurisdiction.gate`): seller AND buyer GREEN, asset sale, no real estate, we never hold funds. Otherwise licensed partner-broker referral at $0 to us.
+- Gate (`jurisdiction.gate`): seller AND buyer GREEN, asset sale, no real estate, we never hold funds. Otherwise declined: "Not available in your location yet".
 - GREEN: 24 US states/DC plus BR, CH, DE, ES, JP, MX. See STATE_LICENSING.md. Output: `out/08_commission.json`; dashboard section "Sell-side success fee".
+
+## Operating scope: GREEN only
+**Available in 24 US states + 6 countries** (AL, CT, DC, DE, IA, IN, KS, MA, MD, MO, MS, MT, NC, ND, NJ, NM, OK, PA, SC, TN, TX, VA, VT, WV + BR, CH, DE, ES, JP, MX).
+`jurisdiction.scope_gate()` declines sellers and buyers anywhere else with "Not available in your location yet" (no flat-fee products, no referrals). The pipeline drops non-GREEN listings.

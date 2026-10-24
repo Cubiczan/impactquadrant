@@ -40,3 +40,15 @@ def gate(seller=("US", None), buyer=("US", None), deal_structure="asset", fee_ba
             "flat_fee_products_enabled": True,  # info/verification/subscriptions everywhere
             "advance_seller_listing_fee_allowed": (not red_or_nv) and s["us"],
             "non_us_info_only": not (s["us"] and b["us"]) and not structure_ok, "never_hold_funds": True}
+
+
+# GREEN-ONLY OPERATING SCOPE (owner decision 2026-10-24): 24 GREEN US states + BR, CH, DE, ES, JP, MX.
+NOT_AVAILABLE = "Not available in your location yet"
+def available(country="US", region=None):
+    return lookup(country, region)["status"] == "GREEN"
+def scope_gate(seller=("US", None), buyer=None):
+    """Decline anyone outside GREEN (no flat-fee products, no referrals)."""
+    s = available(*seller); b = available(*buyer) if buyer else True
+    if not s: return {"allowed": False, "message": NOT_AVAILABLE, "side": "seller"}
+    if not b: return {"allowed": False, "message": NOT_AVAILABLE, "side": "buyer"}
+    return {"allowed": True}

@@ -63,14 +63,14 @@
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
-        "checkout_id": "ch_O6XJcB98bVrtk57",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_O6XJcB98bVrtk57/",
+        "checkout_id": "ch_oGT4PPHRXYqeyyM",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_oGT4PPHRXYqeyyM/",
         "price": 81600.0,
         "error": null
       },
       "retainer_checkout": {
-        "checkout_id": "ch_MGtiya5nSsm4JVR",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_MGtiya5nSsm4JVR/",
+        "checkout_id": "ch_A0Ymccx9caTdNzr",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_A0Ymccx9caTdNzr/",
         "price": 1500.0,
         "error": null
       }
@@ -99,82 +99,16 @@
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
-        "checkout_id": "ch_m5jf4UMwEUNUpaz",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_m5jf4UMwEUNUpaz/",
+        "checkout_id": "ch_G1BgbkCHrjee94l",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_G1BgbkCHrjee94l/",
         "price": 81600.0,
         "error": null
       },
       "retainer_checkout": {
-        "checkout_id": "ch_wRJukfWGvZmSuPb",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_wRJukfWGvZmSuPb/",
+        "checkout_id": "ch_Z46W0vBz5RxlEmR",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_Z46W0vBz5RxlEmR/",
         "price": 1500.0,
         "error": null
-      }
-    },
-    {
-      "targetId": "t_2fdfb85d",
-      "gate": {
-        "seller": "YELLOW",
-        "buyer": "GREEN",
-        "seller_state": "GA",
-        "success_fee_eligible": false,
-        "success_fee_enabled": false,
-        "success_fee_route": "licensed partner broker referral",
-        "flat_fee_products_enabled": true,
-        "advance_seller_listing_fee_allowed": true,
-        "non_us_info_only": false,
-        "never_hold_funds": true
-      },
-      "route": "licensed partner broker referral",
-      "est_fee_at_close": 140800.0,
-      "never_hold_funds": true,
-      "partner_referral": {
-        "action": "refer to licensed partner broker",
-        "our_fee": 0
-      }
-    },
-    {
-      "targetId": "t_f24f7afb",
-      "gate": {
-        "seller": "YELLOW",
-        "buyer": "GREEN",
-        "seller_state": "GA",
-        "success_fee_eligible": false,
-        "success_fee_enabled": false,
-        "success_fee_route": "licensed partner broker referral",
-        "flat_fee_products_enabled": true,
-        "advance_seller_listing_fee_allowed": true,
-        "non_us_info_only": false,
-        "never_hold_funds": true
-      },
-      "route": "licensed partner broker referral",
-      "est_fee_at_close": 140800.0,
-      "never_hold_funds": true,
-      "partner_referral": {
-        "action": "refer to licensed partner broker",
-        "our_fee": 0
-      }
-    },
-    {
-      "targetId": "t_d4054dc3",
-      "gate": {
-        "seller": "UNKNOWN",
-        "buyer": "GREEN",
-        "seller_state": "",
-        "success_fee_eligible": false,
-        "success_fee_enabled": false,
-        "success_fee_route": "licensed partner broker referral",
-        "flat_fee_products_enabled": true,
-        "advance_seller_listing_fee_allowed": true,
-        "non_us_info_only": false,
-        "never_hold_funds": true
-      },
-      "route": "licensed partner broker referral",
-      "est_fee_at_close": 140800.0,
-      "never_hold_funds": true,
-      "partner_referral": {
-        "action": "refer to licensed partner broker",
-        "our_fee": 0
       }
     },
     {
@@ -201,14 +135,122 @@
       },
       "success_fee_tranches": 5,
       "success_fee_checkout": {
-        "checkout_id": "ch_xxTZwxmGL9K2pCo",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_xxTZwxmGL9K2pCo/",
+        "checkout_id": "ch_ZX5Z4d1uOpqvSEB",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_ZX5Z4d1uOpqvSEB/",
         "price": 81600.0,
         "error": null
       },
       "retainer_checkout": {
-        "checkout_id": "ch_WHuPDet5Nh7tvFW",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_WHuPDet5Nh7tvFW/",
+        "checkout_id": "ch_pWUwXj7nhh9F2Ro",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_pWUwXj7nhh9F2Ro/",
+        "price": 1500.0,
+        "error": null
+      }
+    },
+    {
+      "targetId": "t_6d911540",
+      "gate": {
+        "seller": "GREEN",
+        "buyer": "GREEN",
+        "seller_state": "NC",
+        "success_fee_eligible": true,
+        "success_fee_enabled": true,
+        "success_fee_route": "direct success fee (RollupOps engagement letter)",
+        "flat_fee_products_enabled": true,
+        "advance_seller_listing_fee_allowed": true,
+        "non_us_info_only": false,
+        "never_hold_funds": true
+      },
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee_at_close": 140800.0,
+      "never_hold_funds": true,
+      "agreement": {
+        "version": "SFA-2026-10-24",
+        "text": "RollupOps Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages RollupOps (Impact Quadrant) to introduce qualified buyers for an ASSET SALE of the business described in listing t_6d911540.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: RollupOps never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "28ad146f5c5c1cabf65ff7877cb5d6ce37bc09ce046c613915126ab18123c1e7"
+      },
+      "success_fee_tranches": 2,
+      "success_fee_checkout": {
+        "checkout_id": "ch_zChdoTjJX54lUpG",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_zChdoTjJX54lUpG/",
+        "price": 70400.0,
+        "error": null
+      },
+      "retainer_checkout": {
+        "checkout_id": "ch_SiMPPOabqpyTEDN",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_SiMPPOabqpyTEDN/",
+        "price": 1500.0,
+        "error": null
+      }
+    },
+    {
+      "targetId": "t_15cdfe12",
+      "gate": {
+        "seller": "GREEN",
+        "buyer": "GREEN",
+        "seller_state": "NC",
+        "success_fee_eligible": true,
+        "success_fee_enabled": true,
+        "success_fee_route": "direct success fee (RollupOps engagement letter)",
+        "flat_fee_products_enabled": true,
+        "advance_seller_listing_fee_allowed": true,
+        "non_us_info_only": false,
+        "never_hold_funds": true
+      },
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee_at_close": 140800.0,
+      "never_hold_funds": true,
+      "agreement": {
+        "version": "SFA-2026-10-24",
+        "text": "RollupOps Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages RollupOps (Impact Quadrant) to introduce qualified buyers for an ASSET SALE of the business described in listing t_15cdfe12.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: RollupOps never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "fbbddc3ab9f19be7d17a2ce1388b437edb6cc278b1dfed5751432a6f0d6e8e2c"
+      },
+      "success_fee_tranches": 2,
+      "success_fee_checkout": {
+        "checkout_id": "ch_cFXPCKTII0TtyLL",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_cFXPCKTII0TtyLL/",
+        "price": 70400.0,
+        "error": null
+      },
+      "retainer_checkout": {
+        "checkout_id": "ch_knVnYjxpBp1cWRj",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_knVnYjxpBp1cWRj/",
+        "price": 1500.0,
+        "error": null
+      }
+    },
+    {
+      "targetId": "t_13cbd526",
+      "gate": {
+        "seller": "GREEN",
+        "buyer": "GREEN",
+        "seller_state": "NC",
+        "success_fee_eligible": true,
+        "success_fee_enabled": true,
+        "success_fee_route": "direct success fee (RollupOps engagement letter)",
+        "flat_fee_products_enabled": true,
+        "advance_seller_listing_fee_allowed": true,
+        "non_us_info_only": false,
+        "never_hold_funds": true
+      },
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee_at_close": 140800.0,
+      "never_hold_funds": true,
+      "agreement": {
+        "version": "SFA-2026-10-24",
+        "text": "RollupOps Success-Fee Engagement (click-through) vSFA-2026-10-24\n1. Scope: Seller engages RollupOps (Impact Quadrant) to introduce qualified buyers for an ASSET SALE of the business described in listing t_13cbd526.\n2. Exclusions: The fee is calculated on purchase price EXCLUDING any real property, leases or interests in land. We do not broker real estate or securities.\n3. Funds: RollupOps never holds deposits, escrow or purchase funds. All closing funds move through the parties' attorney/escrow agent.\n4. Fee: Payable only at closing, from closing statement, per schedule: 10% of first $1M, 8% next $1M, 6% next $1M, 4% above; minimum $15,000. Estimated fee at listed value: $140,800.\n5. Retainer: Optional $1,500 marketing retainer, credited against fee at close.\n6. Jurisdiction: Offered only where seller (NC) and buyer (GREEN) jurisdictions are both rated GREEN in our licensing register; otherwise we refer to a licensed partner broker and charge nothing.\n7. Term: 12 months; 12-month tail for buyers we introduced. Seller may terminate on 30 days' notice.\n8. No legal, tax or investment advice. Seller should retain counsel. Electronic acceptance via Whop checkout constitutes signature (E-SIGN/UETA).",
+        "sha256": "2444e14263c8aad3341a7690bcc2fafded9379e80deca7ad6401671bfc3cbe63"
+      },
+      "success_fee_tranches": 2,
+      "success_fee_checkout": {
+        "checkout_id": "ch_7eRcTzWbwMF6D0z",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_7eRcTzWbwMF6D0z/",
+        "price": 70400.0,
+        "error": null
+      },
+      "retainer_checkout": {
+        "checkout_id": "ch_uqENTAZkg1Tkmh0",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_uqENTAZkg1Tkmh0/",
         "price": 1500.0,
         "error": null
       }

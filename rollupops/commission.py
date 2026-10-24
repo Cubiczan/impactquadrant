@@ -44,7 +44,7 @@ def offer(listing, buyer=("US", None), do_whop=False):
     est = listing.get("_val_lo") or 1e6
     o = {"targetId": listing["targetId"], "gate": g, "route": g["success_fee_route"], "est_fee_at_close": fee_schedule(est), "never_hold_funds": True}
     if not g["success_fee_eligible"]:
-        o["partner_referral"] = {"action": "refer to licensed partner broker", "our_fee": 0}; return o
+        o["route"] = jurisdiction.NOT_AVAILABLE; return o
     o["agreement"] = terms(listing, g, est)
     if do_whop:
         # fee-at-close invoice: one-time plan sent from closing statement; sandbox creates it now as a demo
