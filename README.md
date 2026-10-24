@@ -75,3 +75,10 @@ Agents run both sides: `buyer_agent` keeps PE/platform buy mandates fresh from p
 | Confidential Teaser + CIM | $1,500 one-time | https://whop.com/checkout/plan_rHZvi1hNfO0RW |
 | Quality-of-Earnings Lite | $2,500 one-time | https://whop.com/checkout/plan_5GulOsl8BSUJz |
 On a `payment.succeeded` for one of these plans, `rollupops.fulfillment` drafts the deliverable from DuckDB + Exa into `out/fulfillment/` for human review. Nothing is sent automatically. Not legal, tax or financial advice.
+
+## Service fulfillment (agents prepare, human approves, no auto-send)
+`rollupops/fulfillment.py`, orders in `data/orders.duckdb` (gitignored). States: paid → intake_sent → intake_received → drafting → awaiting_review → delivered.
+1. Whop payment (webhook / `orchestrator.whop_sync`) → intake agent builds a product-specific questionnaire + document list and a tokenized `/intake.html?order=…` link.
+2. Intake submitted (`/api/intake`, HMAC token) → analysis agents (DuckDB buyer mandates/comps + Exa market sources) write markdown + PDF to `out/fulfillment/` with status awaiting_review.
+3. Human approves (dashboard button → `/api/approve`, needs `FULFILL_APPROVE_SECRET`) → delivered via Whop. Sandbox orders record delivery and send nothing.
+Demo: `FULFILL_APPROVE_SECRET=... python -m rollupops.fulfillment teaser_cim`. Sample output: `docs/sample_deliverables/`.

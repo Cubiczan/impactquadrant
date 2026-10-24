@@ -34,7 +34,7 @@ def whop_sync(con):
                     (p.get("membership") or {}).get("id"), p.get("total") or p.get("usd_total"), json.dumps(p.get("metadata") or {}), agents.now()])
     from . import fulfillment  # Precision Sale Process: draft deliverables for paid plans (human review, no sends)
     drafted = [fulfillment.fulfill(p) for p in data if str(p.get("status")) in ("paid", "succeeded")]
-    return r.done({"payments": len(data), "fulfillment_drafts": [d for d in drafted if "draft" in d]})
+    return r.done({"payments": len(data), "intakes_created": [d["order_id"] for d in drafted if "order_id" in d and not d.get("duplicate")]})
 def export(con, path):
     q = lambda s: [dict(zip([d[0] for d in con.description], r)) for r in con.execute(s).fetchall()]
     out = {"generated": str(agents.now()), "agents": q("SELECT * FROM v_agent_summary ORDER BY side, agent"),

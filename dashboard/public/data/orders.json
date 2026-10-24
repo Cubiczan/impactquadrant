@@ -1,0 +1,180 @@
+{
+ "states": [
+  "paid",
+  "intake_sent",
+  "intake_received",
+  "drafting",
+  "awaiting_review",
+  "delivered"
+ ],
+ "orders": [
+  {
+   "order_id": "ord_cfe07766a5",
+   "sku": "readiness",
+   "status": "awaiting_review",
+   "sandbox": true,
+   "updated_at": "2026-10-24 12:07:36.491797"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "sku": "teaser_cim",
+   "status": "delivered",
+   "sandbox": true,
+   "updated_at": "2026-10-24 12:07:29.000520"
+  }
+ ],
+ "events": [
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "paid",
+   "note": "Whop payment pay_SANDBOX_teaser_cim_1792858048",
+   "at": "2026-10-24 12:07:28.627266"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "intake_sent",
+   "note": "intake link ready (sent by human or Whop message after review; no auto-send)",
+   "at": "2026-10-24 12:07:28.630142"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "intake_received",
+   "note": "answers + document list received",
+   "at": "2026-10-24 12:07:28.659792"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "drafting",
+   "note": "analysis agents: DuckDB comps/buyers + Exa",
+   "at": "2026-10-24 12:07:28.662160"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "awaiting_review",
+   "note": "deliverable in outbox; needs human approval",
+   "at": "2026-10-24 12:07:28.973362"
+  },
+  {
+   "order_id": "ord_c1ff71675b",
+   "status": "delivered",
+   "note": "SANDBOX: delivery recorded, nothing sent",
+   "at": "2026-10-24 12:07:29.001872"
+  },
+  {
+   "order_id": "ord_cfe07766a5",
+   "status": "paid",
+   "note": "Whop payment pay_SANDBOX_review_demo",
+   "at": "2026-10-24 12:07:29.184844"
+  },
+  {
+   "order_id": "ord_cfe07766a5",
+   "status": "intake_sent",
+   "note": "intake link ready (sent by human or Whop message after review; no auto-send)",
+   "at": "2026-10-24 12:07:29.187755"
+  },
+  {
+   "order_id": "ord_cfe07766a5",
+   "status": "intake_received",
+   "note": "answers + document list received",
+   "at": "2026-10-24 12:07:29.221688"
+  },
+  {
+   "order_id": "ord_cfe07766a5",
+   "status": "drafting",
+   "note": "analysis agents: DuckDB comps/buyers + Exa",
+   "at": "2026-10-24 12:07:29.224178"
+  },
+  {
+   "order_id": "ord_cfe07766a5",
+   "status": "awaiting_review",
+   "note": "deliverable in outbox; needs human approval",
+   "at": "2026-10-24 12:07:36.494914"
+  }
+ ],
+ "intakes": {
+  "ord_c1ff71675b": {
+   "order_id": "ord_c1ff71675b",
+   "service": "Confidential Teaser + CIM",
+   "questions": [
+    {
+     "key": "company",
+     "label": "Business name (kept confidential)"
+    },
+    {
+     "key": "vertical",
+     "label": "Industry / vertical"
+    },
+    {
+     "key": "state",
+     "label": "State or country of the business"
+    },
+    {
+     "key": "revenue",
+     "label": "Last full-year revenue (USD)"
+    },
+    {
+     "key": "earnings",
+     "label": "Last full-year EBITDA or owner's earnings (SDE)"
+    },
+    {
+     "key": "story",
+     "label": "Company history and what makes it different"
+    },
+    {
+     "key": "growth",
+     "label": "Growth opportunities"
+    }
+   ],
+   "documents": [
+    "3 years P&L",
+    "3 years tax returns",
+    "Add-back schedule",
+    "Customer and supplier overview",
+    "Facility / equipment list",
+    "Photos (optional)"
+   ]
+  },
+  "ord_cfe07766a5": {
+   "order_id": "ord_cfe07766a5",
+   "service": "Sale-Readiness Audit",
+   "questions": [
+    {
+     "key": "company",
+     "label": "Business name (kept confidential)"
+    },
+    {
+     "key": "vertical",
+     "label": "Industry / vertical"
+    },
+    {
+     "key": "state",
+     "label": "State or country of the business"
+    },
+    {
+     "key": "revenue",
+     "label": "Last full-year revenue (USD)"
+    },
+    {
+     "key": "earnings",
+     "label": "Last full-year EBITDA or owner's earnings (SDE)"
+    },
+    {
+     "key": "owner_hours",
+     "label": "Owner hours per week in the business"
+    },
+    {
+     "key": "timeline",
+     "label": "Target sale timeline"
+    }
+   ],
+   "documents": [
+    "3 years P&L",
+    "3 years tax returns",
+    "Add-back schedule",
+    "Balance sheet",
+    "Org chart",
+    "Top-10 customer list (share %)"
+   ]
+  }
+ }
+}
