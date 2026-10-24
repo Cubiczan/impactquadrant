@@ -1,0 +1,16 @@
+[
+ {"name":"Accu-Tool","trade":"precision machining","town":"Apex","state":"NC","website":"https://accutool.net/","notes":"AS9100D/ISO9001; aerospace, medical, semiconductor; prototypes to mid-volume","src":"brave"},
+ {"name":"MCS Machine Works","trade":"precision machining","town":"Raleigh area","state":"NC","website":"https://ies.ncsu.edu/mcs-machine-works-family-roots-modern-precision-and-the-power-of-continuous-improvement/","notes":"Family roots since 1990; AS9100D, ISO 13485, ISO 14001","src":"brave"},
+ {"name":"Advanced Machining LLC","trade":"precision machining","town":"Salisbury","state":"NC","website":"https://advancedmachiningcnc.com/","notes":"AS9100D; site references Compass Precision headquarters","src":"brave"},
+ {"name":"Douglas Machine & Engineering","trade":"precision machining","town":"","state":"NC","website":"https://doug-machine.com/","notes":"ISO 9001, AS9100D, JCP, CAGE 87BF4","src":"brave"},
+ {"name":"James Tool Machine & Engineering","trade":"precision machining","town":"Morganton","state":"NC","website":"https://www.jamestool.com/","notes":"Est. 1987; 92,000 sq ft; AS9100; fixtures + production machining","src":"brave"},
+ {"name":"Carolina Precision Machining","trade":"precision machining","town":"","state":"NC","website":"https://cpmmachining.com/","notes":"AS9100/ISO 9001 compliant","src":"brave"},
+ {"name":"Worley Machine Enterprises","trade":"precision machining","town":"Woolwine","state":"VA","website":"https://www.worleymachine.com/","notes":"Family-owned, 2nd generation, 50+ CNC machines, since 1974","src":"brave"},
+ {"name":"JMC Tool & Machine","trade":"precision machining","town":"Sanford","state":"NC","website":"https://jmctool.com/","notes":"AS9100, ISO 9001, ISO 13485","src":"brave"},
+ {"name":"B&D Industrial","trade":"industrial distribution","town":"Macon","state":"GA","website":"https://bdindustrial.com/","notes":"Family values; MRO + automation distributor; multi-branch since 1950s","src":"brave"},
+ {"name":"Bearing Distributors Inc","trade":"industrial distribution","town":"Columbia","state":"SC","website":"https://www.bdiexpress.com/","notes":"Family owned since 1953; 12+ locations NC/SC/GA; bearings, PT, motors","src":"brave"},
+ {"name":"Fluid Power South","trade":"industrial distribution","town":"","state":"GA","website":"http://www.fluidpowersouth.com/","notes":"Family-owned since 1976; automation components","src":"brave"},
+ {"name":"Dixie Industrial Sales","trade":"industrial distribution","town":"","state":"GA","website":"https://www.dixieindustrialsales.com/","notes":"Since 1983; 4 locations GA/AL; bearings, PT","src":"brave"},
+ {"name":"Bearings and Power Transmission","trade":"industrial distribution","town":"","state":"","website":"https://www.bearingsandpowertransmission.com/","notes":"Family owned, 35+ years","src":"brave"},
+ {"name":"Miller Bearings","trade":"industrial distribution","town":"","state":"FL","website":"https://www.linkedin.com/company/miller-bearings-inc","notes":"15 locations FL; since 1947; bearings, PT, fluid power, MRO","src":"brave"}
+]

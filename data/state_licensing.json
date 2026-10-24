@@ -1,0 +1,479 @@
+{
+ "_disclaimer": "Not legal advice. Research snapshot 2026-10-24; confirm with counsel.",
+ "states": {
+  "AK": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: No specific rule per Advisor1 but BBP lists as licence state \u2014 CONFLICT",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": true
+  },
+  "AL": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "AR": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: Ark. Code 17-42-103(13)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "AZ": {
+   "status": "RED",
+   "basis": "RE licence covers business sales; A.R.S. 32-2101",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": false
+  },
+  "CA": {
+   "status": "RED",
+   "basis": "RE licence required for business opportunity sales since 1966; B&P 10131(a)",
+   "source": "https://www.dre.ca.gov/files/pdf/refbook/ref24.pdf",
+   "verified": "primary",
+   "state_ma_broker_relief": false
+  },
+  "CO": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: C.R.S. 12-10-201(6)(a)(IX); BBP lists as licence state",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "CT": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "DC": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "DE": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "FL": {
+   "status": "RED",
+   "basis": "RE licence covers business enterprise sales; Fla. Stat. 475.01(1)(a)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": true
+  },
+  "GA": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: Ga. Comp. R. & Regs. 520-1-.12; BBP lists as licence state",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "HI": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: HRS 467-1; BBP watch list",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": false
+  },
+  "IA": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "ID": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: Idaho Code 54-2004(39)(a); BBP lists as licence state",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "IL": {
+   "status": "RED",
+   "basis": "Business broker registration with Secretary of State Securities Dept; 815 ILCS 307/10-10",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": true
+  },
+  "IN": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "KS": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "KY": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: No specific rule found; BBP watch list",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": false
+  },
+  "LA": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: La. R.S. 37:1431(24)(h)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "MA": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "MD": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "ME": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: 32 M.R.S. 13001(1)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "MI": {
+   "status": "RED",
+   "basis": "Advisor1 cites MCL 339.2501 as covering business; BBP says court case nullified requirement \u2014 CONFLICT",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": true
+  },
+  "MN": {
+   "status": "RED",
+   "basis": "RE licence covers business sales; Minn. Stat. 82.55 subd.19(d)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": false
+  },
+  "MO": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "MS": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "MT": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "NC": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "ND": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "NE": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: Neb. Rev. Stat. 81-885.01(2); BBP lists as licence state",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "NH": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: RSA 331-A:2, IX",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "NJ": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "NM": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "NV": {
+   "status": "RED",
+   "basis": "NRS 645.030(1)(d) 'business brokerage' in RE broker def; NV RED bulletin says permit targets deals with real estate component \u2014 treat as RED pending counsel",
+   "source": "https://red.nv.gov/uploadedFiles/rednvgov/Content/Publications/Bulletins/ib13-businessbrokers.pdf",
+   "verified": "primary (ambiguous)",
+   "state_ma_broker_relief": true
+  },
+  "NY": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: RPL 440(1)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "OH": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: ORC 4735.01(I)(1)(e)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "OK": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "OR": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: No specific rule per Advisor1 but BBP lists as licence state \u2014 CONFLICT",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": false
+  },
+  "PA": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "RI": {
+   "status": "RED",
+   "basis": "R.I.G.L. 42-14-12: business brokers must post $20k bond and hold RE broker licence",
+   "source": "https://codes.findlaw.com/ri/title-42-state-affairs-and-government/ri-gen-laws-sect-42-14-12/",
+   "verified": "primary text via FindLaw",
+   "state_ma_broker_relief": false
+  },
+  "SC": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "SD": {
+   "status": "RED",
+   "basis": "RE licence covers business sales; SDCL 36-21A-6(3)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": true
+  },
+  "TN": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "TX": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "UT": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: Utah Code 61-2f-102(10); BBP lists as licence state",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "VA": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "VT": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": true
+  },
+  "WA": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: No specific rule per Advisor1 but BBP lists as licence state \u2014 CONFLICT",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": false
+  },
+  "WI": {
+   "status": "RED",
+   "basis": "RE licence covers business sales; Wis. Stat. 452.01(2)(a)",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary+BBP agree",
+   "state_ma_broker_relief": true
+  },
+  "WV": {
+   "status": "GREEN",
+   "basis": "No business-specific RE/broker rule found; RE licence still needed for any real property; securities rules for stock sales",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19)",
+   "verified": "secondary",
+   "state_ma_broker_relief": false
+  },
+  "WY": {
+   "status": "YELLOW",
+   "basis": "Licence needed if real property/lease involved, or sources conflict: No specific rule per Advisor1 but BBP lists as licence state \u2014 CONFLICT",
+   "source": "https://www.advisor1.com/business-broker-licensing (statute-cited table, checked 2026-10-19) ; https://businessbrokeragepress.com/industry-resources/state-licensing/",
+   "verified": "unverified (conflict)",
+   "state_ma_broker_relief": false
+  }
+ },
+ "countries": {
+  "UK": {
+   "status": "YELLOW",
+   "basis": "Share sales = 'arranging deals in investments' (RAO art.25) unless art.70 sale-of-body-corporate exclusion (>50% voting shares, or \u226450 employees-type tests) applies; asset sales unregulated; property needs no licence but estate agency rules (EAA 1979) may apply to business transfers",
+   "source": "https://www.icaew.com/-/media/corporate/files/regulations/dpb-investment-business-licence/examples-of-corporate-finance.ashx ; https://www.legislation.gov.uk/uksi/2001/544/article/70",
+   "verified": "primary/reputable (note: RAO being restated under FSMA 2023)"
+  },
+  "AU": {
+   "status": "YELLOW",
+   "basis": "Share sale of whole private business generally no AFSL (reputable law-firm view); several states (e.g. NSW/QLD/VIC) bring business agents under real estate/agent licensing \u2014 not verified per state",
+   "source": "https://www.klaw.com.au/blog/financial-services-licence-and-company-share-sales ; https://www.asic.gov.au/for-finance-professionals/afs-licensees",
+   "verified": "partial; state agent licensing unverified"
+  },
+  "SG": {
+   "status": "RED",
+   "basis": "Advising on take-over/arrangement of a company or acquiring/disposing capital markets products = corporate finance advice needing CMS licence (or exemption); pure asset-sale brokerage unclear",
+   "source": "https://www.mas.gov.sg/regulation/capital-markets/understand-the-types-of-capital-market-entities/corporate-finance-advisers",
+   "verified": "primary"
+  },
+  "CA": {
+   "status": "YELLOW",
+   "basis": "Provinces regulate via real estate acts; e.g. Ontario TRESA 'trade in real estate' includes business with real property (RECO); other provinces (BC, AB) reportedly include business sales \u2014 unverified; share sales: securities dealer registration / M&A exemptions vary by province (NI 31-103) \u2014 unverified",
+   "source": "https://www.reco.on.ca/",
+   "verified": "unverified"
+  },
+  "IE": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "DE": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "FR": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "NL": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "ES": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "IT": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "CH": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "NZ": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "HK": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "AE": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "IN": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "JP": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "ZA": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "BR": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  },
+  "MX": {
+   "status": "YELLOW",
+   "basis": "Not researched to primary source in this pass. Default assumption: asset-sale introductions often unregulated, share-sale arranging may be regulated (MiFID II for EU/IE; SFO Type 6 for HK; FIEA for JP; FAIS for ZA; real estate licence where property included) \u2014 VERIFY BEFORE COMMISSION",
+   "source": "none",
+   "verified": "unverified"
+  }
+ },
+ "ma_relief_source": "IBBA list (rev 4/21/25) https://www.ibba.org/wp-content/uploads/2025/04/business-broker-state-licensing-list.pdf + IBBA June 2026 update https://www.ibba.org/articles/legislative-update-june-2026/"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "item": "Send 4 outreach drafts for James Tool Machine & Engineering",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Worley Machine Enterprises",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for ABOUT | Ketchie Inc. | Precision Machine Shop Since 1947",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for B&D Industrial",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Dixie Industrial Sales",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for About Our Sanford Machine Shop | Wilson Machine & ToolWilson",
+    "why": "real send"
+  },
+  {
+    "item": "Flagged by trust layer: United Flow Technologies",
+    "why": "fraud/trust flag"
+  },
+  {
+    "item": "Flagged by trust layer: Acme Industries",
+    "why": "fraud/trust flag"
+  },
+  {
+    "item": "Flip Whop to live (WHOP_LIVE=1) for first real sale",
+    "why": "non-sandbox charge"
+  },
+  {
+    "item": "Enable Terac trust layer (TERAC_ENABLED=1): seller + buyer verification, cap 5 each, once researcher org exists",
+    "why": "Terac spend"
+  }
+]

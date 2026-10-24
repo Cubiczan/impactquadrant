@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><title>RollupOps · Impact Quadrant</title><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:system-ui,sans-serif;margin:0;background:#0b1020;color:#e7eaf3}header{padding:24px 32px;background:#111a33}h1{margin:0;font-size:26px}h1 small{display:block;font-size:14px;color:#9fb0d8;font-weight:400;margin-top:6px}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;padding:24px}section{background:#141d3a;border-radius:12px;padding:16px}h2{font-size:15px;margin:0 0 10px;color:#9fd1ff}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px;border-bottom:1px solid #22305a;text-align:left;vertical-align:top}.k{font-size:24px;font-weight:700}.pill{padding:2px 8px;border-radius:99px;background:#22305a;font-size:12px}.off{opacity:.55}.warn{background:#3a2a12}a{color:#9fd1ff}</style></head>
+<body><header><h1>RollupOps: Business brokerage, reimagined and automated.<small>The agent does the broker's whole job: finds buyers, sources sellers, qualifies both sides, matches, runs the deal room and checkout. Agents run the brokerage; humans guarantee trust (Terac verifies both sides). · Impact Quadrant · Whop <span id="mode"></span> · <a href="calculator.html">free valuation calculator</a></small></h1></header>
+<main>
+<section><h2>Pipeline</h2><div id="kpi"></div></section>
+<section><h2>Whop marketplace: two buyer segments</h2><div id="whop"></div></section>
+<section class="off"><h2>Terac trust &amp; fraud layer · DISABLED</h2><p>Agents run the brokerage; humans guarantee trust. Two human tasks, only on items that pass automated pre-screens, async, cap 5 participants each: <b>seller verification</b> (business exists, owner identity, real sell intent) and <b>buyer verification</b> (identity, proof-of-funds plausibility, not a data harvester) before the full memo or owner identity is released. TERAC_ENABLED=0 until the researcher org exists.</p><div id="terac"></div></section>
+<section class="warn"><h2>Needs Shyam</h2><ul id="needs"></ul></section>
+<section style="grid-column:1/-1"><h2>Active PE buyers (scored from public signals)</h2><table id="buyers"></table></section>
+<section style="grid-column:1/-1"><h2>Listings: blind teasers (value ranges are estimates, not asking prices)</h2><table id="list"></table></section>
+</main>
+<script>
+const j=p=>fetch('data/'+p).then(r=>r.json());
+Promise.all(['00_summary.json','01_buyers.json','03_listings.json','05_needs_shyam.json','06_whop.json'].map(j)).then(([s,b,l,n,w])=>{
+ mode.innerHTML='<span class="pill">'+w.mode+'</span>';
+ kpi.innerHTML=[['Buyers found',s.buyers],['Active (scored)',s.active_buyers],['Targets sourced',s.targets_sourced],['Passed checks',s.eligible],['Listed',s.listed],['Outreach drafts (unsent)',s.drafts]].map(([a,v])=>`<div><span class="k">${v}</span> ${a}</div>`).join('')+`<p>Last run ${s.run_at} ET</p>`;
+ const sum=(seg,k)=>w.unlocks.filter(u=>u.segment==seg).reduce((a,u)=>a+u[k],0);
+ whop.innerHTML=`<p><b>PE platforms:</b> <a href="${w.subscription.purchase_url}" target=_blank>Deal Flow ${w.subscription.price}</a> · per-target unlock $250 (GMV if all sold $${sum('pe','gmv_if_sold')}, fee $${sum('pe','platform_fee')})</p>
+ <p><b>Individual buyers:</b> <a href="${w.individual_products.deal_drop.purchase_url}" target=_blank>Off-Market Deal Drop ${w.individual_products.deal_drop.price}</a> · <a href="${w.individual_products.teardown.purchase_url}" target=_blank>Deal Teardown ${w.individual_products.teardown.price}</a> · per-deal unlock $19–99 by deal size (GMV $${sum('individual','gmv_if_sold')}, fee $${sum('individual','platform_fee')})</p>
+ <p>20% application fee on every unlock (direct charge on seller's connected account). Verifier payouts: queued $25 each (sandbox).</p><p>Referral revenue: ${w.referral.program}. Referred: ${w.referral.referred_businesses.length}. Pending: see whop.com/partners</p><p class="pill">${w.go_live_switch}</p>`;
+ terac.innerHTML='<b>Sellers</b>'+l.map(x=>`<div>${x.title}: <span class="pill">${x.trustBadge}</span></div>`).join('')+'<b>Buyers</b>'+b.filter(x=>x.active).slice(0,6).map(x=>`<div>${x.platform}: <span class="pill">${x.trustBadge}</span></div>`).join('');
+ needs.innerHTML=n.map(x=>`<li>${x.item} <span class="pill">${x.why}</span></li>`).join('');
+ buyers.innerHTML='<tr><th>Platform</th><th>Sponsor</th><th>Buy-box</th><th>Score</th><th>Unlock gate</th><th>Trust</th></tr>'+b.filter(x=>x.active).map(x=>`<tr><td>${x.platform}</td><td>${x.sponsor}</td><td>${x.buy_box.trade}</td><td>${x.activity_score}</td><td>${x.qualification.unlock_allowed?'cleared (closed add-ons)':'needs proof of funds'}</td><td>${x.trustBadge}</td></tr>`).join('');
+ list.innerHTML='<tr><th>Teaser</th><th>Revenue</th><th>Earnings</th><th>Value range</th><th>Score</th><th>Status</th><th>Unlock</th></tr>'+l.map(x=>`<tr><td>${x.title}<br><small>${x.strengths.join(' · ')}</small><br><span class="pill">${x.trustBadge}</span></td><td>${x.revenueBand}</td><td>${x.earningsBand}</td><td>${x.valuationBand}<br><small>${x.equityHint}</small></td><td>${x.score}</td><td>${x.status}; stale timer ${x.stale_after}</td><td><a href="${x.checkoutUrl}" target=_blank>PE $250</a><br><a href="${x.checkoutUrlIndividual}" target=_blank>Individual $${x.individualUnlockPrice}</a><br><small>NDA + proof of funds first</small></td></tr>`).join('');
+});
+</script></body></html>

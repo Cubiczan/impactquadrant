@@ -1,0 +1,41 @@
+# RollupOps by Impact Quadrant
+**Business brokerage, reimagined and automated.** The agent does the broker's whole job: finds buyers, sources sellers, qualifies both sides, matches, and runs the deal room and checkout. **Agents run the brokerage; humans guarantee trust.**
+
+Built for the Terac Zero-Human Company Hackathon (NYC, 2026-10-24). Focus: small and medium **manufacturing & distribution** businesses (precision machining, industrial distribution). Global-ready (country/state fields, jurisdiction gate).
+
+- Dashboard: https://dashboard-six-fawn-83.vercel.app (calculator: /calculator.html, webhook: /api/whop-webhook)
+- Marketplace (Wix): impactquadrant.info/marketplace. See `wix/APPLY.md`.
+- Trust, KYC, jurisdiction: `TRUST.md` · Demo script: `DEMO.md`
+
+## Pipeline (`python -m rollupops.pipeline --whop`)
+1. **Buyers**: curated public signals (`data/buyer_signals.json`) + Impact Quadrant PE registry + live **Exa** search (`EXA_API_KEY`).
+2. **Buyer activity score** from public signals (add-on press, partner pages, corp-dev hiring), buy-box inference, qualification (proof of funds before unlock).
+3. **Sourcing** (curated + Exa), automated checks (company site, PE-owned exclusion, dedupe, focus; no mining).
+4. **Value-driver scoring** + valuation **estimate** (SDE <$2M, EBITDA ≥$2M; never mixed; range, not asking price).
+5. **Blind teaser** (no name/city/site) + PII lint; down-payment estimate; stale-deal timer.
+6. **Trust ladder** (`trust.py`): Whop KYC identity + Terac human verification of sellers and buyers (Terac off until org exists).
+7. **Jurisdiction gate** (`jurisdiction.py`): flat-fee info products everywhere; success fees OFF.
+8. **Whop** (`marketplace.py`): per-listing checkouts on the seller's connected account with a 20% application fee, for both PE and individual buyers.
+9. **Outreach drafts** for sellers (free confidential valuation) and buyers; lint; **never sent** (Needs Shyam).
+10. Outputs in `out/*.json`; `python -m rollupops.wix_push` exports `wix/targets_import.csv` (dry run unless `--send`).
+
+## Whop (sandbox, business biz_a5nrqqjxL9lLAv)
+| Product | Segment | Price | Checkout |
+|---|---|---|---|
+| RollupOps Deal Flow | PE platforms | $499/mo | https://sandbox.whop.com/checkout/plan_G3u2jR3bL0Mva |
+| Off-Market Deal Drop | Individual buyers | $49/mo | https://sandbox.whop.com/checkout/plan_PobV6T3Hak8FP |
+| Deal Teardown | Individual buyers | $149 | https://sandbox.whop.com/checkout/plan_K5LRRtkdPMull |
+| Per-target unlock | PE $250 / individual $19–99 by deal size | 20% app fee | per listing in `out/03_listings.json` |
+Seller connected account (sandbox): `biz_GUUF0UYxQLOE5S`. Verifier transfers are queued (sandbox has no payouts). Referral line: Whop Partners pays 30% of Whop's eligible gross profit on referred businesses (tracked at whop.com/partners).
+**Going live is a Needs-Shyam switch**: `WHOP_LIVE=1` + `NEEDS_SHYAM_APPROVED=1` + production key. Not done.
+
+## Safety
+Sandbox only. No real sends. No secrets in repo (`.env.example`). We don't hold funds or store SSNs. Not legal advice; see TRUST.md.
+
+## Run
+```
+cp .env.example .env  # fill locally
+pip install -r requirements.txt  # stdlib only today
+python -m rollupops.pipeline --whop && python -m rollupops.wix_push && python scripts/build_wix.py
+cp out/*.json dashboard/public/data/ && (cd dashboard && vercel deploy --prod)
+```

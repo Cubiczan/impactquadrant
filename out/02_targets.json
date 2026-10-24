@@ -1,0 +1,1243 @@
+[
+  {
+    "name": "Accu-Tool",
+    "trade": "precision machining",
+    "town": "Apex",
+    "state": "NC",
+    "website": "https://accutool.net/",
+    "notes": "AS9100D/ISO9001; aerospace, medical, semiconductor; prototypes to mid-volume",
+    "src": "brave",
+    "id": "t_50afd75e",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 0,
+      "customer_concentration_risk": -1,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 60,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "MCS Machine Works",
+    "trade": "precision machining",
+    "town": "Raleigh area",
+    "state": "NC",
+    "website": "https://ies.ncsu.edu/mcs-machine-works-family-roots-modern-precision-and-the-power-of-continuous-improvement/",
+    "notes": "Family roots since 1990; AS9100D, ISO 13485, ISO 14001",
+    "src": "brave",
+    "id": "t_7f58bfd2",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "Advanced Machining LLC",
+    "trade": "precision machining",
+    "town": "Salisbury",
+    "state": "NC",
+    "website": "https://advancedmachiningcnc.com/",
+    "notes": "AS9100D; site references Compass Precision headquarters",
+    "src": "brave",
+    "id": "t_d3585b91",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": false,
+      "in_focus": true
+    },
+    "status": "dropped:not_pe_owned"
+  },
+  {
+    "name": "Douglas Machine & Engineering",
+    "trade": "precision machining",
+    "town": "",
+    "state": "NC",
+    "website": "https://doug-machine.com/",
+    "notes": "ISO 9001, AS9100D, JCP, CAGE 87BF4",
+    "src": "brave",
+    "id": "t_6d911540",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 0,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 70,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "James Tool Machine & Engineering",
+    "trade": "precision machining",
+    "town": "Morganton",
+    "state": "NC",
+    "website": "https://www.jamestool.com/",
+    "notes": "Est. 1987; 92,000 sq ft; AS9100; fixtures + production machining",
+    "src": "brave",
+    "id": "t_9a6db228",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 0,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": 39,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        15000000.0,
+        40000000.0
+      ],
+      "earnings_band": [
+        1800000,
+        4800000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        7200000.0,
+        27840000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 90,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Carolina Precision Machining",
+    "trade": "precision machining",
+    "town": "",
+    "state": "NC",
+    "website": "https://cpmmachining.com/",
+    "notes": "AS9100/ISO 9001 compliant",
+    "src": "brave",
+    "id": "t_15cdfe12",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 0,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 70,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Worley Machine Enterprises",
+    "trade": "precision machining",
+    "town": "Woolwine",
+    "state": "VA",
+    "website": "https://www.worleymachine.com/",
+    "notes": "Family-owned, 2nd generation, 50+ CNC machines, since 1974",
+    "src": "brave",
+    "id": "t_f13dd4e6",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": 52,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        15000000.0,
+        40000000.0
+      ],
+      "earnings_band": [
+        1800000,
+        4800000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        7200000.0,
+        27840000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 90,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "JMC Tool & Machine",
+    "trade": "precision machining",
+    "town": "Sanford",
+    "state": "NC",
+    "website": "https://jmctool.com/",
+    "notes": "AS9100, ISO 9001, ISO 13485",
+    "src": "brave",
+    "id": "t_13cbd526",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 0,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 70,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "B&D Industrial",
+    "trade": "industrial distribution",
+    "town": "Macon",
+    "state": "GA",
+    "website": "https://bdindustrial.com/",
+    "notes": "Family values; MRO + automation distributor; multi-branch since 1950s",
+    "src": "brave",
+    "id": "t_2fdfb85d",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 1,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 76,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 85,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Bearing Distributors Inc",
+    "trade": "industrial distribution",
+    "town": "Columbia",
+    "state": "SC",
+    "website": "https://www.bdiexpress.com/",
+    "notes": "Family owned since 1953; 12+ locations NC/SC/GA; bearings, PT, motors",
+    "src": "brave",
+    "id": "t_fca82e34",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 73,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        15000000.0,
+        40000000.0
+      ],
+      "earnings_band": [
+        1800000,
+        4800000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        7200000.0,
+        27840000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 75,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Fluid Power South",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "GA",
+    "website": "http://www.fluidpowersouth.com/",
+    "notes": "Family-owned since 1976; automation components",
+    "src": "brave",
+    "id": "t_67ef6197",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 50,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 65,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Dixie Industrial Sales",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "GA",
+    "website": "https://www.dixieindustrialsales.com/",
+    "notes": "Since 1983; 4 locations GA/AL; bearings, PT",
+    "src": "brave",
+    "id": "t_f24f7afb",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": 43,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 85,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Bearings and Power Transmission",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://www.bearingsandpowertransmission.com/",
+    "notes": "Family owned, 35+ years",
+    "src": "brave",
+    "id": "t_f5fac768",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 55,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Miller Bearings",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "FL",
+    "website": "https://www.linkedin.com/company/miller-bearings-inc",
+    "notes": "15 locations FL; since 1947; bearings, PT, fluid power, MRO",
+    "src": "brave",
+    "id": "t_fb838d2d",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "ABOUT | Ketchie Inc. | Precision Machine Shop Since 1947",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://www.ketchiemeansquality.com/about",
+    "notes": "Ketchie Inc. is a family-owned, third-generation CNC precision machine shop based in Concord, North Carolina. Founded in 1947, it originated as a textile job shop and has grown into a woman-owned business that is AS9100D and ISO 9001:2015 certified. The shop serves multiple industries (Aerospace, Ra",
+    "src": "exa",
+    "id": "t_d4054dc3",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 1,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": 0
+    },
+    "years_in_business": 79,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 90,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Precision Machined Parts & CNC Machining Services | Northeas",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://northeasttool.us/what-defines-us/our-story/",
+    "notes": "Northeast Tool is a family-owned CNC precision machine shop in the Carolinas, founded in 1964 by Larry C. Arant. With over five decades of experience, it provides precision machined parts and complex assemblies for aerospace, defense, energy, medical, and commercial sectors. The company emphasizes i",
+    "src": "exa",
+    "id": "t_d1e17fab",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 62,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 70,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "bowen machine company, inc.",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://linkedin.com/company/bowen-machine-company-inc.",
+    "notes": "Summary:\nBowen Machine Company, Inc. is a family-owned precision CNC machining shop based in Dallas, North Carolina (Carolinas region). Founded in 1978, it specializes in turning, milling, grinding, honing, welding, and fabrication, offering quick turnaround and parts produced to exact customer spec",
+    "src": "exa",
+    "id": "t_f7340f4e",
+    "checks": {
+      "dedupe": false,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:dedupe,is_company_site"
+  },
+  {
+    "name": "machine consulting services, inc.",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://linkedin.com/company/machine-consulting-services",
+    "notes": "Machine Consulting Services, Inc. (MCS) is a family-owned precision CNC shop based in Durham, NC, serving the Carolinas and nationwide for over 30 years. Key points:\n- Services: CNC turning and milling, prototyping, welding, and high-volume production for medical, aerospace, electronics, and industr",
+    "src": "exa",
+    "id": "t_8d923442",
+    "checks": {
+      "dedupe": false,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:dedupe,is_company_site"
+  },
+  {
+    "name": "James Tool Achieves AS9100 Registration and Completes Facili",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://bernardandcompany.com/james-tool-achieves-as9100-registration-and-completes-facilities-expansion/",
+    "notes": "James Tool Machine & Engineering, Inc. is a family-owned CNC precision machine shop based in Morganton, NC (Carolinas) with a history dating back to 1987. Under Jeff Toner, the company serves aerospace and other markets, offering prototype to production parts using 4- and 5-axis CNC machines, wire E",
+    "src": "exa",
+    "id": "t_9bec456d",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "MCS Machine Works: Family Roots, Modern Precision, and the P",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://www.nist.gov/mep/successstories/2025/mcs-machine-works-family-roots-modern-precision-and-power-continuous",
+    "notes": "MCS Machine Works is a family-owned CNC contract manufacturing shop near RTP, North Carolina, with roots dating back to 1990. The company achieved AS9100D (Aerospace), ISO 13485 (Medical Devices), and ISO 14001 (Environmental Management) through a partnership with NC State University\u2019s Industry Expa",
+    "src": "exa",
+    "id": "t_6e933aca",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "About Our Sanford Machine Shop | Wilson Machine & ToolWilson",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://wmtusa.com/about-us/",
+    "notes": "Wilson Machine & Tool, Inc. is a family-owned CNC precision machining shop based in Sanford, NC (Carolinas). Key points:\n\n- Founded in 1990 by Ray Wilson; first CNC in 1991. Now a multi-CNC operation with 18,000 sq ft facility.\n- Currently run by Ray\u2019s daughter Alexis Wilson, an industrial engineer ",
+    "src": "exa",
+    "id": "t_600a6f4c",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 1,
+      "recurring_mro_revenue": 0,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 36,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 80,
+    "matched_buyers": [
+      "Threadlock Precision",
+      "Incodema / CORE portfolio",
+      "Netform",
+      "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+      "Avem Partners Completes Acquisition of PAMCO",
+      "Compass Group Tools Up with Koma Precision",
+      "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+      "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+      "Radial Equity Acquires Thomas Precision Machining",
+      "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+      "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "james tool machine & engineering",
+    "trade": "precision machining",
+    "town": "",
+    "state": "",
+    "website": "https://linkedin.com/company/jamestool",
+    "notes": "James Tool Machine & Engineering is a family-owned CNC precision machine shop based in Morganton, North Carolina. Founded in 1987, it specializes in precision machining, custom workholding fixtures, and tooling, serving aerospace, automotive, nuclear, off-highway, and oil & gas industries. The compa",
+    "src": "exa",
+    "id": "t_cafbdf1d",
+    "checks": {
+      "dedupe": false,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:dedupe,is_company_site"
+  },
+  {
+    "name": "INNOVATIVE",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://bdindustrial.com/wp-content/uploads/2025/03/2024-06-19-General-BD-Overview-Bifold_FINAL.pdf",
+    "notes": "B&D Industrial is a family-owned industrial distributor serving the Southeast since 1947. Core offerings include bearings, power transmission, and MRO, with expanded capabilities in gear box maintenance, gear manufacturing, electrical automation, and industrial equipment services. The company merged",
+    "src": "exa",
+    "id": "t_0246e366",
+    "checks": {
+      "dedupe": false,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:dedupe,is_company_site"
+  },
+  {
+    "name": "B&D Industrial CEO Retires; Successor Named",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://www.inddist.com/staffing-changes/news/21219690/bd-industrial-ceo-retires-successor-named",
+    "notes": "B&D Industrial, a family- and employee-owned industrial distributor based in Macon, GA, announces a leadership transition: long-time CEO Andy Nations retires (Dec 31, 2020) but remains Chairman. Three third-generation family members\u2014Brian Davis, Ben Nations, and Lauren Lanter\u2014become co-CEOs while co",
+    "src": "exa",
+    "id": "t_5cb926c7",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "About Our Industrial Supply Company | Apex Industrial Group",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://apexmro.com/about-us-2-2/",
+    "notes": "Apex Industrial Group (also operating as Anderson Distributing) presents itself as a customer-centric, family-influenced industrial distributor serving the Southeast. Key strengths highlighted:\n\n- Personal, relationship-driven service with 24/7/365 support and proactive, solution-focused approach.\n-",
+    "src": "exa",
+    "id": "t_cf378b19",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 1,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 65,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Member-Spotlight---Bob-Dean-Supply-Inc",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://ptda.org/PTDA/PTDA/Industry-Insights/Spotlight-Articles/Member-Spotlight---Bob-Dean-Supply-Inc.aspx",
+    "notes": "Bob Dean Supply Inc. is a family-owned mechanical power transmission distributor based in Florida with a long local heritage. Founded in 1953, the company emphasizes problem-solving, deep product knowledge, and strong manufacturer relationships that date back to the 1940s. They distinguish themselve",
+    "src": "exa",
+    "id": "t_8886912b",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "MTS Industrials",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://www.mtsindustrial.com/",
+    "notes": "MTS Industrials is a family-owned industrial distributor serving the Southeast US since 2001. They offer a broad, locally stocked range of bearings, motors, power transmission, and MRO components, with fast delivery and technical support. Highlights include:\n\n- Family-owned, customer-focused approac",
+    "src": "exa",
+    "id": "t_15de7aad",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 1,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": 25,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 75,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "Gearing up for Industry 4.0 - Industrial Supply Magazine",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "https://industrialsupplymagazine.com/pages/Print-edition---JanFeb18_B&D-Industrial.php",
+    "notes": "B&D Industrial is a 71-year-old, family-owned industrial distributor based in Macon, Georgia, serving the Southeast U.S. It comprises three divisions: B&D Technologies (automation, sensors, drives, machine safety), B&D Service (industrial maintenance and large gearbox repair), and Scale Systems (cus",
+    "src": "exa",
+    "id": "t_a4438e50",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": false,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:is_company_site"
+  },
+  {
+    "name": "Gulf Coast Industrial - Industrial and Heavy Equipment Repai",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "http://www.gcindserv.com/",
+    "notes": "Gulf Coast Industrial is a family-owned industrial distributor in the Southeast US that provides bearings, power transmission components, pumps, motors, couplings, and other MRO parts. They emphasize 24/7 in-house machining and emergency support, backed by 30+ years of industry experience and establ",
+    "src": "exa",
+    "id": "t_53e5dab9",
+    "checks": {
+      "dedupe": true,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "eligible",
+    "value_drivers": {
+      "certifications_moat": 0,
+      "multi_location_or_capacity": 0,
+      "recurring_mro_revenue": 1,
+      "succession_signal": 1,
+      "customer_concentration_risk": 0,
+      "owner_dependence_risk": -1
+    },
+    "years_in_business": null,
+    "valuation": {
+      "basis": "EBITDA",
+      "revenue_band": [
+        3000000.0,
+        12000000.0
+      ],
+      "earnings_band": [
+        378000,
+        1512000
+      ],
+      "multiple_band": [
+        4.0,
+        5.8
+      ],
+      "valuation_band": [
+        1510000.0,
+        8770000.0
+      ],
+      "reference": "PE manufacturing avg 7.1x EBITDA (GF Data 2026 mid-year)",
+      "label": "estimate"
+    },
+    "score": 65,
+    "matched_buyers": [
+      "Solve Industrial Motion Group",
+      "PrimeSource Brands",
+      "Relevant Solutions"
+    ],
+    "qoe_flag": false
+  },
+  {
+    "name": "About Us - Fluid Power South",
+    "trade": "industrial distribution",
+    "town": "",
+    "state": "",
+    "website": "http://www.fluidpowersouth.com/about-us/",
+    "notes": "Fluid Power South is a nearly four-decade-old, family-owned distributor specializing in automation components, bearing and power transmission products, and related MRO solutions for OEMs, manufacturers, and resellers in Georgia and the Southeast. Key strengths include:\n\n- Solution selling: offers on",
+    "src": "exa",
+    "id": "t_037dba1b",
+    "checks": {
+      "dedupe": false,
+      "has_website": true,
+      "is_company_site": true,
+      "not_pe_owned": true,
+      "in_focus": true
+    },
+    "status": "dropped:dedupe"
+  }
+]
