@@ -13,7 +13,7 @@ Built for the Terac Zero-Human Company Hackathon (NYC, 2026-10-24). Focus: small
 3. **Sourcing** (curated + Exa), automated checks (company site, PE-owned exclusion, dedupe, focus; no mining).
 4. **Value-driver scoring** + valuation **estimate** (SDE <$2M, EBITDA ≥$2M; never mixed; range, not asking price).
 5. **Blind teaser** (no name/city/site) + PII lint; down-payment estimate; stale-deal timer.
-6. **Trust ladder** (`trust.py`): Whop KYC identity + Terac human verification of sellers and buyers (Terac off until org exists).
+6. **Trust ladder** (`trust.py`): Whop KYC identity + Terac human verification of business owners only; PE fund buyers are vetted personally by the owner.
 7. **Jurisdiction gate** (`jurisdiction.py`): flat-fee info products everywhere; success fees OFF.
 8. **Whop** (`marketplace.py`): per-listing checkouts on the seller's connected account with a 20% application fee, for both PE and individual buyers.
 9. **Outreach drafts** for sellers (free confidential valuation) and buyers; lint; **never sent** (Needs Shyam).
@@ -87,10 +87,10 @@ Demo: `FULFILL_APPROVE_SECRET=... python -m rollupops.fulfillment teaser_cim`. S
 This public repo is a scrubbed mirror of a private working repo. Partner overlays (priority-sponsor lanes, platform lists, buyer registry, blocked marketing terms) live only in untracked `data/raw/private/`; without them the pipeline runs on public sources. `MARKETING_BLOCKED_TERMS` (comma-separated) adds confidential terms the marketing agent must never emit.
 
 ## Where humans help (and where they don't)
-Terac human-in-the-loop runs in exactly two places, behind `TERAC_ENABLED=1` (org pending). With the flag off, items queue as `pending_human`; low-value paths never block.
-1. **Owner verification**: with the owner's consent, non-blocking, before a listing or teaser goes out.
-2. **Flagged high-value buyer screening**: only when (a) a new or unverified buyer requests confidential deal boxes, (b) anyone moves toward the commission retainer or a $15k+ fee path, or (c) the anomaly score crosses `TERAC_ANOMALY_THRESHOLD` (default 0.7). A human checks intent and fraud; that high-value step waits for the check.
+Terac human-in-the-loop runs in exactly ONE place, behind `TERAC_ENABLED=1`: **blue-collar business owner verification** (consented identity-and-intent call we run; one US reviewer reviews the redacted notes/transcript on our page; paid only after we approve). With the flag off, items queue as `pending_human`.
+
+**No buyer review.** PE fund buyers are vetted personally by the owner, never by Terac or any automated review; no code path sends a buyer to review.
 
 No Terac on: teasers, subscriptions, scoring, matching, marketing, checkout, service fulfillment. Fulfillment deliverables go out only after the owner's own approval. Marketing posts go out only after the owner approves the final text. Queues: `dashboard/public/data/human_checks.json` → dashboard "Human checks" panel.
 ### Terac (real API)
-`rollupops/terac.py` talks to Terac REST v2 (`https://terac.com/api/external/v2`) with `TERAC_API_KEY` from the environment. Read-only calls: org context, list opportunities, get feasibility, get submissions. Free (explicit only): `request_feasibility(kind)` for the two templates. Spending: `launch()` requires `TERAC_LIVE=1` **and** the check id set to `true` in untracked `data/terac_approvals.json` by the owner. The orchestrator never creates, launches or approves anything.
+`rollupops/terac.py` talks to Terac REST v2 (`https://terac.com/api/external/v2`) with `TERAC_API_KEY` from the environment. Read-only calls: org context, list opportunities, get feasibility, get submissions. Free (explicit only): `request_feasibility(kind)` for the owner template. Spending: `launch()` requires `TERAC_LIVE=1` **and** the check id set to `true` in untracked `data/terac_approvals.json` by the owner. The orchestrator never creates, launches or approves anything.

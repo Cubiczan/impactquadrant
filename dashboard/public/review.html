@@ -8,7 +8,7 @@ const P=new URLSearchParams(location.search),c=P.get('c'),t=P.get('t'),sid=P.get
 const esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 fetch(`/api/review?c=${encodeURIComponent(c||'')}&t=${encodeURIComponent(t||'')}`).then(r=>r.json()).then(d=>{
  if(!d.bundle){app.textContent=d.error||'Link not valid.';return}
- const b=d.bundle;kind.textContent='· '+(b.kind==='owner_verification'?'Owner verification':'Buyer screening');
+ const b=d.bundle;kind.textContent='· '+'Owner verification';
  const ctx=Object.entries(b.context||{}).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(typeof v==='object'?JSON.stringify(v):v)}</td></tr>`).join('');
  app.innerHTML=`<section><h2>Consent</h2><p>Consent given (${esc(b.consent.method)}, ${esc(b.consent.at)}). Recording allowed: ${b.consent.recording_allowed?'yes':'no (notes only)'}.</p></section>
  <section><h2>Context (redacted)</h2><table>${ctx||'<tr><td>None</td></tr>'}</table></section>

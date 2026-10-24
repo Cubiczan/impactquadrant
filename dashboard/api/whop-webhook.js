@@ -21,9 +21,8 @@ export default async function handler(req, res) {
     wix = r.status;
   }
   const amt = Number(evt?.data?.final_amount ?? evt?.data?.total ?? evt?.data?.amount ?? 0);
-  // Terac human check #2 only: retainer or >= $15k fee path (or anomaly) -> buyer_screening; everything else stays automated.
-  const human_check = (md.kind === 'retainer' || md.kind === 'fee' || amt >= 15000 || Number(md.anomaly || 0) >= 0.7)
-    ? (process.env.TERAC_ENABLED === '1' ? 'buyer_screening: pending (Terac)' : 'buyer_screening: pending_human') : 'none';
+  // No buyer review: PE fund buyers are vetted personally by the owner; nothing here routes a buyer to Terac.
+  const human_check = 'none';
   console.log(JSON.stringify({ human_check, type, targetId, match_id: md.match_id, duckdb: 'pulled by rollupops.orchestrator whop_sync', fulfillment: 'draft queued for owner approval (rollupops.fulfillment)', segment: md.segment, wix, verifier_transfer: 'queued (sandbox)' }));
   return res.status(200).json({ ok: true, type, targetId, wix, human_check });
 }

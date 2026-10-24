@@ -1,7 +1,5 @@
 {
  "enabled": false,
- "anomaly_threshold": 0.7,
- "fee_threshold": 15000.0,
  "owner_verification": [
   {
    "kind": "owner_verification",
@@ -58,9 +56,8 @@
    "queued_at": "2026-10-24T12:17:12"
   }
  ],
- "buyer_screening": [],
  "rules": {
   "owner_verification": "with consent, non-blocking, before a listing/teaser goes out",
-  "buyer_screening": "unverified buyer requests confidential deal box OR commission retainer / >= $15k fee path OR anomaly >= threshold"
+  "buyers": "never reviewed; PE fund buyers are vetted personally by the owner"
  }
 }

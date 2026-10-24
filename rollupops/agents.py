@@ -136,7 +136,7 @@ def whop_agent(con, top=5):
                           WHERE sp.kind='listing' OR m.score>=70 ORDER BY m.score DESC LIMIT ?""", [top]).fetchall()
     for mid, vert, st, score in rows:
         title = f"Blind teaser: {vert.replace('_', ' ')} business, {st}"
-        payload = {"product": {"title": title, "description": "Founder-owned, off-market. NDA + proof of funds required; Terac human check on both sides.",
+        payload = {"product": {"title": title, "description": "Founder-owned, off-market. NDA + proof of funds required; owner verified by human check; buyers vetted personally by the owner.",
                                "plan_options": {"plan_type": "one_time", "base_currency": "usd", "initial_price": 149}, "metadata": {"match_id": mid, "gate": "nda+pof"}},
                    "checkout": {"mode": "payment", "metadata": {"match_id": mid, "segment": vert}}}
         resp = None

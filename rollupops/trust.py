@@ -22,13 +22,13 @@ def buyer_ladder(b, segment="pe"):
     l1 = {"email_verified": "required to view teasers (Wix member/email confirm)"}
     l2 = {"whop_payment": "required", "click_through_nda": "required", "unlocks": "blind deal memo (no owner identity)"}
     pe_pre = segment == "pe" and any(g["type"] == "addon_press" for g in b.get("signals", []))
-    # No Terac on scoring/subscriptions: human screening happens only on flagged high-value events (terac.buyer_screening).
-    l3 = {"status": "on_flagged_request", "rule": "human screen only if unverified buyer requests confidential deal box, retainer/$15k+ fee path, or anomaly", "flagged": False}
+    # No Terac / automated review of buyers. PE fund buyers are vetted personally by the owner (manual).
+    l3 = {"status": "owner_manual", "rule": "PE fund buyers are vetted personally by the owner; never sent to Terac or automated review", "flagged": False}
     l3["checks"] = (["firm exists", "recent add-ons", "person employed at firm (firm-domain email)"] if segment == "pe"
                     else ["proof of funds or SBA pre-qual letter review", "short video identity confirm"])
     l3["flag_for"] = ["data harvester", "competitor", "unfunded"]
     level = 3 if l3.get("status") == "verified" else 2  # PE platforms on our list are scored as L2-eligible once they pay + NDA
-    return {"segment": segment, "level_max_today": level, "badge": "Flagged" if l3.get("flagged") else "Agent-vetted; human screen on confidential request",
+    return {"segment": segment, "level_max_today": level, "badge": "Flagged" if l3.get("flagged") else "Vetted personally by the owner",
             "L1": l1, "L2": l2, "L3_terac": l3, "owner_identity_released": level >= 3}
 
 # --- Whop KYC as the identity layer (documented endpoints only) ---------------------------------

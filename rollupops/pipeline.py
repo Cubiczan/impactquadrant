@@ -152,7 +152,7 @@ def run(do_whop=False, top=6):
     buyers = [buy_box(score_buyer(b)) for b in discover_buyers()]
     for b in buyers:
         b["trust"] = trust.buyer_ladder(b); b["terac"] = b["trust"]["L3_terac"]; b["trustBadge"] = b["trust"]["badge"]
-        b["qualification"]["full_memo_release"] = "after human buyer screening (Terac) on confidential request" if terac.ENABLED else "queued pending_human on confidential request"
+        b["qualification"]["full_memo_release"] = "after NDA + payment; PE fund buyers vetted personally by the owner (no Terac / automated review)"
     w("01_buyers", buyers)
     targets = source_targets()
     elig = [score_target(t, buyers) for t in targets if t["status"] == "eligible"]
@@ -177,8 +177,8 @@ def run(do_whop=False, top=6):
     needs = [{"item": f"Send {1+len(o['buyers'])} outreach drafts for {o['seller']['target']}", "why": "real send"} for o in outreach]
     needs += [{"item": f"Flagged by trust layer: {x.get('platform') or x.get('title')}", "why": "fraud/trust flag"} for x in buyers + listings if x.get("terac", {}).get("flagged")]
     needs += [{"item": "Flip Whop to live (WHOP_LIVE=1) for first real sale", "why": "non-sandbox charge"},
-              {"item": "Enable Terac (TERAC_ENABLED=1) for the two human checks only: owner verification + flagged high-value buyer screening, cap 5 each", "why": "Terac spend"}]
-    hc = terac.flush(); needs += [{"item": f"Human check queued: {i['kind']} {i['ref']}", "why": i["reason"]} for i in hc["buyer_screening"]]
+              {"item": "Enable Terac (TERAC_ENABLED=1) for the one human check only: blue-collar owner verification, cap 5 (no buyer review; PE buyers vetted by the owner)", "why": "Terac spend"}]
+    hc = terac.flush(); needs += [{"item": f"Human check queued: {i['kind']} {i['ref']}", "why": i["reason"]} for i in hc["owner_verification"] if i.get("status") == "flagged"]
     w("05_needs_shyam", needs)
     if listings: w("07_free_teardown", free_teardown(listings[0]))
     summary = {"run_at": dt.datetime.now().isoformat(timespec="seconds"), "buyers": len(buyers), "active_buyers": sum(b["active"] for b in buyers),

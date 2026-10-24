@@ -1,6 +1,6 @@
-"""Evidence-review flow for the two Terac human checks.
+"""Evidence-review flow for the single Terac human check (owner verification; no buyer review).
 Terac cannot book live calls or reach a named person, so:
-  1. WE run the consented identity-and-intent call (owner verification / flagged buyer screening).
+  1. WE run the consented identity-and-intent call (blue-collar owner verification only).
   2. capture_consent() MUST be recorded before any recording or notes are stored.
   3. attach_evidence() stores the recording reference/notes + minimal context (local, untracked: data/reviews/).
   4. publish_bundle() writes a REDACTED bundle for the hosted reviewer page and returns a token-gated URL.
@@ -14,7 +14,7 @@ LOCAL = ROOT / "data/reviews"                      # untracked: raw consent + ev
 BUNDLES = ROOT / "dashboard/review_evidence"       # redacted bundles shipped to the reviewer API (untracked except demo-*)
 SECRET_FILE = ROOT / "data/review_secret"          # untracked; same value as Vercel env REVIEW_TOKEN_SECRET
 BASE_URL = os.environ.get("REVIEW_BASE_URL", "https://dashboard-six-fawn-83.vercel.app")
-KINDS = ("owner_verification", "buyer_screening")
+KINDS = ("owner_verification",)  # no buyer review; PE buyers are vetted manually by the owner
 VERDICTS = ("verified", "concerns", "fail")
 CONSENT_SCRIPT = ("This call is with Impact Quadrant. With your permission we will record it (or take notes) so that one "
                   "independent reviewer can confirm your identity and intent. Only a redacted summary is shared; you can "
@@ -66,10 +66,7 @@ def attach_evidence(check_id, notes, context=None, recording_path=None, transcri
 QUESTIONS = {
     "owner_verification": ["Does the person credibly present as an owner or authorized seller of the described business?",
                            "Is the business plausibly operating as described (sector, size band, region)?",
-                           "Is the stated intent to sell or value the business genuine and consistent?"],
-    "buyer_screening": ["Does the stated identity match the firm evidence provided (firm site, domain, public profile)?",
-                        "Are funds / capacity plausible for the deal size band?",
-                        "Is acquisition intent genuine (no data harvesting, competitor fishing or identity mismatch)?"]}
+                           "Is the stated intent to sell or value the business genuine and consistent?"]}
 def publish_bundle(check_id):
     """Writes the redacted reviewer bundle; returns the token-gated reviewer URL. Requires consent + evidence."""
     c = consent(check_id); e = LOCAL / check_id / "evidence.json"

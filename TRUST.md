@@ -18,7 +18,7 @@
 Flagged at any level → **Needs Shyam** lane. Terac runs only on items that pass automated pre-screens, async, cap 5 participants per task. Terac is OFF (`TERAC_ENABLED=0`) until a researcher org exists.
 
 ## Fraud cases modeled
-Fake listings (L1 + L2 call), competitor fishing (L3 buyer check + NDA + staged disclosure), inflated add-backs (L3 reconciliation, QoE flag), identity spoofing (Whop KYC + Terac cross-check), scraping/data harvesting (blind teasers, PII lint, paid + NDA gate, L3 before identity).
+Fake listings (L1 + L2 call), competitor fishing (owner's personal PE buyer vetting + NDA + staged disclosure), inflated add-backs (L3 reconciliation, QoE flag), identity spoofing (Whop KYC + Terac cross-check), scraping/data harvesting (blind teasers, PII lint, paid + NDA gate, L3 before identity).
 
 ## Whop KYC: what we use (from docs.whop.com, checked 2026-10-24)
 | Use | Endpoint / field |
@@ -42,3 +42,6 @@ We do not hold escrow, move deal funds, or store SSNs/bank logins. Whop handles 
 - RED/YELLOW/unknown: route success-fee work to a **licensed partner broker** referral.
 - Flat-fee info/verification/subscriptions: available everywhere; **no advance seller listing fees in RED states or NV**.
 - Non-US: info products only, no success fees.
+
+
+**Buyer vetting is manual.** PE fund buyers are vetted personally by the owner. They never go through Terac or any automated review; Terac is used only for blue-collar business owner verification.
