@@ -1,0 +1,623 @@
+[
+  {
+    "targetId": "t_9a6db228",
+    "title": "Precision Machining business, Carolinas",
+    "trade": "precision machining",
+    "region": "Carolinas",
+    "revenueBand": "$15.0M-$40.0M (est.)",
+    "earningsBand": "EBITDA $1.8M-$4.8M (est.)",
+    "yearsInBusiness": "35+ yrs",
+    "strengths": [
+      "Aerospace/medical certifications",
+      "Multi-site / capacity"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$7.2M-$27.8M (estimate, EBITDA basis)",
+    "score": 90,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 7200000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: deal size likely above SBA 7(a) loan limits; PE / conventional financing",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "NC",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "NC",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_BLftSfWcNZETuc7/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_q5mouHYQUzR2l7o/",
+    "individualUnlockPrice": 99.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_BLftSfWcNZETuc7",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_BLftSfWcNZETuc7/",
+        "plan_id": "plan_q6BFYlWn6HhQY",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_q5mouHYQUzR2l7o",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_q5mouHYQUzR2l7o/",
+        "plan_id": "plan_k6EihPTLNoz8e",
+        "fee": 19.8,
+        "price": 99.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_oGT4PPHRXYqeyyM/",
+      "tranches": 5,
+      "tranche_amount": 81600.0
+    }
+  },
+  {
+    "targetId": "t_f13dd4e6",
+    "title": "Precision Machining business, Mid-Atlantic",
+    "trade": "precision machining",
+    "region": "Mid-Atlantic",
+    "revenueBand": "$15.0M-$40.0M (est.)",
+    "earningsBand": "EBITDA $1.8M-$4.8M (est.)",
+    "yearsInBusiness": "50+ yrs",
+    "strengths": [
+      "Multi-site / capacity",
+      "Succession-ready ownership"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$7.2M-$27.8M (estimate, EBITDA basis)",
+    "score": 90,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 7200000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: deal size likely above SBA 7(a) loan limits; PE / conventional financing",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "VA",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "VA",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_0OpAHAIkUbJrcxB/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_IOO8WNx8pSPVrvF/",
+    "individualUnlockPrice": 99.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_0OpAHAIkUbJrcxB",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_0OpAHAIkUbJrcxB/",
+        "plan_id": "plan_So30O8JHb23jq",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_IOO8WNx8pSPVrvF",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_IOO8WNx8pSPVrvF/",
+        "plan_id": "plan_jTXMc3Tu9A5x2",
+        "fee": 19.8,
+        "price": 99.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_G1BgbkCHrjee94l/",
+      "tranches": 5,
+      "tranche_amount": 81600.0
+    }
+  },
+  {
+    "targetId": "t_fca82e34",
+    "title": "Industrial Distribution business, Carolinas",
+    "trade": "industrial distribution",
+    "region": "Carolinas",
+    "revenueBand": "$15.0M-$40.0M (est.)",
+    "earningsBand": "EBITDA $1.8M-$4.8M (est.)",
+    "yearsInBusiness": "70+ yrs",
+    "strengths": [
+      "Multi-site / capacity",
+      "Succession-ready ownership"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$7.2M-$27.8M (estimate, EBITDA basis)",
+    "score": 75,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 7200000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: deal size likely above SBA 7(a) loan limits; PE / conventional financing",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "SC",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "SC",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_tMT4EfUXeU4N5qs/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_DDCvCfXJrAp6BX8/",
+    "individualUnlockPrice": 99.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_tMT4EfUXeU4N5qs",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_tMT4EfUXeU4N5qs/",
+        "plan_id": "plan_cwL5HZ0kVFLiR",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_DDCvCfXJrAp6BX8",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_DDCvCfXJrAp6BX8/",
+        "plan_id": "plan_PEoNdF2MKqkIt",
+        "fee": 19.8,
+        "price": 99.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_ZX5Z4d1uOpqvSEB/",
+      "tranches": 5,
+      "tranche_amount": 81600.0
+    }
+  },
+  {
+    "targetId": "t_6d911540",
+    "title": "Precision Machining business, Carolinas",
+    "trade": "precision machining",
+    "region": "Carolinas",
+    "revenueBand": "$3.0M-$12.0M (est.)",
+    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
+    "yearsInBusiness": "Established",
+    "strengths": [
+      "Aerospace/medical certifications"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "score": 70,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 1510000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "NC",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "NC",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_r0Rx44w66aouNfD/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_Hu1sYTX7LnKdJJ0/",
+    "individualUnlockPrice": 49.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_r0Rx44w66aouNfD",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_r0Rx44w66aouNfD/",
+        "plan_id": "plan_tncv2GTxIqjVr",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_Hu1sYTX7LnKdJJ0",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_Hu1sYTX7LnKdJJ0/",
+        "plan_id": "plan_PVr7qFVBgdAz8",
+        "fee": 9.8,
+        "price": 49.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 140800.0,
+      "url": "https://sandbox.whop.com/checkout/ch_zChdoTjJX54lUpG/",
+      "tranches": 2,
+      "tranche_amount": 70400.0
+    }
+  },
+  {
+    "targetId": "t_15cdfe12",
+    "title": "Precision Machining business, Carolinas",
+    "trade": "precision machining",
+    "region": "Carolinas",
+    "revenueBand": "$3.0M-$12.0M (est.)",
+    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
+    "yearsInBusiness": "Established",
+    "strengths": [
+      "Aerospace/medical certifications"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "score": 70,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 1510000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "NC",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "NC",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_AAfMb2GQTITO02x/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_7LBMcHZf85wHKJJ/",
+    "individualUnlockPrice": 49.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_AAfMb2GQTITO02x",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_AAfMb2GQTITO02x/",
+        "plan_id": "plan_lQlg5MOSux3CA",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_7LBMcHZf85wHKJJ",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_7LBMcHZf85wHKJJ/",
+        "plan_id": "plan_ze2KWXy2y4UhR",
+        "fee": 9.8,
+        "price": 49.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 140800.0,
+      "url": "https://sandbox.whop.com/checkout/ch_cFXPCKTII0TtyLL/",
+      "tranches": 2,
+      "tranche_amount": 70400.0
+    }
+  },
+  {
+    "targetId": "t_13cbd526",
+    "title": "Precision Machining business, Carolinas",
+    "trade": "precision machining",
+    "region": "Carolinas",
+    "revenueBand": "$3.0M-$12.0M (est.)",
+    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
+    "yearsInBusiness": "Established",
+    "strengths": [
+      "Aerospace/medical certifications"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "score": 70,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 1510000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "NC",
+    "jurisdiction": {
+      "seller": "GREEN",
+      "buyer": "UNKNOWN",
+      "seller_state": "NC",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_QbRtbRjGS9FmeX4/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_QMXRjra20SVTzpd/",
+    "individualUnlockPrice": 49.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_QbRtbRjGS9FmeX4",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_QbRtbRjGS9FmeX4/",
+        "plan_id": "plan_CQmyM4KAxv7iA",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_QMXRjra20SVTzpd",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_QMXRjra20SVTzpd/",
+        "plan_id": "plan_3thxXDMdl06ez",
+        "fee": 9.8,
+        "price": 49.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "direct success fee (ImpactQuadrant engagement letter)",
+      "est_fee": 140800.0,
+      "url": "https://sandbox.whop.com/checkout/ch_7eRcTzWbwMF6D0z/",
+      "tranches": 2,
+      "tranche_amount": 70400.0
+    }
+  }
+]

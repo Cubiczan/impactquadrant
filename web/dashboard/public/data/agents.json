@@ -1,0 +1,306 @@
+{
+ "generated": "2026-10-24 12:50:21",
+ "agents": [
+  {
+   "agent": "buyer_agent",
+   "side": "buy",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:10"
+  },
+  {
+   "agent": "buyer_search:exterior",
+   "side": "buy",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "buyer_search:home_services_mep",
+   "side": "buy",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "buyer_search:precision_machining",
+   "side": "buy",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "matcher",
+   "side": "match",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:12"
+  },
+  {
+   "agent": "orchestrator",
+   "side": "orchestrate",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:21"
+  },
+  {
+   "agent": "seller_agent",
+   "side": "sell",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:11"
+  },
+  {
+   "agent": "seller_search:distribution:TX",
+   "side": "sell",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "seller_search:home_services_mep:NC",
+   "side": "sell",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "seller_search:precision_machining:SC",
+   "side": "sell",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:09"
+  },
+  {
+   "agent": "whop_agent",
+   "side": "whop",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:12"
+  },
+  {
+   "agent": "whop_sync",
+   "side": "whop",
+   "runs": 1,
+   "last_run": "2026-10-24 12:50:21"
+  }
+ ],
+ "counts": {
+  "sponsors": 264,
+  "platforms": 124,
+  "buyer_mandates": 175,
+  "operators": 479,
+  "seller_pipeline": 247,
+  "matches": 237,
+  "whop_outbox": 5,
+  "whop_events": 0,
+  "agent_runs": 12,
+  "agent_actions": 694
+ },
+ "authoritative_mandates": 0,
+ "matches_by_vertical": [
+  {
+   "vertical": "precision_machining",
+   "n": 63,
+   "top": 80.0
+  },
+  {
+   "vertical": "home_services_mep",
+   "n": 42,
+   "top": 85.0
+  },
+  {
+   "vertical": "distribution",
+   "n": 24,
+   "top": 80.0
+  },
+  {
+   "vertical": "property_mgmt",
+   "n": 18,
+   "top": 72.0
+  },
+  {
+   "vertical": "manufacturing",
+   "n": 18,
+   "top": 80.0
+  },
+  {
+   "vertical": "openings",
+   "n": 15,
+   "top": 85.0
+  },
+  {
+   "vertical": "professional_services",
+   "n": 13,
+   "top": 78.0
+  },
+  {
+   "vertical": "facilities",
+   "n": 12,
+   "top": 85.0
+  },
+  {
+   "vertical": "tree_care",
+   "n": 9,
+   "top": 85.0
+  },
+  {
+   "vertical": "exterior",
+   "n": 9,
+   "top": 85.0
+  },
+  {
+   "vertical": "industrial_automation",
+   "n": 6,
+   "top": 74.0
+  },
+  {
+   "vertical": "restoration",
+   "n": 6,
+   "top": 82.0
+  },
+  {
+   "vertical": "commercial_access",
+   "n": 1,
+   "top": 74.0
+  },
+  {
+   "vertical": "veterinary",
+   "n": 1,
+   "top": 68.0
+  }
+ ],
+ "top_matches": [
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "TN",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "TX",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "MD",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Valor Exterior Partners",
+   "vertical": "exterior",
+   "state": "TX",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Valor Exterior Partners",
+   "vertical": "exterior",
+   "state": "NC",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "IN",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "NJ",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "TreeServe",
+   "vertical": "tree_care",
+   "state": "CT",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "TreeServe",
+   "vertical": "tree_care",
+   "state": "KS",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "NC",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Valor Exterior Partners",
+   "vertical": "openings",
+   "state": "MD",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "PA",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Legacy Service Partners",
+   "vertical": "home_services_mep",
+   "state": "TN",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Valor Exterior Partners",
+   "vertical": "openings",
+   "state": "PA",
+   "score": 85.0,
+   "status": "proposed"
+  },
+  {
+   "platform": "Valor Exterior Partners",
+   "vertical": "openings",
+   "state": "TX",
+   "score": 85.0,
+   "status": "proposed"
+  }
+ ],
+ "whop_outbox": [
+  {
+   "title": "Blind teaser: home services mep business, PA",
+   "published": false
+  },
+  {
+   "title": "Blind teaser: home services mep business, IN",
+   "published": false
+  },
+  {
+   "title": "Blind teaser: home services mep business, TX",
+   "published": false
+  },
+  {
+   "title": "Blind teaser: home services mep business, TN",
+   "published": false
+  },
+  {
+   "title": "Blind teaser: home services mep business, NC",
+   "published": false
+  }
+ ],
+ "marketing": {
+  "marketing_drafts": 36,
+  "by_status": {
+   "draft": 36
+  },
+  "autopublish": "0"
+ },
+ "inbox": {
+  "sellers_total": 0,
+  "new_sellers": 0,
+  "buyers_total": 47,
+  "new_buyers": 47,
+  "sellers_feed": false,
+  "buyers_feed": true
+ }
+}

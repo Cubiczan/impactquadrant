@@ -1,0 +1,63 @@
+{
+ "enabled": false,
+ "owner_verification": [
+  {
+   "kind": "owner_verification",
+   "ref": "t_9a6db228",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  },
+  {
+   "kind": "owner_verification",
+   "ref": "t_f13dd4e6",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  },
+  {
+   "kind": "owner_verification",
+   "ref": "t_fca82e34",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  },
+  {
+   "kind": "owner_verification",
+   "ref": "t_6d911540",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  },
+  {
+   "kind": "owner_verification",
+   "ref": "t_15cdfe12",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  },
+  {
+   "kind": "owner_verification",
+   "ref": "t_13cbd526",
+   "reason": "consented owner check before listing/teaser",
+   "status": "pending_human",
+   "blocking": false,
+   "badge": "Queued for human check (Terac off)",
+   "queued_at": "2026-10-24T12:17:12"
+  }
+ ],
+ "rules": {
+  "owner_verification": "with consent, non-blocking, before a listing/teaser goes out",
+  "buyers": "never reviewed; PE fund buyers are vetted personally by the owner"
+ }
+}

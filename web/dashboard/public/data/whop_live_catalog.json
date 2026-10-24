@@ -1,0 +1,65 @@
+{
+ "business": "biz_hBjAsGrR4pbWup",
+ "mode": "LIVE",
+ "scope": "Available in 24 US states + 6 countries",
+ "products": {
+  "pe_deal_flow": {
+   "product_id": "prod_klDLOsiPCFzuH",
+   "plan_id": "plan_vw11C9YfuqPBB",
+   "price": "$499/mo",
+   "purchase_url": "https://whop.com/checkout/plan_vw11C9YfuqPBB"
+  },
+  "deal_drop": {
+   "product_id": "prod_DQLhNeWbAd1Ls",
+   "plan_id": "plan_Y29FScJ0r99WQ",
+   "price": "$49/mo",
+   "purchase_url": "https://whop.com/checkout/plan_Y29FScJ0r99WQ"
+  },
+  "teardown": {
+   "product_id": "prod_PRhFKR2p2gZVt",
+   "plan_id": "plan_uJeL4VQ1BA9XB",
+   "price": "$149 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_uJeL4VQ1BA9XB"
+  },
+  "valuation": {
+   "product_id": "prod_JrFjHG5YDHvwK",
+   "plan_id": "plan_WtHSQEw7OfZqz",
+   "price": "$499 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_WtHSQEw7OfZqz",
+   "title": "IQ Business Valuation Report",
+   "line": "Precision Sale Process"
+  },
+  "readiness": {
+   "product_id": "prod_dHoAPZx61vWAx",
+   "plan_id": "plan_9V5dcLhzS24to",
+   "price": "$999 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_9V5dcLhzS24to",
+   "title": "IQ Sale-Readiness Audit",
+   "line": "Precision Sale Process"
+  },
+  "buyer_landscape": {
+   "product_id": "prod_uNXaY535mXf7H",
+   "plan_id": "plan_qMZc3rTzx0pOB",
+   "price": "$299 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_qMZc3rTzx0pOB",
+   "title": "IQ Buyer Landscape Report",
+   "line": "Precision Sale Process"
+  },
+  "teaser_cim": {
+   "product_id": "prod_1VKc0dAeD0rgS",
+   "plan_id": "plan_rHZvi1hNfO0RW",
+   "price": "$1,500 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_rHZvi1hNfO0RW",
+   "title": "IQ Confidential Teaser + CIM",
+   "line": "Precision Sale Process"
+  },
+  "qoe_lite": {
+   "product_id": "prod_qBVJq0Q4qu5RR",
+   "plan_id": "plan_5GulOsl8BSUJz",
+   "price": "$2,500 one-time",
+   "purchase_url": "https://whop.com/checkout/plan_5GulOsl8BSUJz",
+   "title": "IQ Quality-of-Earnings Lite",
+   "line": "Precision Sale Process"
+  }
+ }
+}

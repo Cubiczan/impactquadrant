@@ -1,0 +1,120 @@
+{
+  "mode": "sandbox",
+  "business": "biz_a5nrqqjxL9lLAv",
+  "subscription": {
+    "product_id": "prod_ZTAhjw5WPU11F",
+    "plan_id": "plan_G3u2jR3bL0Mva",
+    "purchase_url": "https://sandbox.whop.com/checkout/plan_G3u2jR3bL0Mva",
+    "price": "$499/mo"
+  },
+  "individual_products": {
+    "deal_drop": {
+      "product_id": "prod_Xrrw2ZWUd72nW",
+      "plan_id": "plan_PobV6T3Hak8FP",
+      "purchase_url": "https://sandbox.whop.com/checkout/plan_PobV6T3Hak8FP",
+      "price": "$49/mo"
+    },
+    "teardown": {
+      "product_id": "prod_8WJ9zRFEbGhDP",
+      "plan_id": "plan_K5LRRtkdPMull",
+      "purchase_url": "https://sandbox.whop.com/checkout/plan_K5LRRtkdPMull",
+      "price": "$149 one-time"
+    }
+  },
+  "seller_account": "biz_GUUF0UYxQLOE5S",
+  "unlocks": [
+    {
+      "target": "t_9a6db228",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_9a6db228",
+      "segment": "individual",
+      "gmv_if_sold": 99.0,
+      "platform_fee": 19.8,
+      "seller_net": 79.2
+    },
+    {
+      "target": "t_f13dd4e6",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_f13dd4e6",
+      "segment": "individual",
+      "gmv_if_sold": 99.0,
+      "platform_fee": 19.8,
+      "seller_net": 79.2
+    },
+    {
+      "target": "t_fca82e34",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_fca82e34",
+      "segment": "individual",
+      "gmv_if_sold": 99.0,
+      "platform_fee": 19.8,
+      "seller_net": 79.2
+    },
+    {
+      "target": "t_6d911540",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_6d911540",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
+    },
+    {
+      "target": "t_15cdfe12",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_15cdfe12",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
+    },
+    {
+      "target": "t_13cbd526",
+      "segment": "pe",
+      "gmv_if_sold": 250.0,
+      "platform_fee": 50.0,
+      "seller_net": 200.0
+    },
+    {
+      "target": "t_13cbd526",
+      "segment": "individual",
+      "gmv_if_sold": 49.0,
+      "platform_fee": 9.8,
+      "seller_net": 39.2
+    }
+  ],
+  "referral": {
+    "program": "Whop Partners: 30% of Whop's eligible gross profit on referred businesses",
+    "referred_businesses": [
+      "biz_GUUF0UYxQLOE5S"
+    ],
+    "pending": "tracked in whop.com/partners (not exposed by API)",
+    "completed": 0
+  },
+  "go_live_switch": "Needs Shyam: set WHOP_LIVE=1 + NEEDS_SHYAM_APPROVED=1 with a production key"
+}

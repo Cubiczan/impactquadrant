@@ -1,0 +1,1458 @@
+[
+  {
+    "platform": "Threadlock Precision",
+    "sponsor": "The D. E. Shaw Group",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-02",
+        "note": "Acquired R&S Machining (St. Louis); also Kremin (Jan 2026), J&F Machine (Oct 2025)",
+        "url": "https://axiagrowth.com/resources/industries/manufacturing/precision-machining"
+      },
+      {
+        "type": "addon_press",
+        "date": "2026",
+        "note": "Large-format machining add-on for A&D network",
+        "url": "https://www.privsource.com/acquisitions/activity/add-on/manufacturing/2026"
+      }
+    ],
+    "activity_score": 60,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://axiagrowth.com/resources/industries/manufacturing/precision-machining",
+        "https://www.privsource.com/acquisitions/activity/add-on/manufacturing/2026"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Netform",
+    "sponsor": "Torque Capital Group",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026",
+        "note": "Merged with Tapemaster (AS9100D CNC)",
+        "url": "https://www.privsource.com/acquisitions/activity/add-on/manufacturing/2026"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.privsource.com/acquisitions/activity/add-on/manufacturing/2026"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Incodema / CORE portfolio",
+    "sponsor": "CORE Industrial Partners",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2025-2026",
+        "note": "14 precision manufacturing acquisitions in 24 months",
+        "url": "https://ctacquisitions.com/guides/precision-machining-ma-multiples-2026/"
+      },
+      {
+        "type": "partner_page",
+        "date": "2026",
+        "note": "Sponsor publishes add-on criteria",
+        "url": "https://ctacquisitions.com/guides/precision-machining-ma-multiples-2026/"
+      }
+    ],
+    "activity_score": 48,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://ctacquisitions.com/guides/precision-machining-ma-multiples-2026/",
+        "https://ctacquisitions.com/guides/precision-machining-ma-multiples-2026/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Solve Industrial Motion Group",
+    "sponsor": "Audax Private Equity",
+    "sector": "industrial distribution",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2025",
+        "note": "Passed 100 add-ons (bearings/PT distributors)",
+        "url": "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/"
+      },
+      {
+        "type": "addon_press",
+        "date": "2025",
+        "note": "Bearings Limited, SST Bearing, USA Rollers, MasterDrive",
+        "url": "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/"
+      },
+      {
+        "type": "corpdev_hiring",
+        "date": "2026",
+        "note": "Serial acquirer with dedicated M&A team",
+        "url": "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/"
+      }
+    ],
+    "activity_score": 68,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "industrial distribution",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/",
+        "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/",
+        "https://ctacquisitions.com/manufacturing-pe-rollup-tracker-2026/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "PrimeSource Brands",
+    "sponsor": "PE-backed (building products distribution)",
+    "sector": "industrial distribution",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026",
+        "note": "JACLO + Starborn Industries; three acquisitions in 2026",
+        "url": "https://www.mdm.com/category/mergers-acquisitions/"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "industrial distribution",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.mdm.com/category/mergers-acquisitions/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Relevant Solutions",
+    "sponsor": "PE-backed",
+    "sector": "industrial distribution",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-09",
+        "note": "Acquired Conrad Kacsik Instrument Systems",
+        "url": "https://www.privsource.com/acquisitions/private-equity-backed-acquisitions/industrial-services"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "industrial distribution",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.privsource.com/acquisitions/private-equity-backed-acquisitions/industrial-services"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "United Flow Technologies",
+    "sponsor": "Berkshire Partners",
+    "sector": "industrial distribution",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "registry",
+        "date": "2026",
+        "note": "In ImpactQuadrant PE registry as acquisition platform",
+        "url": "registry.csv"
+      }
+    ],
+    "activity_score": 12,
+    "active": false,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "request >=20-25% liquid / fund docs",
+      "unlock_allowed": false,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "industrial distribution",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "registry.csv"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "Flagged",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "status": "not_sent",
+        "badge": "Flagged",
+        "flagged": true,
+        "reason": "no recent add-ons found",
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "status": "not_sent",
+      "badge": "Flagged",
+      "flagged": true,
+      "reason": "no recent add-ons found",
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "Flagged"
+  },
+  {
+    "platform": "Acme Industries",
+    "sponsor": "Owner Resource Group",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "registry",
+        "date": "2026",
+        "note": "In ImpactQuadrant PE registry",
+        "url": "registry.csv"
+      }
+    ],
+    "activity_score": 12,
+    "active": false,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "request >=20-25% liquid / fund docs",
+      "unlock_allowed": false,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "registry.csv"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "Flagged",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "status": "not_sent",
+        "badge": "Flagged",
+        "flagged": true,
+        "reason": "no recent add-ons found",
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "status": "not_sent",
+      "badge": "Flagged",
+      "flagged": true,
+      "reason": "no recent add-ons found",
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "Flagged"
+  },
+  {
+    "platform": "E Tech Group",
+    "sponsor": "Graham Partners",
+    "sector": "industrial automation",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026",
+        "note": "Most active SCADA/controls integrator acquirer",
+        "url": "https://ctacquisitions.com/guides/private-equity-industrial-automation-2026/"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "industrial automation",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://ctacquisitions.com/guides/private-equity-industrial-automation-2026/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "GenNx360 | Private Equity | Middle-Market | Industrial Business Services | April",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-04",
+        "note": "GenNx360 announces a portfolio add-on acquisition: Horsburgh & Scott (H&S), a Cleveland-based, private-equity-backed gearing solutions provider, has acquired Franklin Machine & Gear (Houston), a famil",
+        "url": "https://www.gennx360.com/news-article/horsburghscott-acquires-franklin-machinegear"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.gennx360.com/news-article/horsburghscott-acquires-franklin-machinegear"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "The Edgewater Funds Announces Boulden Holdings, LLC\u2019s Acquisition of Ace Precisi",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2025-11",
+        "note": "Summary tailored to your query:\n- Press release (November 2025) announcing that Edgewater Growth Capital Partners\u2019 portfolio company Boulden Holdings, LLC completed an add-on acquisition of Ace Precis",
+        "url": "https://www.edgewaterfunds.com/the-edgewater-funds-announces-boulden-holdings-llcs-acquisition-of-ace-precision-industries-inc/"
+      }
+    ],
+    "activity_score": 25,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.edgewaterfunds.com/the-edgewater-funds-announces-boulden-holdings-llcs-acquisition-of-ace-precision-industries-inc/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "GenNx360 Capital Partners Announces Horsburgh & Scott\u2019s Acquisition of Franklin ",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-04",
+        "note": "Summary:\n\nGenNx360 Capital Partners announced that its portfolio company Horsburgh & Scott (H&S) completed an add-on acquisition of Franklin Machine & Gear, a Houston-based family-owned gear and gearb",
+        "url": "https://www.morningstar.com/news/business-wire/20260414846839/gennx360-capital-partners-announces-horsburgh-scotts-acquisition-of-franklin-machine-gear"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.morningstar.com/news/business-wire/20260414846839/gennx360-capital-partners-announces-horsburgh-scotts-acquisition-of-franklin-machine-gear"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Avem Partners Completes Acquisition of PAMCO",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-04",
+        "note": "Avem Partners has completed the add-on acquisition of Precision Aircraft Machining Company (PAMCO), a family-founded, Sun Valley-based precision machining firm specializing in \u201csource controlled\u201d flui",
+        "url": "https://www.businesswire.com/news/home/20260421458522/en/Avem-Partners-Completes-Acquisition-of-PAMCO"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.businesswire.com/news/home/20260421458522/en/Avem-Partners-Completes-Acquisition-of-PAMCO"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Compass Group Tools Up with Koma Precision",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-08",
+        "note": "Compass Group Equity Partners acquired Koma Precision, a Connecticut-based distributor of machine-tool accessories and calibration/aftermarket services, in a 2026 add-on platform deal. This marks the ",
+        "url": "https://peprofessional.com/2026/08/compass-group-tools-up-with-koma-precision/"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://peprofessional.com/2026/08/compass-group-tools-up-with-koma-precision/"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "VSE Corporation Completes Acquisition of Precision Aviation Group :: VSE Corpora",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2026-05",
+        "note": "Summary tailored to your query:\n- Press release: VSE Corporation completes acquisition of Precision Aviation Group (PAG) on May 5, 2026.\n- Deal details: ~$2.025 billion purchase price (cash $1.75B + ~",
+        "url": "https://ir.vsecorp.com/news/press-releases/detail/408/vse-corporation-completes-acquisition-of-precision-aviation"
+      }
+    ],
+    "activity_score": 30,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://ir.vsecorp.com/news/press-releases/detail/408/vse-corporation-completes-acquisition-of-precision-aviation"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "GenNx360 Capital Partners' Portfolio Company Tooling ...",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "2015-10",
+        "note": "Summary:\n\nA private-equity backed platform completed its second add-on acquisition in 2015. GenNx360 Capital Partners\u2019 portfolio company Tooling Technology Holdings (Tooling Tech) announced the acquis",
+        "url": "https://www.prnewswire.com/news-releases/gennx360-capital-partners-portfolio-company-tooling-technology-holdings-completes-second-add-on-acquisition-300163754.html"
+      }
+    ],
+    "activity_score": 25,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.prnewswire.com/news-releases/gennx360-capital-partners-portfolio-company-tooling-technology-holdings-completes-second-add-on-acquisition-300163754.html"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  },
+  {
+    "platform": "Boulden Holdings, LLC Acquires Ace Precision Industries, Inc. | PrivSource",
+    "sponsor": "see source",
+    "sector": "precision machining",
+    "regions": [
+      "US"
+    ],
+    "signals": [
+      {
+        "type": "addon_press",
+        "date": "",
+        "note": "Summary:\nPrivSource reports that on November 11, 2025, Boulden Holdings, LLC, a portfolio company of Edgewater Growth Capital Partners V, L.P., acquired Ace Precision Industries, Inc., a family-owned ",
+        "url": "https://www.privsource.com/acquisitions/deal/boulden-holdings-llc-acquires-ace-precision-industries-inc-0oS9Y6"
+      }
+    ],
+    "activity_score": 25,
+    "active": true,
+    "qualification": {
+      "buy_box_fit": null,
+      "competitor_conflict_check": "pending",
+      "proof_of_funds": "PE entity with recent closed add-ons",
+      "unlock_allowed": true,
+      "full_memo_release": "blocked until buyer verified"
+    },
+    "buy_box": {
+      "trade": "precision machining",
+      "regions": [
+        "Southeast US"
+      ],
+      "revenue_band": "$3M-$40M",
+      "ebitda_band": "$0.5M-$8M",
+      "deal_type": "add-on (majority, founder rollover 15-25%)",
+      "evidence": [
+        "https://www.privsource.com/acquisitions/deal/boulden-holdings-llc-acquires-ace-precision-industries-inc-0oS9Y6"
+      ]
+    },
+    "trust": {
+      "segment": "pe",
+      "level_max_today": 2,
+      "badge": "L3 pending: human check before owner identity release",
+      "L1": {
+        "email_verified": "required to view teasers (Wix member/email confirm)"
+      },
+      "L2": {
+        "whop_payment": "required",
+        "click_through_nda": "required",
+        "unlocks": "blind deal memo (no owner identity)"
+      },
+      "L3_terac": {
+        "task": "buyer_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false,
+        "checks": [
+          "firm exists",
+          "recent add-ons",
+          "person employed at firm (firm-domain email)"
+        ],
+        "flag_for": [
+          "data harvester",
+          "competitor",
+          "unfunded"
+        ]
+      },
+      "owner_identity_released": false
+    },
+    "terac": {
+      "task": "buyer_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false,
+      "checks": [
+        "firm exists",
+        "recent add-ons",
+        "person employed at firm (firm-domain email)"
+      ],
+      "flag_for": [
+        "data harvester",
+        "competitor",
+        "unfunded"
+      ]
+    },
+    "trustBadge": "L3 pending: human check before owner identity release"
+  }
+]

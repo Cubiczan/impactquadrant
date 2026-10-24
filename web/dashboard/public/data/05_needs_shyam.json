@@ -1,0 +1,42 @@
+[
+  {
+    "item": "Send 4 outreach drafts for James Tool Machine & Engineering",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Worley Machine Enterprises",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Bearing Distributors Inc",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Douglas Machine & Engineering",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for Carolina Precision Machining",
+    "why": "real send"
+  },
+  {
+    "item": "Send 4 outreach drafts for JMC Tool & Machine",
+    "why": "real send"
+  },
+  {
+    "item": "Flagged by trust layer: United Flow Technologies",
+    "why": "fraud/trust flag"
+  },
+  {
+    "item": "Flagged by trust layer: Acme Industries",
+    "why": "fraud/trust flag"
+  },
+  {
+    "item": "Flip Whop to live (WHOP_LIVE=1) for first real sale",
+    "why": "non-sandbox charge"
+  },
+  {
+    "item": "Enable Terac trust layer (TERAC_ENABLED=1): seller + buyer verification, cap 5 each, once researcher org exists",
+    "why": "Terac spend"
+  }
+]

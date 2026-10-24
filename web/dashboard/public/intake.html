@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Intake · ImpactQuadrant</title><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:system-ui;max-width:720px;margin:auto;padding:24px;background:#0b1020;color:#e7eaf3}input,textarea{width:100%;padding:8px;margin:4px 0 12px;background:#141d3a;color:#fff;border:1px solid #22305a;border-radius:6px}button{padding:10px 18px;background:#1f6f3f;color:#fff;border:0;border-radius:8px}small{color:#9fb0d8}</style></head>
+<body><h1 id="h">Order intake</h1><p><small>Confidential. Your answers go only to the ImpactQuadrant team preparing your deliverable. Not legal, tax or financial advice.</small></p>
+<form id="f"></form><h3>Documents to upload</h3><ul id="docs"></ul><p><small>Upload securely via the link in your Whop membership. Do not email tax returns.</small></p><p id="msg"></p>
+<script>
+const P=new URLSearchParams(location.search),order=P.get('order'),t=P.get('t');
+fetch('data/orders.json').then(r=>r.json()).then(d=>{const i=d.intakes[order];if(!i){h.textContent='Order not found';return}
+ h.textContent=i.service+' · intake';docs.innerHTML=i.documents.map(x=>`<li>${x}</li>`).join('')||'<li>None needed</li>';
+ f.innerHTML=i.questions.map(q=>`<label>${q.label}<input name="${q.key}"></label>`).join('')+'<button>Submit intake</button>';
+ f.onsubmit=e=>{e.preventDefault();fetch('/api/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({order,t,answers:Object.fromEntries(new FormData(f))})}).then(r=>r.json()).then(x=>msg.textContent=x.ok?'Received. Our agents are drafting; a human reviews before delivery.':'Error: '+x.error)}});
+</script></body></html>

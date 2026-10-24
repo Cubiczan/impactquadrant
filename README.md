@@ -88,3 +88,7 @@ No Terac on: teasers, subscriptions, scoring, matching, marketing, checkout, ser
 
 - Demo video (2 min, captions): [submission/demo.mp4](submission/demo.mp4) — [view on GitHub](https://github.com/Cubiczan/impactquadrant/blob/main/submission/demo.mp4)
 - Pitch deck (PDF): [submission/impactquadrant-deck.pdf](submission/impactquadrant-deck.pdf)
+
+## Website UI
+
+All page sources are in [`/web`](web/README.md): the Wix Services embed and Velo page code (https://www.impactquadrant.info, /services, /marketplace) and the Vercel dashboard frontend (https://dashboard-six-fawn-83.vercel.app: dashboard, calculator, intake, review). Run locally with `cd web/dashboard/public && python3 -m http.server 8080`, or `cd dashboard && npx vercel dev` for the API routes. See `web/README.md` for the per-page table.
