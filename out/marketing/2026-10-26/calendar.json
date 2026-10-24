@@ -1,0 +1,191 @@
+[
+ {
+  "date": "2026-10-26",
+  "platform": "linkedin",
+  "product": "pe_deal_flow",
+  "status": "draft",
+  "file": "2026-10-26_linkedin_pe_deal_flow.json"
+ },
+ {
+  "date": "2026-10-26",
+  "platform": "facebook",
+  "product": "pe_deal_flow",
+  "status": "draft",
+  "file": "2026-10-26_facebook_pe_deal_flow.json"
+ },
+ {
+  "date": "2026-10-26",
+  "platform": "instagram",
+  "product": "pe_deal_flow",
+  "status": "draft",
+  "file": "2026-10-26_instagram_pe_deal_flow.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "linkedin",
+  "product": "deal_drop",
+  "status": "draft",
+  "file": "2026-10-27_linkedin_deal_drop.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "facebook",
+  "product": "deal_drop",
+  "status": "draft",
+  "file": "2026-10-27_facebook_deal_drop.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "instagram",
+  "product": "deal_drop",
+  "status": "draft",
+  "file": "2026-10-27_instagram_deal_drop.json"
+ },
+ {
+  "date": "2026-10-28",
+  "platform": "linkedin",
+  "product": "teardown",
+  "status": "draft",
+  "file": "2026-10-28_linkedin_teardown.json"
+ },
+ {
+  "date": "2026-10-28",
+  "platform": "facebook",
+  "product": "teardown",
+  "status": "draft",
+  "file": "2026-10-28_facebook_teardown.json"
+ },
+ {
+  "date": "2026-10-28",
+  "platform": "instagram",
+  "product": "teardown",
+  "status": "draft",
+  "file": "2026-10-28_instagram_teardown.json"
+ },
+ {
+  "date": "2026-10-29",
+  "platform": "linkedin",
+  "product": "sell_side_retainer",
+  "status": "draft",
+  "file": "2026-10-29_linkedin_sell_side_retainer.json"
+ },
+ {
+  "date": "2026-10-29",
+  "platform": "facebook",
+  "product": "sell_side_retainer",
+  "status": "draft",
+  "file": "2026-10-29_facebook_sell_side_retainer.json"
+ },
+ {
+  "date": "2026-10-29",
+  "platform": "instagram",
+  "product": "sell_side_retainer",
+  "status": "draft",
+  "file": "2026-10-29_instagram_sell_side_retainer.json"
+ },
+ {
+  "date": "2026-10-30",
+  "platform": "linkedin",
+  "product": "valuation",
+  "status": "draft",
+  "file": "2026-10-30_linkedin_valuation.json"
+ },
+ {
+  "date": "2026-10-30",
+  "platform": "facebook",
+  "product": "valuation",
+  "status": "draft",
+  "file": "2026-10-30_facebook_valuation.json"
+ },
+ {
+  "date": "2026-10-30",
+  "platform": "instagram",
+  "product": "valuation",
+  "status": "draft",
+  "file": "2026-10-30_instagram_valuation.json"
+ },
+ {
+  "date": "2026-10-31",
+  "platform": "linkedin",
+  "product": "readiness",
+  "status": "draft",
+  "file": "2026-10-31_linkedin_readiness.json"
+ },
+ {
+  "date": "2026-10-31",
+  "platform": "facebook",
+  "product": "readiness",
+  "status": "draft",
+  "file": "2026-10-31_facebook_readiness.json"
+ },
+ {
+  "date": "2026-10-31",
+  "platform": "instagram",
+  "product": "readiness",
+  "status": "draft",
+  "file": "2026-10-31_instagram_readiness.json"
+ },
+ {
+  "date": "2026-11-01",
+  "platform": "linkedin",
+  "product": "buyer_landscape",
+  "status": "draft",
+  "file": "2026-11-01_linkedin_buyer_landscape.json"
+ },
+ {
+  "date": "2026-11-01",
+  "platform": "facebook",
+  "product": "buyer_landscape",
+  "status": "draft",
+  "file": "2026-11-01_facebook_buyer_landscape.json"
+ },
+ {
+  "date": "2026-11-01",
+  "platform": "instagram",
+  "product": "buyer_landscape",
+  "status": "draft",
+  "file": "2026-11-01_instagram_buyer_landscape.json"
+ },
+ {
+  "date": "2026-10-26",
+  "platform": "linkedin",
+  "product": "teaser_cim",
+  "status": "draft",
+  "file": "2026-10-26_linkedin_teaser_cim.json"
+ },
+ {
+  "date": "2026-10-26",
+  "platform": "facebook",
+  "product": "teaser_cim",
+  "status": "draft",
+  "file": "2026-10-26_facebook_teaser_cim.json"
+ },
+ {
+  "date": "2026-10-26",
+  "platform": "instagram",
+  "product": "teaser_cim",
+  "status": "draft",
+  "file": "2026-10-26_instagram_teaser_cim.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "linkedin",
+  "product": "qoe_lite",
+  "status": "draft",
+  "file": "2026-10-27_linkedin_qoe_lite.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "facebook",
+  "product": "qoe_lite",
+  "status": "draft",
+  "file": "2026-10-27_facebook_qoe_lite.json"
+ },
+ {
+  "date": "2026-10-27",
+  "platform": "instagram",
+  "product": "qoe_lite",
+  "status": "draft",
+  "file": "2026-10-27_instagram_qoe_lite.json"
+ }
+]
