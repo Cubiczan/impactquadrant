@@ -82,3 +82,6 @@ On a `payment.succeeded` for one of these plans, `rollupops.fulfillment` drafts 
 2. Intake submitted (`/api/intake`, HMAC token) → analysis agents (DuckDB buyer mandates/comps + Exa market sources) write markdown + PDF to `out/fulfillment/` with status awaiting_review.
 3. Human approves (dashboard button → `/api/approve`, needs `FULFILL_APPROVE_SECRET`) → delivered via Whop. Sandbox orders record delivery and send nothing.
 Demo: `FULFILL_APPROVE_SECRET=... python -m rollupops.fulfillment teaser_cim`. Sample output: `docs/sample_deliverables/`.
+
+## Public copy
+This public repo is a scrubbed mirror of a private working repo. Partner overlays (priority-sponsor lanes, platform lists, buyer registry, blocked marketing terms) live only in untracked `data/raw/private/`; without them the pipeline runs on public sources. `MARKETING_BLOCKED_TERMS` (comma-separated) adds confidential terms the marketing agent must never emit.

@@ -11,7 +11,10 @@ KW = [("veterinar|vet |pet ", "veterinary"), ("entrance|automatic door|commercia
 def verticals(text):
     t = " " + (text or "").lower() + " "; out = [v for k, v in KW if re.search(k, t)]
     return list(dict.fromkeys(out)) or ["other"]
-PARTNER_LANES = _load_partner_lanes()
+from pathlib import Path as _P
+import json as _json
+_LANES = _P(__file__).resolve().parent.parent / "data/raw/private/partner_lanes.json"  # untracked private overlay
+PARTNER_LANES = _json.loads(_LANES.read_text()) if _LANES.exists() else {}
 US = {"alabama":"AL","alaska":"AK","arizona":"AZ","arkansas":"AR","california":"CA","colorado":"CO","connecticut":"CT","delaware":"DE","florida":"FL","georgia":"GA","hawaii":"HI","idaho":"ID","illinois":"IL","indiana":"IN","iowa":"IA","kansas":"KS","kentucky":"KY","louisiana":"LA","maine":"ME","maryland":"MD","massachusetts":"MA","michigan":"MI","minnesota":"MN","mississippi":"MS","missouri":"MO","montana":"MT","nebraska":"NE","nevada":"NV","new hampshire":"NH","new jersey":"NJ","new mexico":"NM","new york":"NY","north carolina":"NC","north dakota":"ND","ohio":"OH","oklahoma":"OK","oregon":"OR","pennsylvania":"PA","rhode island":"RI","south carolina":"SC","south dakota":"SD","tennessee":"TN","texas":"TX","utah":"UT","vermont":"VT","virginia":"VA","washington":"WA","west virginia":"WV","wisconsin":"WI","wyoming":"WY","district of columbia":"DC"}
 def state(s):
     if not s: return None

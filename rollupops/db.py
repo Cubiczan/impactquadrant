@@ -78,17 +78,17 @@ def build(private=False):
     b.ins("jurisdictions", [(k, "US_STATE", v["status"], v.get("basis"), v.get("source"), "data/state_licensing.json") for k, v in lic["states"].items()]
           + [(k, "COUNTRY", v["status"], v.get("basis"), v.get("source"), "data/state_licensing.json") for k, v in lic["countries"].items()])
     # --- curated public sources ---
-    for r in csv.DictReader(open(RAW / "private/partner_platforms.csv")):
+    for r in (csv.DictReader(open(RAW / "private/partner_platforms.csv")) if (RAW / "private/partner_platforms.csv").exists() else []):  # untracked private overlay
         pid = b.platform(r["platform"], "Partner A", r["verticals"], "data/raw/private/partner_platforms.csv", priority=int(r["priority"]), regions_json='["US"]', thesis=r["pull"])
         b.signal(pid, "hunger", None, r["hunger_signal"], r["urls"], "partner_map")
     for x in json.loads((ROOT / "data/buyer_signals.json").read_text()):
         pid = b.platform(x["platform"], x["sponsor"], x["sector"], "data/buyer_signals.json", regions_json=json.dumps(x.get("regions")))
         for g in x["signals"]: b.signal(pid, g["type"], g.get("date"), g.get("note"), g.get("url"), "data/buyer_signals.json")
-    for r in csv.DictReader(open(RAW / "pe_buyer_registry.csv")):
+    for r in (csv.DictReader(open(RAW / "private/pe_buyer_registry.csv")) if (RAW / "private/pe_buyer_registry.csv").exists() else []):  # untracked private overlay
         if r["platform"] == "unknown": continue
-        pid = b.platform(r["platform"], r["pe_sponsor"], r["trade"], "data/raw/pe_buyer_registry.csv", regions_json=json.dumps([r["state"]]))
-        b.portcos[hid(r["portfolio_company"], r["city"])] = (hid(r["portfolio_company"], r["city"]), r["portfolio_company"], pid, r["city"], r["state"], r["trade"], r["acquired_date"], r["source_url"], "data/raw/pe_buyer_registry.csv")
-        b.signal(pid, "registry", r["acquired_date"], r["portfolio_company"], r["source_url"], "data/raw/pe_buyer_registry.csv")
+        pid = b.platform(r["platform"], r["pe_sponsor"], r["trade"], "data/raw/private/pe_buyer_registry.csv", regions_json=json.dumps([r["state"]]))
+        b.portcos[hid(r["portfolio_company"], r["city"])] = (hid(r["portfolio_company"], r["city"]), r["portfolio_company"], pid, r["city"], r["state"], r["trade"], r["acquired_date"], r["source_url"], "data/raw/private/pe_buyer_registry.csv")
+        b.signal(pid, "registry", r["acquired_date"], r["portfolio_company"], r["source_url"], "data/raw/private/pe_buyer_registry.csv")
     for t in json.loads((ROOT / "data/targets_raw.json").read_text()):
         b.operator(t["name"], "data/targets_raw.json", trade=t["trade"], vertical=verticals(t["trade"])[0], town=t["town"], state=t["state"], country="US",
                    website=t.get("website"), notes=t.get("notes"), independent=True)
