@@ -1,9 +1,9 @@
 {
-  "run_at": "2026-10-24T10:44:05",
+  "run_at": "2026-10-24T10:53:42",
   "buyers": 17,
   "active_buyers": 15,
   "targets_sourced": 30,
-  "eligible": 17,
+  "eligible": 18,
   "listed": 6,
   "drafts": 24,
   "terac_enabled": false

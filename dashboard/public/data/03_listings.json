@@ -72,13 +72,13 @@
     "trustBadge": "L1 Agent-checked",
     "trustLevel": 1,
     "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_yTgC720xUHxYAHA/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_el47nIV15ICuLZC/",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_S4sOnQITM3ieh5D/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_r88pQaqXoj67Vxc/",
     "individualUnlockPrice": 99.0,
     "whop": {
       "pe": {
-        "checkout_id": "ch_yTgC720xUHxYAHA",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_yTgC720xUHxYAHA/",
+        "checkout_id": "ch_S4sOnQITM3ieh5D",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_S4sOnQITM3ieh5D/",
         "plan_id": "plan_q6BFYlWn6HhQY",
         "fee": 50.0,
         "price": 250.0,
@@ -86,14 +86,22 @@
         "error": null
       },
       "individual": {
-        "checkout_id": "ch_el47nIV15ICuLZC",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_el47nIV15ICuLZC/",
+        "checkout_id": "ch_r88pQaqXoj67Vxc",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_r88pQaqXoj67Vxc/",
         "plan_id": "plan_k6EihPTLNoz8e",
         "fee": 19.8,
         "price": 99.0,
         "segment": "individual",
         "error": null
       }
+    },
+    "commission": {
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_O6XJcB98bVrtk57/",
+      "tranches": 5,
+      "tranche_amount": 81600.0,
+      "retainer_url": "https://sandbox.whop.com/checkout/ch_MGtiya5nSsm4JVR/"
     }
   },
   {
@@ -169,13 +177,13 @@
     "trustBadge": "L1 Agent-checked",
     "trustLevel": 1,
     "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_YfWHLyHALwIxLdn/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_Ay1p8euGTq39Fvf/",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_uU1HB3IgtDmkUdf/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_1dbh0R3dhZdtzyC/",
     "individualUnlockPrice": 99.0,
     "whop": {
       "pe": {
-        "checkout_id": "ch_YfWHLyHALwIxLdn",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_YfWHLyHALwIxLdn/",
+        "checkout_id": "ch_uU1HB3IgtDmkUdf",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_uU1HB3IgtDmkUdf/",
         "plan_id": "plan_So30O8JHb23jq",
         "fee": 50.0,
         "price": 250.0,
@@ -183,14 +191,233 @@
         "error": null
       },
       "individual": {
-        "checkout_id": "ch_Ay1p8euGTq39Fvf",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_Ay1p8euGTq39Fvf/",
+        "checkout_id": "ch_1dbh0R3dhZdtzyC",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_1dbh0R3dhZdtzyC/",
         "plan_id": "plan_jTXMc3Tu9A5x2",
         "fee": 19.8,
         "price": 99.0,
         "segment": "individual",
         "error": null
       }
+    },
+    "commission": {
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_m5jf4UMwEUNUpaz/",
+      "tranches": 5,
+      "tranche_amount": 81600.0,
+      "retainer_url": "https://sandbox.whop.com/checkout/ch_wRJukfWGvZmSuPb/"
+    }
+  },
+  {
+    "targetId": "t_2fdfb85d",
+    "title": "Industrial Distribution business, Southeast",
+    "trade": "industrial distribution",
+    "region": "Southeast",
+    "revenueBand": "$3.0M-$12.0M (est.)",
+    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
+    "yearsInBusiness": "75+ yrs",
+    "strengths": [
+      "Multi-site / capacity",
+      "Recurring MRO/service revenue",
+      "Succession-ready ownership"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "score": 90,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 1510000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "GA",
+    "jurisdiction": {
+      "seller": "YELLOW",
+      "buyer": "UNKNOWN",
+      "seller_state": "GA",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_2VVaiObEXIk4iPy/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_WqlSdwUqAgrBd0h/",
+    "individualUnlockPrice": 49.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_2VVaiObEXIk4iPy",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_2VVaiObEXIk4iPy/",
+        "plan_id": "plan_NOqjqEJ30RxAz",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_WqlSdwUqAgrBd0h",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_WqlSdwUqAgrBd0h/",
+        "plan_id": "plan_BFA62P1aMnwHC",
+        "fee": 9.8,
+        "price": 49.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "licensed partner broker referral",
+      "est_fee": 140800.0,
+      "url": null,
+      "tranches": null,
+      "tranche_amount": null,
+      "retainer_url": null
+    }
+  },
+  {
+    "targetId": "t_f24f7afb",
+    "title": "Industrial Distribution business, Southeast",
+    "trade": "industrial distribution",
+    "region": "Southeast",
+    "revenueBand": "$3.0M-$12.0M (est.)",
+    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
+    "yearsInBusiness": "40+ yrs",
+    "strengths": [
+      "Multi-site / capacity",
+      "Succession-ready ownership"
+    ],
+    "dealType": "Add-on / majority recap",
+    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "score": 90,
+    "verified": false,
+    "status": "listed",
+    "_val_lo": 1510000.0,
+    "buyerSegments": "PE platforms + individual buyers",
+    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
+    "pii_lint": "pass",
+    "trust": {
+      "level": 1,
+      "badge": "L1 Agent-checked",
+      "L1_automated": {
+        "web_presence": true,
+        "not_pe_owned": true,
+        "dedupe": true,
+        "sos_registration_active": "todo (state SoS lookup)",
+        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
+        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
+        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
+      },
+      "L2_terac_call": {
+        "task": "seller_verification",
+        "status": "disabled",
+        "badge": "Agent-vetted (human verification off)",
+        "flagged": false
+      },
+      "L3_financials": {
+        "status": "awaiting owner upload",
+        "docs": [
+          "3y tax returns",
+          "TTM P&L"
+        ],
+        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
+      },
+      "publish_teaser": true
+    },
+    "country": "US",
+    "stateProvince": "GA",
+    "jurisdiction": {
+      "seller": "YELLOW",
+      "buyer": "UNKNOWN",
+      "seller_state": "GA",
+      "success_fee_eligible": false,
+      "success_fee_enabled": false,
+      "success_fee_route": "licensed partner broker referral",
+      "flat_fee_products_enabled": true,
+      "advance_seller_listing_fee_allowed": true,
+      "non_us_info_only": false,
+      "never_hold_funds": true
+    },
+    "terac": {
+      "task": "seller_verification",
+      "status": "disabled",
+      "badge": "Agent-vetted (human verification off)",
+      "flagged": false
+    },
+    "trustBadge": "L1 Agent-checked",
+    "trustLevel": 1,
+    "stale_after": "2026-11-03",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_a5vUW28RALcH6iS/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_hLU6dNEZc7O0VAt/",
+    "individualUnlockPrice": 49.0,
+    "whop": {
+      "pe": {
+        "checkout_id": "ch_a5vUW28RALcH6iS",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_a5vUW28RALcH6iS/",
+        "plan_id": "plan_mIlH0PvYYk3LT",
+        "fee": 50.0,
+        "price": 250.0,
+        "segment": "pe",
+        "error": null
+      },
+      "individual": {
+        "checkout_id": "ch_hLU6dNEZc7O0VAt",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_hLU6dNEZc7O0VAt/",
+        "plan_id": "plan_R2M6MtMBZ8A3g",
+        "fee": 9.8,
+        "price": 49.0,
+        "segment": "individual",
+        "error": null
+      }
+    },
+    "commission": {
+      "route": "licensed partner broker referral",
+      "est_fee": 140800.0,
+      "url": null,
+      "tranches": null,
+      "tranche_amount": null,
+      "retainer_url": null
     }
   },
   {
@@ -200,9 +427,10 @@
     "region": "US",
     "revenueBand": "$3.0M-$12.0M (est.)",
     "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
-    "yearsInBusiness": "75+ yrs",
+    "yearsInBusiness": "Established",
     "strengths": [
       "Aerospace/medical certifications",
+      "Recurring MRO/service revenue",
       "Succession-ready ownership"
     ],
     "dealType": "Add-on / majority recap",
@@ -266,13 +494,13 @@
     "trustBadge": "L1 Agent-checked",
     "trustLevel": 1,
     "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_EofM2tDOBTAdhcp/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_C9rDbFlrL3DMfWq/",
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_h4kEv3wbB4zSnjb/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_r8PNUQbmtjL8Mvx/",
     "individualUnlockPrice": 49.0,
     "whop": {
       "pe": {
-        "checkout_id": "ch_EofM2tDOBTAdhcp",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_EofM2tDOBTAdhcp/",
+        "checkout_id": "ch_h4kEv3wbB4zSnjb",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_h4kEv3wbB4zSnjb/",
         "plan_id": "plan_qoSjOBQsWvHCg",
         "fee": 50.0,
         "price": 250.0,
@@ -280,231 +508,44 @@
         "error": null
       },
       "individual": {
-        "checkout_id": "ch_C9rDbFlrL3DMfWq",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_C9rDbFlrL3DMfWq/",
+        "checkout_id": "ch_r8PNUQbmtjL8Mvx",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_r8PNUQbmtjL8Mvx/",
         "plan_id": "plan_zYDNPmF751rfQ",
         "fee": 9.8,
         "price": 49.0,
         "segment": "individual",
         "error": null
       }
+    },
+    "commission": {
+      "route": "licensed partner broker referral",
+      "est_fee": 140800.0,
+      "url": null,
+      "tranches": null,
+      "tranche_amount": null,
+      "retainer_url": null
     }
   },
   {
-    "targetId": "t_2fdfb85d",
-    "title": "Industrial Distribution business, Southeast",
+    "targetId": "t_fca82e34",
+    "title": "Industrial Distribution business, Carolinas",
     "trade": "industrial distribution",
-    "region": "Southeast",
-    "revenueBand": "$3.0M-$12.0M (est.)",
-    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
-    "yearsInBusiness": "75+ yrs",
-    "strengths": [
-      "Multi-site / capacity",
-      "Recurring MRO/service revenue",
-      "Succession-ready ownership"
-    ],
-    "dealType": "Add-on / majority recap",
-    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
-    "score": 85,
-    "verified": false,
-    "status": "listed",
-    "_val_lo": 1510000.0,
-    "buyerSegments": "PE platforms + individual buyers",
-    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
-    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
-    "pii_lint": "pass",
-    "trust": {
-      "level": 1,
-      "badge": "L1 Agent-checked",
-      "L1_automated": {
-        "web_presence": true,
-        "not_pe_owned": true,
-        "dedupe": true,
-        "sos_registration_active": "todo (state SoS lookup)",
-        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
-        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
-        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
-      },
-      "L2_terac_call": {
-        "task": "seller_verification",
-        "status": "disabled",
-        "badge": "Agent-vetted (human verification off)",
-        "flagged": false
-      },
-      "L3_financials": {
-        "status": "awaiting owner upload",
-        "docs": [
-          "3y tax returns",
-          "TTM P&L"
-        ],
-        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
-      },
-      "publish_teaser": true
-    },
-    "country": "US",
-    "stateProvince": "GA",
-    "jurisdiction": {
-      "seller": "YELLOW",
-      "buyer": "UNKNOWN",
-      "seller_state": "GA",
-      "success_fee_eligible": false,
-      "success_fee_enabled": false,
-      "success_fee_route": "licensed partner broker referral",
-      "flat_fee_products_enabled": true,
-      "advance_seller_listing_fee_allowed": true,
-      "non_us_info_only": false,
-      "never_hold_funds": true
-    },
-    "terac": {
-      "task": "seller_verification",
-      "status": "disabled",
-      "badge": "Agent-vetted (human verification off)",
-      "flagged": false
-    },
-    "trustBadge": "L1 Agent-checked",
-    "trustLevel": 1,
-    "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_nSGcflTiA5CDOO7/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_yEJEbTDTq3dUNXg/",
-    "individualUnlockPrice": 49.0,
-    "whop": {
-      "pe": {
-        "checkout_id": "ch_nSGcflTiA5CDOO7",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_nSGcflTiA5CDOO7/",
-        "plan_id": "plan_NOqjqEJ30RxAz",
-        "fee": 50.0,
-        "price": 250.0,
-        "segment": "pe",
-        "error": null
-      },
-      "individual": {
-        "checkout_id": "ch_yEJEbTDTq3dUNXg",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_yEJEbTDTq3dUNXg/",
-        "plan_id": "plan_BFA62P1aMnwHC",
-        "fee": 9.8,
-        "price": 49.0,
-        "segment": "individual",
-        "error": null
-      }
-    }
-  },
-  {
-    "targetId": "t_f24f7afb",
-    "title": "Industrial Distribution business, Southeast",
-    "trade": "industrial distribution",
-    "region": "Southeast",
-    "revenueBand": "$3.0M-$12.0M (est.)",
-    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
-    "yearsInBusiness": "40+ yrs",
+    "region": "Carolinas",
+    "revenueBand": "$15.0M-$40.0M (est.)",
+    "earningsBand": "EBITDA $1.8M-$4.8M (est.)",
+    "yearsInBusiness": "70+ yrs",
     "strengths": [
       "Multi-site / capacity",
       "Succession-ready ownership"
     ],
     "dealType": "Add-on / majority recap",
-    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
-    "score": 85,
-    "verified": false,
-    "status": "listed",
-    "_val_lo": 1510000.0,
-    "buyerSegments": "PE platforms + individual buyers",
-    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
-    "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
-    "pii_lint": "pass",
-    "trust": {
-      "level": 1,
-      "badge": "L1 Agent-checked",
-      "L1_automated": {
-        "web_presence": true,
-        "not_pe_owned": true,
-        "dedupe": true,
-        "sos_registration_active": "todo (state SoS lookup)",
-        "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
-        "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)",
-        "whop_kyc_identity": "not_started (seller connected account created at listing; KYC via hosted account link)"
-      },
-      "L2_terac_call": {
-        "task": "seller_verification",
-        "status": "disabled",
-        "badge": "Agent-vetted (human verification off)",
-        "flagged": false
-      },
-      "L3_financials": {
-        "status": "awaiting owner upload",
-        "docs": [
-          "3y tax returns",
-          "TTM P&L"
-        ],
-        "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"
-      },
-      "publish_teaser": true
-    },
-    "country": "US",
-    "stateProvince": "GA",
-    "jurisdiction": {
-      "seller": "YELLOW",
-      "buyer": "UNKNOWN",
-      "seller_state": "GA",
-      "success_fee_eligible": false,
-      "success_fee_enabled": false,
-      "success_fee_route": "licensed partner broker referral",
-      "flat_fee_products_enabled": true,
-      "advance_seller_listing_fee_allowed": true,
-      "non_us_info_only": false,
-      "never_hold_funds": true
-    },
-    "terac": {
-      "task": "seller_verification",
-      "status": "disabled",
-      "badge": "Agent-vetted (human verification off)",
-      "flagged": false
-    },
-    "trustBadge": "L1 Agent-checked",
-    "trustLevel": 1,
-    "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_CAL52HUoXLTRmMw/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_BRrRLnc1QgpZGGr/",
-    "individualUnlockPrice": 49.0,
-    "whop": {
-      "pe": {
-        "checkout_id": "ch_CAL52HUoXLTRmMw",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_CAL52HUoXLTRmMw/",
-        "plan_id": "plan_mIlH0PvYYk3LT",
-        "fee": 50.0,
-        "price": 250.0,
-        "segment": "pe",
-        "error": null
-      },
-      "individual": {
-        "checkout_id": "ch_BRrRLnc1QgpZGGr",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_BRrRLnc1QgpZGGr/",
-        "plan_id": "plan_R2M6MtMBZ8A3g",
-        "fee": 9.8,
-        "price": 49.0,
-        "segment": "individual",
-        "error": null
-      }
-    }
-  },
-  {
-    "targetId": "t_600a6f4c",
-    "title": "Precision Machining business, US",
-    "trade": "precision machining",
-    "region": "US",
-    "revenueBand": "$3.0M-$12.0M (est.)",
-    "earningsBand": "EBITDA $0.4M-$1.5M (est.)",
-    "yearsInBusiness": "35+ yrs",
-    "strengths": [
-      "Multi-site / capacity",
-      "Succession-ready ownership"
-    ],
-    "dealType": "Add-on / majority recap",
-    "valuationBand": "$1.5M-$8.8M (estimate, EBITDA basis)",
+    "valuationBand": "$7.2M-$27.8M (estimate, EBITDA basis)",
     "score": 80,
     "verified": false,
     "status": "listed",
-    "_val_lo": 1510000.0,
+    "_val_lo": 7200000.0,
     "buyerSegments": "PE platforms + individual buyers",
-    "equityHint": "Estimate: ~10% down \u2248 $0.2M-$0.9M with SBA-style financing (estimate only; confirm with your lender)",
+    "equityHint": "Estimate: deal size likely above SBA 7(a) loan limits; PE / conventional financing",
     "qualificationGate": "NDA + proof of funds (PE: fund docs / closed add-ons; individual: liquid funds or lender pre-qual letter)",
     "pii_lint": "pass",
     "trust": {
@@ -536,11 +577,11 @@
       "publish_teaser": true
     },
     "country": "US",
-    "stateProvince": "",
+    "stateProvince": "SC",
     "jurisdiction": {
-      "seller": "UNKNOWN",
+      "seller": "GREEN",
       "buyer": "UNKNOWN",
-      "seller_state": "",
+      "seller_state": "SC",
       "success_fee_eligible": false,
       "success_fee_enabled": false,
       "success_fee_route": "licensed partner broker referral",
@@ -558,28 +599,36 @@
     "trustBadge": "L1 Agent-checked",
     "trustLevel": 1,
     "stale_after": "2026-11-03",
-    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_0jVRvJn4NdiIAKh/",
-    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_w88QZEJt84rLyep/",
-    "individualUnlockPrice": 49.0,
+    "checkoutUrl": "https://sandbox.whop.com/checkout/ch_BXTW0hBXrEnRRoh/",
+    "checkoutUrlIndividual": "https://sandbox.whop.com/checkout/ch_d1Vx6xJqV9aJuZu/",
+    "individualUnlockPrice": 99.0,
     "whop": {
       "pe": {
-        "checkout_id": "ch_0jVRvJn4NdiIAKh",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_0jVRvJn4NdiIAKh/",
-        "plan_id": "plan_6XWhy4eQeHTfa",
+        "checkout_id": "ch_BXTW0hBXrEnRRoh",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_BXTW0hBXrEnRRoh/",
+        "plan_id": "plan_cwL5HZ0kVFLiR",
         "fee": 50.0,
         "price": 250.0,
         "segment": "pe",
         "error": null
       },
       "individual": {
-        "checkout_id": "ch_w88QZEJt84rLyep",
-        "purchase_url": "https://sandbox.whop.com/checkout/ch_w88QZEJt84rLyep/",
-        "plan_id": "plan_UUaCuYBIphJkz",
-        "fee": 9.8,
-        "price": 49.0,
+        "checkout_id": "ch_d1Vx6xJqV9aJuZu",
+        "purchase_url": "https://sandbox.whop.com/checkout/ch_d1Vx6xJqV9aJuZu/",
+        "plan_id": "plan_PEoNdF2MKqkIt",
+        "fee": 19.8,
+        "price": 99.0,
         "segment": "individual",
         "error": null
       }
+    },
+    "commission": {
+      "route": "direct success fee (RollupOps engagement letter)",
+      "est_fee": 408000.0,
+      "url": "https://sandbox.whop.com/checkout/ch_xxTZwxmGL9K2pCo/",
+      "tranches": 5,
+      "tranche_amount": 81600.0,
+      "retainer_url": "https://sandbox.whop.com/checkout/ch_WHuPDet5Nh7tvFW/"
     }
   }
 ]

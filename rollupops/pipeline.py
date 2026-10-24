@@ -171,6 +171,7 @@ def run(do_whop=False, top=6):
         listings.append(tz); outreach.append(drafts(t, tz))
     if do_whop:
         from . import marketplace; marketplace.list_on_whop(listings)
+    from . import commission; commission.run(listings, do_whop)
     w("03_listings", listings); w("04_outreach_drafts", outreach)
     needs = [{"item": f"Send {1+len(o['buyers'])} outreach drafts for {o['seller']['target']}", "why": "real send"} for o in outreach]
     needs += [{"item": f"Flagged by trust layer: {x.get('platform') or x.get('title')}", "why": "fraud/trust flag"} for x in buyers + listings if x.get("terac", {}).get("flagged")]
