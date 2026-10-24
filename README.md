@@ -63,3 +63,5 @@ Catalog: `data/whop_live_catalog.json`. Per-listing success-fee checkouts stay s
 
 ## Marketplace backend (DuckDB)
 Agents run both sides: `buyer_agent` keeps PE/platform buy mandates fresh from public signals, `seller_agent` keeps the seller pipeline (verification, Terac flag, GREEN jurisdiction), `matcher` proposes scored matches. `python -m rollupops.db` builds `data/rollupops.duckdb`. See [SCHEMA.md](SCHEMA.md).
+
+**Multi-agent cycle:** `python -m rollupops.orchestrator --exa` runs parallel buyer-search and seller-search agents (Exa), the matcher and the Whop agent. The dashboard's Agents panel shows runs, matches and Whop teaser payloads. Nothing is sent to anyone.
