@@ -1,0 +1,14 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import crypto from 'node:crypto';
+import { verifySignature, planActions } from '../lib/whop-events.js';
+const secret = 'whsec_' + Buffer.from('test-secret-key-123').toString('base64');
+const sign = (id, ts, body) => 'v1,' + crypto.createHmac('sha256', Buffer.from(secret.slice(6), 'base64')).update(`${id}.${ts}.${body}`).digest('base64');
+const now = 1_800_000_000;
+test('valid signature passes', () => { const b = '{"a":1}'; assert.equal(verifySignature(secret, { 'webhook-id': 'm1', 'webhook-timestamp': String(now), 'webhook-signature': sign('m1', now, b) }, b, now).ok, true); });
+test('tampered body fails', () => { const h = { 'webhook-id': 'm1', 'webhook-timestamp': String(now), 'webhook-signature': sign('m1', now, '{"a":1}') }; assert.equal(verifySignature(secret, h, '{"a":2}', now).reason, 'bad_signature'); });
+test('stale timestamp fails', () => { const b = '{}'; const h = { 'webhook-id': 'm', 'webhook-timestamp': String(now - 1000), 'webhook-signature': sign('m', now - 1000, b) }; assert.equal(verifySignature(secret, h, b, now).reason, 'stale_timestamp'); });
+test('missing secret rejects', () => assert.equal(verifySignature('', {}, '', now).reason, 'secret_not_configured'));
+test('snapshot payment queues onboarding only', () => { const p = planActions({ type: 'payment.succeeded', data: { id: 'pay_1', plan: { metadata: { sku: 'valuation_snapshot' } } } }); assert.deepEqual(p.tasks, ['onboarding:valuation_snapshot']); assert.equal(p.terac, 'none'); assert.equal(p.payment_id, 'pay_1'); });
+test('deal access grants deal room', () => assert.ok(planActions({ type: 'membership.went_valid', data: { id: 'mem_1', metadata: { sku: 'deal_access' } } }).tasks.includes('grant:deal_room')));
+test('buyers never queue Terac', () => { for (const sku of ['deal_access', 'deal_room', 'deal_deposit', 'valuation_snapshot']) assert.equal(planActions({ type: 'payment.succeeded', data: { metadata: { sku } } }, { TERAC_LIVE: '1' }).terac, 'none'); });
+test('owner listing queues Terac gated', () => { assert.equal(planActions({ type: 'payment.succeeded', data: { metadata: { sku: 'owner_listing' } } }, {}).terac, 'queued_dry_run'); assert.equal(planActions({ type: 'payment.succeeded', data: { metadata: { sku: 'owner_listing' } } }, { TERAC_LIVE: '1' }).terac, 'queued_pending_owner_approval'); });
+test('unknown event ignored', () => assert.equal(planActions({ type: 'foo' }).status, 'ignored'));

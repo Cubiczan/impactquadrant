@@ -1,1 +1,1 @@
-{"name":"rollupops-dashboard","private":true,"dependencies":{"@vercel/blob":"^2.8.2"}}
+{"name":"rollupops-dashboard","private":true,"dependencies":{"@vercel/blob":"^2.8.2"},"type":"module","scripts":{"test":"node --test test/"}}
