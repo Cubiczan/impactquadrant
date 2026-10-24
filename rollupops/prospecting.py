@@ -94,26 +94,49 @@ class AlgoliaStore:
         self.r = requests; self.app = os.environ["ALGOLIA_APP_ID"]
         self.h = {"X-Algolia-Application-Id": self.app, "X-Algolia-API-Key": os.environ["ALGOLIA_ADMIN_KEY"]}
         self.base = f"https://{self.app}.algolia.net/1/indexes"
+    WRITE_ACL = {"addObject", "deleteObject", "editSettings"}
+    def acl(self):
+        x = self.r.get(f"https://{self.app}.algolia.net/1/keys/{self.h['X-Algolia-API-Key']}", headers=self.h, timeout=20)
+        return set(x.json().get("acl", [])) if x.ok else set()
+    def can_write(self): return self.WRITE_ACL <= self.acl()
+    def _ok(self, x):
+        if not x.ok: raise RuntimeError(f"Algolia {x.status_code}: {x.json().get('message', '') if x.content else ''}")
+        return x
+    def ensure_settings(self):
+        for idx, attrs in (("iq_prospects", ["filterOnly(k)", "state", "trade", "status"]), ("iq_dnc", ["filterOnly(k)"])):
+            self._ok(self.r.put(f"{self.base}/{idx}/settings", headers=self.h, json={"attributesForFaceting": attrs}, timeout=20))
     def _get(self, idx, oid):
         x = self.r.get(f"{self.base}/{idx}/{oid}", headers=self.h, timeout=20); return x.json() if x.ok else None
     def dnc_hit(self, ks):
         for k in ks:
             if self._get("iq_dnc", hashlib.sha1(k.encode()).hexdigest()): return k
     def add_dnc(self, k, reason):
-        self.r.put(f"{self.base}/iq_dnc/{hashlib.sha1(k.encode()).hexdigest()}", headers=self.h, json={"k": k, "reason": reason}, timeout=20)
-        self.r.post(f"{self.base}/iq_prospects/deleteByQuery", headers=self.h, json={"filters": f'k:"{k}"'}, timeout=20)
+        self._ok(self.r.put(f"{self.base}/iq_dnc/{hashlib.sha1(k.encode()).hexdigest()}", headers=self.h,
+                            json={"k": k, "reason": reason, "added": dt.date.today().isoformat()}, timeout=20))
+        self._ok(self.r.post(f"{self.base}/iq_prospects/deleteByQuery", headers=self.h, json={"filters": f'k:"{k}"'}, timeout=20))
     def find_dup(self, ks):
         f = " OR ".join(f'k:"{k}"' for k in ks)
         x = self.r.post(f"{self.base}/iq_prospects/query", headers=self.h, json={"filters": f, "hitsPerPage": 1}, timeout=20).json()
         return (x.get("hits") or [{}])[0].get("objectID")
     def upsert(self, p):
-        self.r.put(f"{self.base}/iq_prospects/{p['objectID']}", headers=self.h, json={**p, "k": keys(p)}, timeout=20)
+        self._ok(self.r.put(f"{self.base}/iq_prospects/{p['objectID']}", headers=self.h, json={**p, "k": keys(p)}, timeout=20))
+    def _browse(self, idx):
+        out, body = [], {}
+        while True:
+            x = self.r.post(f"{self.base}/{idx}/browse", headers=self.h, json=body, timeout=30)
+            if x.status_code == 404: return out
+            j = self._ok(x).json(); out += j.get("hits", [])
+            if not j.get("cursor"): return out
+            body = {"cursor": j["cursor"]}
     def all(self):
-        return self.r.post(f"{self.base}/iq_prospects/browse", headers=self.h, json={}, timeout=30).json().get("hits", [])
-    def count_dnc(self): return None
+        return [{k: v for k, v in h.items() if k not in ("k", "_highlightResult")} for h in self._browse("iq_prospects")]
+    def count_dnc(self): return len(self._browse("iq_dnc"))
 
 def get_store():
-    if os.environ.get("ALGOLIA_APP_ID") and os.environ.get("ALGOLIA_ADMIN_KEY"): return AlgoliaStore()
+    """Algolia only if the key can actually write; a search-only key silently falls back to DuckDB."""
+    if os.environ.get("ALGOLIA_APP_ID") and os.environ.get("ALGOLIA_ADMIN_KEY"):
+        a = AlgoliaStore()
+        if a.can_write(): return a
     return DuckStore()
 
 # ---------- pipeline ----------
