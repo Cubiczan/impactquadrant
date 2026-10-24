@@ -10,7 +10,7 @@ def seller_ladder(t):
           "sos_registration_active": "todo (state SoS lookup)", "gbp_reviews_phone_consistency": "todo (Google Business Profile match)",
           "lien_lawsuit_bankruptcy": "todo (UCC/PACER search)"}
     l1_pass = all(v is True for v in l1.values() if isinstance(v, bool))
-    l2 = terac.seller_verification(t) if l1_pass else {"status": "not_sent", "badge": "Flagged", "flagged": True}
+    l2 = terac.owner_verification(t) if l1_pass else {"status": "not_sent", "badge": "Flagged", "flagged": True}
     acct = t.get("whop_account_id")
     l1["whop_kyc_identity"] = whop_kyc_status(acct)["status"] if acct else "not_started (seller connected account created at listing; KYC via hosted account link)"
     l3 = {"status": "awaiting owner upload", "docs": ["3y tax returns", "TTM P&L"], "rule": "agent reconciles to teaser range; >20% add-backs -> QoE flag; never bank logins"}
@@ -22,12 +22,13 @@ def buyer_ladder(b, segment="pe"):
     l1 = {"email_verified": "required to view teasers (Wix member/email confirm)"}
     l2 = {"whop_payment": "required", "click_through_nda": "required", "unlocks": "blind deal memo (no owner identity)"}
     pe_pre = segment == "pe" and any(g["type"] == "addon_press" for g in b.get("signals", []))
-    l3 = terac.buyer_verification(b) if pe_pre or segment == "individual" else {"status": "not_sent", "badge": "Flagged", "flagged": True, "reason": "no recent add-ons found"}
+    # No Terac on scoring/subscriptions: human screening happens only on flagged high-value events (terac.buyer_screening).
+    l3 = {"status": "on_flagged_request", "rule": "human screen only if unverified buyer requests confidential deal box, retainer/$15k+ fee path, or anomaly", "flagged": False}
     l3["checks"] = (["firm exists", "recent add-ons", "person employed at firm (firm-domain email)"] if segment == "pe"
                     else ["proof of funds or SBA pre-qual letter review", "short video identity confirm"])
     l3["flag_for"] = ["data harvester", "competitor", "unfunded"]
     level = 3 if l3.get("status") == "verified" else 2  # PE platforms on our list are scored as L2-eligible once they pay + NDA
-    return {"segment": segment, "level_max_today": level, "badge": "Flagged" if l3.get("flagged") else "L3 pending: human check before owner identity release",
+    return {"segment": segment, "level_max_today": level, "badge": "Flagged" if l3.get("flagged") else "Agent-vetted; human screen on confidential request",
             "L1": l1, "L2": l2, "L3_terac": l3, "owner_identity_released": level >= 3}
 
 # --- Whop KYC as the identity layer (documented endpoints only) ---------------------------------

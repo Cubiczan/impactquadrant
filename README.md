@@ -85,3 +85,10 @@ Demo: `FULFILL_APPROVE_SECRET=... python -m rollupops.fulfillment teaser_cim`. S
 
 ## Public copy
 This public repo is a scrubbed mirror of a private working repo. Partner overlays (priority-sponsor lanes, platform lists, buyer registry, blocked marketing terms) live only in untracked `data/raw/private/`; without them the pipeline runs on public sources. `MARKETING_BLOCKED_TERMS` (comma-separated) adds confidential terms the marketing agent must never emit.
+
+## Where humans help (and where they don't)
+Terac human-in-the-loop runs in exactly two places, behind `TERAC_ENABLED=1` (org pending). With the flag off, items queue as `pending_human`; low-value paths never block.
+1. **Owner verification**: with the owner's consent, non-blocking, before a listing or teaser goes out.
+2. **Flagged high-value buyer screening**: only when (a) a new or unverified buyer requests confidential deal boxes, (b) anyone moves toward the commission retainer or a $15k+ fee path, or (c) the anomaly score crosses `TERAC_ANOMALY_THRESHOLD` (default 0.7). A human checks intent and fraud; that high-value step waits for the check.
+
+No Terac on: teasers, subscriptions, scoring, matching, marketing, checkout, service fulfillment. Fulfillment deliverables go out only after the owner's own approval. Marketing posts go out only after the owner approves the final text. Queues: `dashboard/public/data/human_checks.json` → dashboard "Human checks" panel.
