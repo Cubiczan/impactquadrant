@@ -10,3 +10,4 @@ data/raw/private/
 data/rollupops.duckdb
 data/*.duckdb
 data/inbox/
+data/terac_approvals.json

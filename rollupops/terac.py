@@ -5,7 +5,7 @@
                            (c) anomaly score >= ANOMALY_THRESHOLD. Human checks intent + fraud.
 NOT used for: teasers, subscriptions, scoring, matching, marketing, checkout, service fulfillment
 (fulfillment keeps the owner's own approval, not Terac).
-Gated by TERAC_ENABLED=1 (org pending). Flag off -> item queued as pending_human; low-value paths never block."""
+Gated by TERAC_ENABLED=1 (queue) and TERAC_LIVE=1 + per-check owner approval (spend). Flag off -> item queued as pending_human; low-value paths never block."""
 import os, json, datetime as dt
 from pathlib import Path
 ENABLED = os.environ.get("TERAC_ENABLED") == "1"
@@ -56,3 +56,48 @@ if __name__ == "__main__":
               {"buyer": "demo-v", "buyer_verified": True, "action": "checkout", "fee": 499}, {"buyer": "demo-v", "buyer_verified": True, "action": "fee", "fee": 42000},
               {"buyer": "demo-x", "action": "subscribe", "anomaly": 0.9}]:
         print(e["action"], "->", buyer_screening(e)["status"])
+
+# ---------------------------------------------------------------------------------------------
+# Real Terac REST client (v2, https://terac.com/api/external/v2). Key from env TERAC_API_KEY only.
+# Spend safety: nothing here launches unless TERAC_LIVE=1 AND the specific check id is approved in
+# data/terac_approvals.json (untracked) by the owner. Drafts/feasibility cost nothing but are only
+# created by an explicit call; the orchestrator never calls them.
+import urllib.request, urllib.error
+API = "https://terac.com/api/external/v2"
+LIVE = os.environ.get("TERAC_LIVE") == "1"
+APPROVALS = ROOT / "data/terac_approvals.json"
+TEMPLATES = {
+    "owner_verification": {
+        "task": "With the owner's consent, confirm a small business operates at its stated location, the person is an owner, and they genuinely want a confidential valuation or sale. Disclose the caller works with Impact Quadrant; no recording without consent. Flag inconsistencies.",
+        "panel": "US-based business researchers / verification specialists experienced with small-business due diligence or KYC; English.",
+        "count": 1, "timeline_hours": 72, "business_type": "b2b"},
+    "buyer_screening": {
+        "task": "Verify a prospective acquirer: identity (firm site, firm-domain email, public profile match), plausibility of funds versus deal size, and real acquisition intent. Flag data harvesting, competitor fishing or mismatched identity. Upload a short written finding.",
+        "panel": "US-based M&A, private equity or KYC/fraud analysts with buy-side diligence experience; English.",
+        "count": 1, "timeline_hours": 48, "business_type": "b2b"},
+}
+def _req(method, path, body=None):
+    key = os.environ.get("TERAC_API_KEY")
+    if not key: return {"error": "TERAC_API_KEY not set"}
+    r = urllib.request.Request(API + path, method=method, data=json.dumps(body).encode() if body is not None else None,
+                               headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(r, timeout=30) as resp: return json.loads(resp.read() or b"{}")
+    except urllib.error.HTTPError as e:
+        return {"error": e.code, "body": e.read().decode()[:300]}
+def context(): return _req("GET", "/organizations/current/context")              # read-only
+def list_opportunities(): return _req("GET", "/opportunities")                    # read-only
+def get_feasibility(rid): return _req("GET", f"/feasibility/requests/{rid}")       # read-only
+def get_submissions(opp_id): return _req("GET", f"/opportunities/{opp_id}/submissions")  # read-only
+def request_feasibility(kind):
+    """Free quote request (POST /feasibility/requests). Explicit call only."""
+    t = TEMPLATES[kind]
+    return _req("POST", "/feasibility/requests", {"taskDescription": t["task"], "panelDescription": t["panel"],
+                                                  "submissionCount": t["count"], "timelineHours": t["timeline_hours"]})
+def _approved(check_id):
+    return APPROVALS.exists() and json.loads(APPROVALS.read_text()).get(check_id) is True
+def launch(opp_id, check_id):
+    """Spends credit. Requires TERAC_LIVE=1 and owner approval of this exact check id."""
+    if not LIVE: return {"launched": False, "reason": "TERAC_LIVE!=1"}
+    if not _approved(check_id): return {"launched": False, "reason": f"check {check_id} not approved in data/terac_approvals.json"}
+    return _req("POST", f"/opportunities/{opp_id}/launch", {})
