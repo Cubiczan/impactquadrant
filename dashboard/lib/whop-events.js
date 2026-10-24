@@ -21,7 +21,7 @@ export function verifySignature(secret, headers, body, nowS = Math.floor(Date.no
 
 const SKU_ACTIONS = {
   valuation_snapshot: ['onboarding:valuation_snapshot'],
-  deal_access: ['onboarding:deal_access', 'grant:deal_room'],
+  deal_access: ['onboarding:deal_access', 'grant:deal_alerts'],
   deal_room: ['onboarding:deal_room', 'grant:deal_room'],
   deal_deposit: ['onboarding:deal_deposit', 'hold:refundable_deposit'],
   owner_listing: ['onboarding:owner_listing', 'queue:owner_verification'],

@@ -1,6 +1,6 @@
 Hi {{customer.first_name | default: 'there'}},
 
-Just a heads-up: your $100 Snapshot credit toward a subscription ends in 3 days. Reply if you have any questions first.
+Just a heads-up: your $100 Snapshot credit expires in 3 days (30 days after your Snapshot purchase). Use code SNAPSHOT100 at checkout for $100 off your first month. Reply if you have any questions first.
 
 Deal Access: https://whop.com/checkout/plan_dz3xCCAiGVTns
 Deal Room: https://whop.com/checkout/plan_wFIIKYKAZbP1n

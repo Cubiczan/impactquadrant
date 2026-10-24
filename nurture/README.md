@@ -10,12 +10,12 @@ UI: https://fly.customer.io/workspaces/216782/journeys/automations/<id>
 | 3 | IQ Onboarding - Deal Room | iq_deal_room_started | email, wait 7d, email |
 | 4 | IQ Upsell - Snapshot to Deal Access | iq_snapshot_purchased | wait 10d, email |
 | 5 | IQ Upsell - Deal Access to Deal Room | iq_deal_access_started | wait 21d, email |
-| 6 | IQ PROPOSED - 30-day Snapshot upgrade credit | iq_snapshot_purchased | wait 20d, email, wait 7d, email |
+| 6 | IQ - 30-day Snapshot upgrade credit | iq_snapshot_purchased | wait 20d, email, wait 7d, email |
 | 7 | IQ Scorecard - High band follow-up | iq_scorecard_high | email, wait 4d, email |
 | 8 | IQ Scorecard - Mid band follow-up | iq_scorecard_mid | email, wait 7d, email |
 | 9 | IQ Scorecard - Low band follow-up | iq_scorecard_low | email, wait 14d, email |
 
-Copy: `copy.json` and `html/`. #6 is a PROPOSED offer: needs owner approval and a Whop promo/credit mechanism before it can run.
+Copy: `copy.json` and `html/`. #6 uses Whop promo code SNAPSHOT100 (promo_6rrSdl3bkdyw): $100 off the first month of Deal Access or Deal Room, one per customer; the 30-day window is enforced by the journey timing and stated in the copy. Sender: Sam Desigan <sam@impactquadrant.info>.
 
 Before starting any automation: set sender identity, add exit conditions (e.g. exit upsell #4/#6 when `iq_deal_access_started` or `iq_deal_room_started`; exit #5 on `iq_deal_room_started`), and set re-entry to "once".
 
@@ -23,7 +23,7 @@ Before starting any automation: set sender identity, add exit conditions (e.g. e
 - identify: id = lowercased email; attrs email, first_name, whop_user_id, iq_<sku>=true
 - `iq_payment_succeeded` on every payment.succeeded
 - `iq_snapshot_purchased` / `iq_deal_access_started` / `iq_deal_room_started` on first payment (not renewals)
-- Scorecard (to wire into the scorecard form): `iq_scorecard_high|mid|low` via `scorecardEvent(score)` (proposed thresholds 70/40)
+- Scorecard (to wire into the scorecard form): `iq_scorecard_high|mid|low` via `scorecardEvent(score)` (approved thresholds: 70+ high, 40-69 mid, under 40 low)
 
 Env (not set): CIO_LIVE, CIO_SITE_ID, CIO_API_KEY (Track API), optional CIO_REGION=eu.
 

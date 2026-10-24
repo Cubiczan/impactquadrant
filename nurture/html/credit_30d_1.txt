@@ -1,9 +1,9 @@
 Hi {{customer.first_name | default: 'there'}},
 
-A reminder: because you bought a Valuation Snapshot, we'll credit the $100 toward a Deal Access or Deal Room subscription if you start within 30 days of your purchase.
+A reminder: because you bought a Valuation Snapshot, you get $100 off your first month of Deal Access or Deal Room. Use code SNAPSHOT100 at checkout. The offer expires 30 days after your Snapshot purchase, so you have about 10 days left.
 
 Deal Access ($49/month): https://whop.com/checkout/plan_dz3xCCAiGVTns
-Deal Room ($129/month): https://whop.com/checkout/plan_wFIIKYKAZbP1n
+Deal Room ($129/month, includes the members-only Deal Room forums): https://whop.com/checkout/plan_wFIIKYKAZbP1n
 
 Shyam
 ImpactQuadrant
