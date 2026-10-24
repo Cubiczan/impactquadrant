@@ -17,3 +17,4 @@ dashboard/review_evidence/*.json
 !dashboard/review_evidence/demo-*.json
 dashboard/.env.local
 node_modules/
+data/prospects.duckdb

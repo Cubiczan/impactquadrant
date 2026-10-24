@@ -1,0 +1,21 @@
+<!-- ImpactQuadrant funnel tracking (DRAFT, not published). Paste into Wix > Settings > Custom Code (Body end, all pages)
+     only after approval and after the Mixpanel project token is set in Vercel env. No Mixpanel token or SDK in page source:
+     events go to our Vercel proxy, which holds the token server-side. No names/emails are sent. -->
+<script>
+(function(){
+  var EP='https://dashboard-six-fawn-83.vercel.app/api/track';
+  function id(){try{var k='iq_aid',v=localStorage.getItem(k);if(!v){v=(crypto.randomUUID?crypto.randomUUID():String(Math.random()).slice(2)+Date.now()).replace(/-/g,'');localStorage.setItem(k,v);}return v;}catch(e){return 'anon'+Date.now();}}
+  function utm(){var q=new URLSearchParams(location.search),o={};['utm_source','utm_medium','utm_campaign'].forEach(function(k){if(q.get(k))o[k]=q.get(k);});return o;}
+  window.iqTrack=function(ev,props){var p=Object.assign({page:location.pathname,referrer_host:document.referrer?new URL(document.referrer).host:'',device:innerWidth<768?'mobile':'desktop'},utm(),props||{});
+    try{fetch(EP,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event:ev,distinct_id:id(),props:p}),keepalive:true});}catch(e){}};
+  var path=location.pathname;
+  if(/scorecard/i.test(path)) iqTrack('scorecard_viewed');
+  if(/services|pricing/i.test(path)) iqTrack('pricing_viewed');
+  // Whop checkout links: https://whop.com/checkout/<plan>
+  var PLANS={plan_DxqY6XEluwGE6:['valuation_snapshot',100],plan_dz3xCCAiGVTns:['deal_access',49],plan_wFIIKYKAZbP1n:['deal_room',129]};
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="whop.com/checkout/"]');if(!a)return;
+    var plan=a.href.split('/checkout/')[1].split(/[/?#]/)[0],m=PLANS[plan]||['other',''];iqTrack('checkout_clicked',{plan:plan,sku:m[0],price:m[1]});},true);
+  // Scorecard (iframe/embed) should postMessage {iq:'scorecard_started'} / {iq:'scorecard_completed',score,score_band}
+  window.addEventListener('message',function(e){var d=e.data||{};if(d.iq==='scorecard_started'||d.iq==='scorecard_completed')iqTrack(d.iq,{score:d.score,score_band:d.score_band});});
+})();
+</script>
